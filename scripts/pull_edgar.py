@@ -148,50 +148,27 @@ def parse_form4_xml(filing_index_url):
         # Get filing index page to find XML document
         idx = requests.get(filing_index_url, headers=HEADERS, timeout=10).text
         # Find the actual form4 XML link
-        # XML is under issuer CIK, not filer CIK — find non-xsl XML link
-        xml_matches = re.findall(r'href="(/Archives/edgar/data/[^"]+\.xml)"', idx)
-        xml_matches = [x for x in xml_matches if 'xslF' not in x]
-        xml_match = type('M', (), {'group': lambda self,n: xml_matches[0]})() if xml_matches else None
+        xml_match = re.search(r'href="(/Archives/edgar/data/[^"]+\.xml)"', idx)
         if not xml_match:
             return None
         xml_url = "https://www.sec.gov" + xml_match.group(1)
         xml = requests.get(xml_url, headers=HEADERS, timeout=10).text
 
-        # Must have nonDerivativeTable with transactionCode P
-        if "<nonDerivativeTable>" not in xml:
+        # Transaction code P = open-market purchase
+        trans_code = re.search(r"<transactionCode>([^<]+)</transactionCode>", xml)
+        if not trans_code or trans_code.group(1).strip() != "P":
             return None
 
-        # Extract only nonDerivative section
-        nd_match = re.search(r"<nonDerivativeTable>(.*?)</nonDerivativeTable>", xml, re.DOTALL)
-        if not nd_match:
-            return None
-        nd = nd_match.group(1)
-
-        # Find P (open-market purchase) transaction block
-        trans_blocks = re.findall(r"<nonDerivativeTransaction>(.*?)</nonDerivativeTransaction>", nd, re.DOTALL)
-        purchase_block = None
-        for block in trans_blocks:
-            code = re.search(r"<transactionCode>([^<]+)</transactionCode>", block)
-            if code and code.group(1).strip() == "P":
-                purchase_block = block
-                break
-        if not purchase_block:
-            return None
-
-        # Extract values — EDGAR nests amounts in <value> tags
-        def extract(tag, src=xml):
-            m = re.search(rf"<{tag}>\s*<value>([^<]+)</value>", src)
+        # Extract fields
+        def extract(tag):
+            m = re.search(rf"<{tag}>([^<]+)</{tag}>", xml)
             return m.group(1).strip() if m else None
 
-        def extract_plain(tag, src=xml):
-            m = re.search(rf"<{tag}>([^<]+)</{tag}>", src)
-            return m.group(1).strip() if m else None
-
-        shares  = extract("transactionShares", purchase_block)
-        price   = extract("transactionPricePerShare", purchase_block)
-        ticker  = extract_plain("issuerTradingSymbol")
-        company = extract_plain("issuerName")
-        name    = extract_plain("rptOwnerName")
+        shares = extract("transactionShares")
+        price  = extract("transactionPricePerShare")
+        ticker = extract("issuerTradingSymbol")
+        company= extract("issuerName")
+        name   = extract("rptOwnerName")
         role_tags = re.findall(r"<officerTitle>([^<]+)</officerTitle>", xml)
         is_director = "<isDirector>1</isDirector>" in xml
         is_officer  = "<isOfficer>1</isOfficer>" in xml
@@ -308,7 +285,6 @@ def fetch_13d_filer_names(days_back=7):
             track = ACTIVIST_TRACK_RECORDS.get(filer, {
                 "win_rate": None, "avg_return_6m": None, "style": "Unknown"
             })
-            if len(results) >= 20: break
             results.append({
                 "type": "13D",
                 "filed_date": src.get("file_date", ""),
@@ -337,12 +313,42 @@ def run():
     form4s      = fetch_form4_recent(days_back=3)
 
     # Save Form 4 data to insider_trades.json
+    # Save today's trades
     with open("data/insider_trades.json", "w") as f:
         json.dump({
             "last_updated": datetime.now().isoformat(),
             "trades": form4s
         }, f, indent=2, default=str)
     print(f"  Saved {len(form4s)} Form 4 filings to insider_trades.json")
+
+    # Append to rolling history (deduplicated)
+    try:
+        with open("data/insider_history.json") as f:
+            history = json.load(f)
+        hist_trades = history.get("trades", [])
+    except:
+        hist_trades = []
+
+    existing_keys = set(
+        (t.get("ticker",""), t.get("insider",""), t.get("filed_date",""), str(t.get("value_usd",0)))
+        for t in hist_trades
+    )
+    new_trades = []
+    for t in form4s:
+        key = (t.get("ticker",""), t.get("insider",""), t.get("filed_date",""), str(t.get("value_usd",0)))
+        if key not in existing_keys:
+            new_trades.append(t)
+            existing_keys.add(key)
+
+    hist_trades = (new_trades + hist_trades)[:2000]  # keep rolling 2000
+    hist_trades.sort(key=lambda x: x.get("filed_date",""), reverse=True)
+
+    with open("data/insider_history.json", "w") as f:
+        json.dump({
+            "last_updated": datetime.now().isoformat(),
+            "trades": hist_trades
+        }, f, indent=2, default=str)
+    print(f"  History: {len(hist_trades)} total trades stored")
 
     # Confluence: activist + insider on same ticker
     confluence = compute_confluence(filings_13d + filings_13g, form4s)
