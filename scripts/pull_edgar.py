@@ -304,10 +304,7 @@ def fetch_13d_filer_names(days_back=7):
 
 
 def run():
-    # Try richer API first, fall back to ATOM feed
-    filings_13d = fetch_13d_filer_names(days_back=7)
-    if not filings_13d:
-        filings_13d = fetch_13d_filings(days_back=7)
+    filings_13d = fetch_13d_filings(days_back=7)
 
     filings_13g = fetch_13g_filings(days_back=7)
     form4s      = fetch_form4_recent(days_back=3)
