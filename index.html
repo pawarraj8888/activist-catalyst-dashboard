@@ -77,6 +77,26 @@ tbody td{padding:12px 14px;font-size:13px;vertical-align:middle}
 .secbtn{display:inline-block;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:600;color:var(--blue);border:1px solid rgba(0,113,227,0.25);text-decoration:none;transition:all 0.15s;background:rgba(0,113,227,0.06)}
 .secbtn:hover{background:var(--blue);color:white}
 .fire{font-size:13px;margin-left:3px}
+
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.4);backdrop-filter:blur(8px);z-index:1000;align-items:center;justify-content:center}
+.modal-bg.show{display:flex}
+.modal{background:white;border-radius:20px;padding:32px;width:760px;max-width:95vw;max-height:85vh;overflow-y:auto;box-shadow:0 24px 80px rgba(0,0,0,0.2)}
+.modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.modal-ticker{font-size:28px;font-weight:800;font-family:var(--mono)}
+.modal-close{width:32px;height:32px;border-radius:50%;border:none;background:rgba(0,0,0,0.08);cursor:pointer;font-size:16px}
+.modal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.modal-stat{background:#f5f5f7;border-radius:12px;padding:14px}
+.modal-stat-label{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px}
+.modal-stat-value{font-size:20px;font-weight:700;font-family:var(--mono);margin-top:4px}
+.wl-bar{display:flex;gap:8px;align-items:center;margin-bottom:20px;background:var(--surface);border:1px solid var(--border2);backdrop-filter:var(--blur);border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow)}
+.wl-bar h3{font-size:13px;font-weight:700;margin-right:4px}
+.wl-chips{display:flex;gap:6px;flex-wrap:wrap;flex:1}
+.wl-chip{padding:4px 12px;border-radius:20px;background:rgba(0,113,227,0.1);color:var(--blue);font-family:var(--mono);font-weight:700;font-size:12px;border:1px solid rgba(0,113,227,0.2);cursor:pointer;transition:all 0.15s}
+.wl-chip:hover{background:var(--blue);color:white}
+.wl-chip.alert{background:rgba(255,59,48,0.1);color:#cc1000;border-color:rgba(255,59,48,0.2)}
+.wl-input{padding:6px 12px;border-radius:20px;border:1.5px solid var(--border);font-size:12px;outline:none;width:120px}
+.wl-input:focus{border-color:var(--blue)}
+.wl-add{padding:6px 14px;border-radius:20px;border:none;background:var(--blue);color:white;font-size:12px;font-weight:600;cursor:pointer}
 </style>
 </head>
 <body>
@@ -87,6 +107,30 @@ tbody td{padding:12px 14px;font-size:13px;vertical-align:middle}
   </div>
   <div class="h-right" id="lastUpdated">—</div>
 </header>
+
+
+<!-- TICKER MODAL -->
+<div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-header">
+      <div>
+        <div class="modal-ticker" id="mTicker">—</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:2px" id="mCompany">—</div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-grid" id="mGrid"></div>
+    <div id="mInsiderHistory" style="margin-top:8px"></div>
+  </div>
+</div>
+
+<!-- WATCHLIST BAR -->
+<div class="wl-bar" id="wlBar">
+  <h3>👁 Watchlist</h3>
+  <div class="wl-chips" id="wlChips"><span style="color:var(--muted);font-size:12px">Add tickers to watch for activity alerts</span></div>
+  <input class="wl-input" id="wlInput" placeholder="TICKER" onkeydown="if(event.key==='Enter')addWL()">
+  <button class="wl-add" onclick="addWL()">+ Add</button>
+</div>
 
 <div class="tabs">
   <button class="tab active" onclick="switchTab('activist',this)">Activist Filings <span class="badge r" id="b1">0</span></button>
@@ -175,6 +219,7 @@ tbody td{padding:12px 14px;font-size:13px;vertical-align:middle}
 <script>
 
 var hData=null;
+var siData={};
 var hF='all';
 
 function fh(f,btn){hF=f;document.querySelectorAll('#panel-history .pill').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');rH();}
@@ -221,6 +266,84 @@ function rH(){
   document.getElementById('tH').innerHTML=html;
 }
 
+
+// ── WATCHLIST ────────────────────────────────────────────────────────────────
+var watchlist = JSON.parse(localStorage.getItem('wl')||'[]');
+
+function renderWL(){
+  var chips = document.getElementById('wlChips');
+  if(!watchlist.length){
+    chips.innerHTML='<span style="color:var(--muted);font-size:12px">Add tickers to watch for activity alerts</span>';
+    return;
+  }
+  chips.innerHTML = watchlist.map(function(t){
+    var hasActivity = checkWLActivity(t);
+    return '<span class="wl-chip'+(hasActivity?' alert':'')+'" onclick="openModal(\''+t+'\')">'+(hasActivity?'🔥 ':'')+t+'</span>';
+  }).join('');
+}
+
+function checkWLActivity(ticker){
+  if(!aData&&!iData&&!eData)return false;
+  var a13d=(aData&&aData.filings_13d||[]).some(function(f){return f.ticker===ticker});
+  var ins=(iData&&iData.trades||[]).some(function(t){return (t.ticker||'').toUpperCase()===ticker});
+  return a13d||ins;
+}
+
+function addWL(){
+  var v=document.getElementById('wlInput').value.toUpperCase().trim().replace(/[^A-Z]/g,'');
+  if(!v||watchlist.indexOf(v)>=0){document.getElementById('wlInput').value='';return;}
+  watchlist.push(v);
+  localStorage.setItem('wl',JSON.stringify(watchlist));
+  document.getElementById('wlInput').value='';
+  renderWL();
+}
+
+// ── TICKER MODAL ──────────────────────────────────────────────────────────────
+function openModal(ticker){
+  var si=siData[ticker]||{};
+  var rm=rData[ticker]||{};
+  var ib=ibData[ticker]||{};
+  var earnings=(eData&&eData.events||[]).find(function(e){return e.ticker===ticker});
+
+  document.getElementById('mTicker').textContent=ticker;
+  document.getElementById('mCompany').textContent=earnings?('Earnings: '+earnings.earnings_date):'';
+
+  var stats=[
+    {label:'Short Interest',value:si.short_pct_float!=null?si.short_pct_float.toFixed(1)+'%':'—',color:si.short_pct_float>15?'#cc1000':si.short_pct_float>10?'#b06600':'#1c1c1e'},
+    {label:'Squeeze Risk',value:si.squeeze_risk||'—',color:si.squeeze_risk==='HIGH'?'#cc1000':si.squeeze_risk==='MEDIUM'?'#b06600':'#1c1c1e'},
+    {label:'Days to Cover',value:si.days_to_cover!=null?si.days_to_cover.toFixed(1)+'d':'—',color:'#1c1c1e'},
+    {label:'Avg Realized Move',value:rm.avg_realized_move!=null?(rm.avg_realized_move*100).toFixed(1)+'%':'—',color:'#0060c7'},
+    {label:'Beat Rate (8Q)',value:ib.beat_rate!=null?(ib.beat_rate*100).toFixed(0)+'%':'—',color:ib.beat_rate>0.8?'#1a8a3a':ib.beat_rate>0.5?'#b06600':'#cc1000'},
+    {label:'Last EPS Surprise',value:ib.last_surprise!=null?(ib.last_surprise>0?'+':'')+ib.last_surprise.toFixed(2):'—',color:ib.last_surprise>0?'#1a8a3a':'#cc1000'},
+  ];
+
+  document.getElementById('mGrid').innerHTML=stats.map(function(s){
+    return '<div class="modal-stat"><div class="modal-stat-label">'+s.label+'</div><div class="modal-stat-value" style="color:'+s.color+'">'+s.value+'</div></div>';
+  }).join('');
+
+  // Insider history for this ticker
+  var hist=(hData&&hData.trades||[]).filter(function(t){return (t.ticker||'').toUpperCase()===ticker});
+  if(hist.length){
+    var hhtml='<div style="font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Insider Purchase History</div>';
+    hhtml+='<table><thead><tr><th>Date</th><th>Insider</th><th>Role</th><th>Shares</th><th>Price</th><th>Value</th></tr></thead><tbody>';
+    hist.forEach(function(t){
+      var val=t.value_usd||0;
+      var vs=val>=1e6?'$'+(val/1e6).toFixed(2)+'M':'$'+(val/1e3).toFixed(0)+'K';
+      var role=t.is_ceo?'<span class="tag r">CEO</span>':t.is_director?'<span class="tag b">Director</span>':'<span class="tag gr">'+(t.role||'Insider')+'</span>';
+      hhtml+='<tr><td class="mu">'+t.filed_date+'</td><td>'+t.insider+'</td><td>'+role+'</td><td class="mo">'+t.shares.toLocaleString()+'</td><td class="mo">$'+t.price.toFixed(2)+'</td><td class="mo pos" style="font-weight:700">'+vs+'</td></tr>';
+    });
+    hhtml+='</tbody></table>';
+    document.getElementById('mInsiderHistory').innerHTML=hhtml;
+  } else {
+    document.getElementById('mInsiderHistory').innerHTML='<div style="font-size:12px;color:var(--muted);padding:16px 0">No insider purchase history for '+ticker+' yet.</div>';
+  }
+
+  document.getElementById('modalBg').classList.add('show');
+}
+
+function closeModal(){document.getElementById('modalBg').classList.remove('show');}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+
 var aData=null,eData=null,iData=null,rData={},ibData={};
 var confluence=[];
 var afF='all',eF='all',inF='all';
@@ -240,13 +363,16 @@ async function loadAll(){
       fetch('data/insider_trades.json').then(function(r){return r.json()}).catch(function(){return null}),
       fetch('data/realized_moves.json').then(function(r){return r.json()}).catch(function(){return null}),
       fetch('data/ibes_enrichment.json').then(function(r){return r.json()}).catch(function(){return null}),
-      fetch('data/insider_history.json').then(function(r){return r.json()}).catch(function(){return null})
+      fetch('data/insider_history.json').then(function(r){return r.json()}).catch(function(){return null}),
+      fetch('data/short_interest.json').then(function(r){return r.json()}).catch(function(){return null})
     ]);
     aData=rs[0];eData=rs[1];iData=rs[2];
     rData=(rs[3]&&rs[3].data)||{};
     ibData=(rs[4]&&rs[4].data)||{};
     hData=rs[5]||null;
+    siData=(rs[6]&&rs[6].data)||{};
     if(hData)rH();
+    renderWL();
     confluence=(aData&&aData.confluence_tickers)||[];
     var ts=(aData&&aData.last_updated)||(eData&&eData.last_updated);
     if(ts)document.getElementById('lastUpdated').innerHTML='Last refreshed<br><strong>'+new Date(ts).toLocaleString()+'</strong>';
@@ -324,7 +450,7 @@ function rE(){
   var beats=all.filter(function(e){return e.beat_rate!=null}).map(function(e){return e.beat_rate});
   document.getElementById('s2d').textContent=beats.length?(beats.reduce(function(a,b){return a+b},0)/beats.length*100).toFixed(0)+'%':'—';
   if(!evts.length){document.getElementById('tE').innerHTML='<div class="empty"><div class="ei">📅</div>No events match filter</div>';return;}
-  var html='<table><thead><tr><th>Ticker</th><th>Sector</th><th>Date</th><th>In</th><th>Implied Move</th><th>Avg Realized (8Q)</th><th>Ratio</th><th>Signal</th><th>Beat Rate</th><th>Last Surprise</th></tr></thead><tbody>';
+  var html='<table><thead><tr><th>Ticker</th><th>Sector</th><th>Date</th><th>In</th><th>Implied Move</th><th>Avg Realized (8Q)</th><th>Ratio</th><th>Signal</th><th>Short Int %</th><th>Beat Rate</th><th>Last Surprise</th></tr></thead><tbody>';
   evts.forEach(function(e){
     var sec=SECTORS[e.ticker]||'Other';
     var rm=rData[e.ticker];
@@ -335,7 +461,7 @@ function rE(){
     var sig=e.mispricing&&e.mispricing.signal;
     var ratio=e.mispricing&&e.mispricing.ratio;
     html+='<tr>';
-    html+='<td class="ticker">'+e.ticker+'</td>';
+    html+='<td class="ticker" style="cursor:pointer" onclick="openModal(\''+e.ticker+'\')">'+'<span style="color:var(--blue)">'+e.ticker+'</span></td>';
     html+='<td><span class="sp '+scls(sec)+'">'+sec+'</span></td>';
     html+='<td class="mu">'+e.earnings_date+'</td>';
     html+=('<td>'+dbadge(e.earnings_date)+'</td>');
@@ -343,6 +469,9 @@ function rE(){
     html+='<td class="mo">'+rl+'</td>';
     html+='<td class="mo">'+(ratio!=null?ratio.toFixed(2)+'x':'—')+'</td>';
     html+='<td>'+(sig?'<span class="tag '+(sig==='CHEAP'?'g':sig==='RICH'?'r':'gr')+'">'+sig+'</span>':'<span class="tag gr">N/A</span>')+'</td>';
+    var esi=siData[e.ticker]||{};
+    var esiPct=esi.short_pct_float!=null?esi.short_pct_float.toFixed(1)+'%':'—';
+    html+='<td class="mo '+(esi.short_pct_float>15?'neg':'mu')+'">'+esiPct+'</td>';
     html+='<td class="'+bcls(beat)+'">'+(beat!=null?(beat*100).toFixed(0)+'%':'—')+'</td>';
     html+='<td class="'+(surp!=null?(surp>0?'pos':'neg'):'mu')+'">'+(surp!=null?(surp>0?'+':'')+surp.toFixed(2):'—')+'</td>';
     html+='</tr>';
@@ -370,7 +499,7 @@ function rI(){
     document.getElementById('tI').innerHTML='<div class="empty"><div class="ei">👤</div>'+(all.length===0?'No open-market purchases found today. Re-run pipeline.':'No trades match filter.')+'</div>';
     return;
   }
-  var html='<table><thead><tr><th>Date</th><th>Ticker</th><th>Company</th><th>Insider</th><th>Role</th><th>Shares</th><th>Price</th><th>Value</th><th>Confluence</th><th>Filing</th></tr></thead><tbody>';
+  var html='<table><thead><tr><th>Date</th><th>Ticker</th><th>Company</th><th>Insider</th><th>Role</th><th>Shares</th><th>Price</th><th>Value</th><th>Short Int %</th><th>Squeeze Risk</th><th>Confluence</th><th>Filing</th></tr></thead><tbody>';
   trades.forEach(function(t){
     var tick=(t.ticker||'—').toUpperCase();
     var isC=confluence.indexOf(tick)>=0;
@@ -379,13 +508,18 @@ function rI(){
     var role=t.is_ceo?'<span class="tag r">CEO</span>':t.is_director?'<span class="tag b">Director</span>':t.is_ten_pct?'<span class="tag p">10%+ Owner</span>':'<span class="tag gr">'+(t.role||'Insider')+'</span>';
     html+='<tr>';
     html+='<td class="mu">'+(t.filed_date||'—')+'</td>';
-    html+='<td class="ticker">'+tick+(isC?'<span class="fire">🔥</span>':'')+'</td>';
+    html+='<td class="ticker" style="cursor:pointer" onclick="openModal(\''+tick+'\')">'+'<span style="color:var(--blue)">'+tick+'</span>'+(isC?'<span class="fire">🔥</span>':'')+'</td>';
     html+='<td class="mu">'+(t.company||'—')+'</td>';
     html+='<td>'+(t.insider||'—')+'</td>';
     html+=('<td>'+role+'</td>');
     html+='<td class="mo">'+(t.shares||0).toLocaleString()+'</td>';
     html+='<td class="mo">$'+(t.price||0).toFixed(2)+'</td>';
     html+='<td class="mo pos" style="font-weight:700">'+valStr+'</td>';
+    var si=siData[tick]||{};
+    var siPct=si.short_pct_float!=null?si.short_pct_float.toFixed(1)+'%':'—';
+    var sqCls=si.squeeze_risk==='HIGH'?'r':si.squeeze_risk==='MEDIUM'?'y':'gr';
+    html+='<td class="mo '+(si.short_pct_float>15?'neg':'mu')+'">'+siPct+'</td>';
+    html+='<td>'+(si.squeeze_risk?'<span class="tag '+sqCls+'">'+si.squeeze_risk+'</span>':'<span class="tag gr">—</span>')+'</td>';
     html+='<td>'+(isC?'<span class="tag r">ACTIVIST+INSIDER</span>':'<span class="tag gr">—</span>')+'</td>';
     html+='<td>'+(t.sec_link?'<a class="secbtn" href="'+t.sec_link+'" target="_blank">SEC ↗</a>':'—')+'</td>';
     html+='</tr>';

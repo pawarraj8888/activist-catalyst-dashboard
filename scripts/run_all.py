@@ -12,6 +12,7 @@ scripts = [
     "scripts/pull_wrds.py",
     "scripts/pull_edgar.py",
     "scripts/pull_options.py",
+    "scripts/pull_short_interest.py",
 ]
 
 print("=" * 50)
