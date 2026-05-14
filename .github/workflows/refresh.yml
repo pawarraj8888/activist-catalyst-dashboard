@@ -1,0 +1,36 @@
+name: Refresh Dashboard Data
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+    - cron: "*/15 13-21 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: python scripts/pull_edgar.py
+        env:
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+      - run: python scripts/pull_options.py
+        env:
+          POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+      - if: github.event.schedule == '0 */6 * * *'
+        run: python scripts/pull_wrds.py
+        env:
+          WRDS_USERNAME: ${{ secrets.WRDS_USERNAME }}
+          WRDS_PASSWORD: ${{ secrets.WRDS_PASSWORD }}
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: refresh data $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

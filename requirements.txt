@@ -1,0 +1,8 @@
+wrds
+pandas
+numpy
+requests
+python-dotenv
+feedparser
+beautifulsoup4
+lxml
