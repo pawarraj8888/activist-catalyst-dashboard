@@ -5,604 +5,326 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Activist Catalyst Dashboard</title>
 <style>
-  :root {
-    --bg:        #f2f2f7;
-    --surface:   rgba(255,255,255,0.72);
-    --surface2:  rgba(255,255,255,0.55);
-    --border:    rgba(0,0,0,0.08);
-    --border2:   rgba(255,255,255,0.6);
-    --text:      #1c1c1e;
-    --text2:     #3a3a3c;
-    --muted:     #8e8e93;
-    --blue:      #0071e3;
-    --green:     #34c759;
-    --red:       #ff3b30;
-    --yellow:    #ff9f0a;
-    --purple:    #5e5ce6;
-    --teal:      #32ade6;
-    --shadow:    0 2px 20px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
-    --shadow-lg: 0 8px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.06);
-    --radius:    16px;
-    --radius-sm: 10px;
-    --mono:      "SF Mono","Fira Code",monospace;
-    --sans:      -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    --blur:      blur(24px) saturate(180%);
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 14px; }
-  body { min-height: 100vh; padding: 28px 24px 80px; max-width: 1480px; margin: 0 auto;
-         background: linear-gradient(135deg, #f0f4ff 0%, #f5f5f7 40%, #fff0f5 100%); }
-
-  /* ── HEADER ── */
-  header {
-    display: flex; justify-content: space-between; align-items: center;
-    margin-bottom: 28px;
-    background: var(--surface); border: 1px solid var(--border2);
-    backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur);
-    border-radius: var(--radius); padding: 18px 24px;
-    box-shadow: var(--shadow);
-  }
-  .header-left h1 { font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
-  .header-left p  { font-size: 12px; color: var(--muted); margin-top: 3px; display: flex; align-items: center; gap: 6px; }
-  .live-dot { width: 7px; height: 7px; background: var(--green); border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
-  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.85)} }
-  .header-right { text-align: right; font-size: 12px; color: var(--muted); line-height: 1.7; }
-
-  /* ── TABS ── */
-  .tabs {
-    display: flex; gap: 6px; margin-bottom: 20px;
-    background: var(--surface); border: 1px solid var(--border2);
-    backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur);
-    border-radius: var(--radius); padding: 6px;
-    box-shadow: var(--shadow);
-  }
-  .tab {
-    flex: 1; padding: 9px 16px; border-radius: var(--radius-sm);
-    border: none; background: none; font-size: 13px; font-weight: 500;
-    color: var(--muted); cursor: pointer; transition: all 0.2s; text-align: center;
-  }
-  .tab.active {
-    background: white; color: var(--text); font-weight: 600;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-  }
-  .badge {
-    display: inline-block; font-size: 10px; font-weight: 700;
-    padding: 1px 7px; border-radius: 20px; margin-left: 5px;
-    background: var(--blue); color: white;
-  }
-  .badge.alert { background: var(--red); }
-
-  /* ── STAT CARDS ── */
-  .stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 16px; }
-  .stat {
-    background: var(--surface); border: 1px solid var(--border2);
-    backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur);
-    border-radius: var(--radius); padding: 18px 20px;
-    box-shadow: var(--shadow); transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .stat:hover { transform: translateY(-1px); box-shadow: var(--shadow-lg); }
-  .stat-label { font-size: 11px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; }
-  .stat-value { font-size: 28px; font-weight: 700; margin-top: 6px; font-family: var(--mono); color: var(--text); }
-  .stat-value.blue   { color: var(--blue); }
-  .stat-value.green  { color: var(--green); }
-  .stat-value.red    { color: var(--red); }
-  .stat-value.yellow { color: var(--yellow); }
-  .stat-sub { font-size: 11px; color: var(--muted); margin-top: 4px; }
-
-  /* ── TOOLBAR ── */
-  .toolbar { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
-  .pill {
-    padding: 6px 16px; border-radius: 20px; border: 1.5px solid var(--border);
-    background: var(--surface); color: var(--muted); font-size: 12px; font-weight: 500;
-    cursor: pointer; transition: all 0.15s; backdrop-filter: var(--blur);
-    -webkit-backdrop-filter: var(--blur);
-  }
-  .pill.active { background: var(--blue); border-color: var(--blue); color: white; font-weight: 600; }
-  .pill:hover:not(.active) { border-color: var(--blue); color: var(--blue); }
-  .search {
-    padding: 7px 14px; border-radius: 20px; border: 1.5px solid var(--border);
-    background: white; color: var(--text); font-size: 12px; outline: none;
-    width: 200px; transition: border 0.15s; box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  }
-  .search:focus { border-color: var(--blue); }
-  .search::placeholder { color: var(--muted); }
-
-  /* ── PANEL ── */
-  .panel { display: none; }
-  .panel.active { display: block; }
-
-  /* ── TABLE ── */
-  .table-card {
-    background: var(--surface); border: 1px solid var(--border2);
-    backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur);
-    border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
-  }
-  table { width: 100%; border-collapse: collapse; }
-  thead th {
-    background: rgba(0,0,0,0.025); padding: 11px 14px;
-    text-align: left; font-size: 11px; font-weight: 700; color: var(--muted);
-    text-transform: uppercase; letter-spacing: 0.6px;
-    border-bottom: 1px solid var(--border); white-space: nowrap; cursor: pointer;
-    user-select: none; transition: color 0.15s;
-  }
-  thead th:hover { color: var(--blue); }
-  tbody tr { border-bottom: 1px solid rgba(0,0,0,0.045); transition: background 0.1s; }
-  tbody tr:last-child { border-bottom: none; }
-  tbody tr:hover { background: rgba(0,113,227,0.04); }
-  tbody td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
-
-  /* ── TAGS ── */
-  .ticker { font-family: var(--mono); font-weight: 700; font-size: 13px; color: var(--text); }
-  .tag {
-    display: inline-block; padding: 3px 9px; border-radius: 6px;
-    font-size: 11px; font-weight: 600;
-  }
-  .tag.red    { background: rgba(255,59,48,0.10);  color: #cc1000; }
-  .tag.green  { background: rgba(52,199,89,0.12);  color: #1a8a3a; }
-  .tag.blue   { background: rgba(0,113,227,0.10);  color: #0060c7; }
-  .tag.yellow { background: rgba(255,159,10,0.12); color: #b06600; }
-  .tag.purple { background: rgba(94,92,230,0.10);  color: #3634a3; }
-  .tag.gray   { background: rgba(0,0,0,0.06);      color: var(--muted); }
-  .tag.teal   { background: rgba(50,173,230,0.10); color: #0077a8; }
-
-  /* ── BEAT RATE COLORING ── */
-  .beat-high  { color: #1a8a3a; font-weight: 700; font-family: var(--mono); }
-  .beat-mid   { color: #b06600; font-weight: 700; font-family: var(--mono); }
-  .beat-low   { color: #cc1000; font-weight: 700; font-family: var(--mono); }
-  .beat-none  { color: var(--muted); font-family: var(--mono); }
-  .positive   { color: #1a8a3a; font-family: var(--mono); }
-  .negative   { color: #cc1000; font-family: var(--mono); }
-  .muted-text { color: var(--muted); }
-  .mono       { font-family: var(--mono); }
-
-  /* ── DAYS BADGE ── */
-  .days-badge {
-    display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600;
-  }
-  .days-badge.soon   { background: rgba(255,59,48,0.10);  color: #cc1000; }
-  .days-badge.medium { background: rgba(255,159,10,0.10); color: #b06600; }
-  .days-badge.far    { background: rgba(0,0,0,0.06);      color: var(--muted); }
-
-  /* ── CONFLUENCE BANNER ── */
-  .confluence-banner {
-    background: linear-gradient(135deg, rgba(255,59,48,0.08), rgba(255,159,10,0.06));
-    border: 1px solid rgba(255,59,48,0.2);
-    border-radius: var(--radius); padding: 16px 20px; margin-bottom: 16px;
-    display: none; backdrop-filter: var(--blur); -webkit-backdrop-filter: var(--blur);
-  }
-  .confluence-banner.show { display: block; }
-  .confluence-banner h3 { font-size: 13px; font-weight: 700; color: #cc1000; margin-bottom: 8px; }
-  .conf-chips { display: flex; gap: 8px; flex-wrap: wrap; }
-  .conf-chip {
-    padding: 4px 14px; border-radius: 20px; font-family: var(--mono);
-    font-weight: 700; font-size: 12px;
-    background: rgba(255,59,48,0.12); color: #cc1000;
-    border: 1px solid rgba(255,59,48,0.2);
-  }
-
-  /* ── SECTOR PILLS ── */
-  .sector-pill {
-    padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;
-  }
-  .s-tech     { background: rgba(0,113,227,0.09);  color: #0060c7; }
-  .s-fin      { background: rgba(52,199,89,0.09);  color: #1a8a3a; }
-  .s-health   { background: rgba(94,92,230,0.09);  color: #3634a3; }
-  .s-consumer { background: rgba(255,159,10,0.09); color: #b06600; }
-  .s-energy   { background: rgba(255,59,48,0.09);  color: #cc1000; }
-  .s-ind      { background: rgba(50,173,230,0.09); color: #0077a8; }
-  .s-other    { background: rgba(0,0,0,0.06);      color: var(--muted); }
-
-  /* ── EMPTY / LOADER ── */
-  .empty { text-align: center; padding: 60px; color: var(--muted); }
-  .empty-icon { font-size: 40px; margin-bottom: 14px; opacity: 0.4; }
-  .loader { text-align: center; padding: 60px; color: var(--muted); }
-  .spinner {
-    width: 26px; height: 26px; border: 2.5px solid rgba(0,113,227,0.15);
-    border-top-color: var(--blue); border-radius: 50%;
-    animation: spin 0.75s linear infinite; margin: 0 auto 14px;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  /* ── SEC LINK ── */
-  .sec-btn {
-    display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 600;
-    color: var(--blue); border: 1px solid rgba(0,113,227,0.25);
-    text-decoration: none; transition: all 0.15s;
-    background: rgba(0,113,227,0.06);
-  }
-  .sec-btn:hover { background: var(--blue); color: white; }
-
-  /* ── FIRE ICON ── */
-  .fire { font-size: 13px; margin-left: 3px; }
+:root{--bg:#f2f2f7;--surface:rgba(255,255,255,0.75);--border:rgba(0,0,0,0.08);--border2:rgba(255,255,255,0.6);--text:#1c1c1e;--muted:#8e8e93;--blue:#0071e3;--green:#34c759;--red:#ff3b30;--yellow:#ff9f0a;--purple:#5e5ce6;--shadow:0 2px 20px rgba(0,0,0,0.07);--shadow2:0 8px 40px rgba(0,0,0,0.10);--radius:16px;--radius2:10px;--mono:"SF Mono","Fira Code",monospace;--blur:blur(24px) saturate(180%)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:14px}
+body{min-height:100vh;padding:28px 24px 80px;max-width:1480px;margin:0 auto;background:linear-gradient(135deg,#f0f4ff 0%,#f5f5f7 50%,#fff0f5 100%)}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;background:var(--surface);border:1px solid var(--border2);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border-radius:var(--radius);padding:18px 24px;box-shadow:var(--shadow)}
+.h-left h1{font-size:18px;font-weight:700;letter-spacing:-0.3px}
+.h-left p{font-size:12px;color:var(--muted);margin-top:3px;display:flex;align-items:center;gap:6px}
+.dot{width:7px;height:7px;background:var(--green);border-radius:50%;display:inline-block;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.h-right{text-align:right;font-size:12px;color:var(--muted);line-height:1.8}
+.tabs{display:flex;gap:6px;margin-bottom:20px;background:var(--surface);border:1px solid var(--border2);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border-radius:var(--radius);padding:6px;box-shadow:var(--shadow)}
+.tab{flex:1;padding:9px 16px;border-radius:var(--radius2);border:none;background:none;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;transition:all 0.2s;text-align:center}
+.tab.active{background:white;color:var(--text);font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,0.10)}
+.badge{display:inline-block;font-size:10px;font-weight:700;padding:1px 7px;border-radius:20px;margin-left:5px;background:var(--blue);color:white}
+.badge.r{background:var(--red)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.stat{background:var(--surface);border:1px solid var(--border2);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow)}
+.sl{font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px}
+.sv{font-size:28px;font-weight:700;margin-top:6px;font-family:var(--mono)}
+.sv.b{color:var(--blue)}.sv.g{color:var(--green)}.sv.r{color:var(--red)}
+.ss{font-size:11px;color:var(--muted);margin-top:4px}
+.toolbar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;align-items:center}
+.pill{padding:6px 16px;border-radius:20px;border:1.5px solid var(--border);background:var(--surface);color:var(--muted);font-size:12px;font-weight:500;cursor:pointer;transition:all 0.15s;backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur)}
+.pill.active{background:var(--blue);border-color:var(--blue);color:white;font-weight:600}
+.pill:hover:not(.active){border-color:var(--blue);color:var(--blue)}
+.srch{padding:7px 14px;border-radius:20px;border:1.5px solid var(--border);background:white;color:var(--text);font-size:12px;outline:none;width:200px;transition:border 0.15s}
+.srch:focus{border-color:var(--blue)}
+.srch::placeholder{color:var(--muted)}
+.panel{display:none}.panel.active{display:block}
+.card{background:var(--surface);border:1px solid var(--border2);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+table{width:100%;border-collapse:collapse}
+thead th{background:rgba(0,0,0,0.025);padding:11px 14px;text-align:left;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.6px;border-bottom:1px solid var(--border);white-space:nowrap}
+tbody tr{border-bottom:1px solid rgba(0,0,0,0.045);transition:background 0.1s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:rgba(0,113,227,0.04)}
+tbody td{padding:12px 14px;font-size:13px;vertical-align:middle}
+.ticker{font-family:var(--mono);font-weight:700;font-size:13px}
+.tag{display:inline-block;padding:3px 9px;border-radius:6px;font-size:11px;font-weight:600}
+.tag.r{background:rgba(255,59,48,0.10);color:#cc1000}
+.tag.g{background:rgba(52,199,89,0.12);color:#1a8a3a}
+.tag.b{background:rgba(0,113,227,0.10);color:#0060c7}
+.tag.p{background:rgba(94,92,230,0.10);color:#3634a3}
+.tag.y{background:rgba(255,159,10,0.12);color:#b06600}
+.tag.gr{background:rgba(0,0,0,0.06);color:var(--muted)}
+.sp{display:inline-block;padding:3px 10px;border-radius:6px;font-size:11px;font-weight:600}
+.st{background:rgba(0,113,227,0.09);color:#0060c7}
+.sf{background:rgba(52,199,89,0.09);color:#1a8a3a}
+.sh{background:rgba(94,92,230,0.09);color:#3634a3}
+.sc{background:rgba(255,159,10,0.09);color:#b06600}
+.se{background:rgba(255,59,48,0.09);color:#cc1000}
+.si{background:rgba(50,173,230,0.09);color:#0077a8}
+.so{background:rgba(0,0,0,0.06);color:var(--muted)}
+.db{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600}
+.ds{background:rgba(255,59,48,0.10);color:#cc1000}
+.dm{background:rgba(255,159,10,0.10);color:#b06600}
+.df{background:rgba(0,0,0,0.06);color:var(--muted)}
+.pos{color:#1a8a3a;font-family:var(--mono)}
+.neg{color:#cc1000;font-family:var(--mono)}
+.mu{color:var(--muted)}
+.mo{font-family:var(--mono)}
+.bh{color:#1a8a3a;font-weight:700;font-family:var(--mono)}
+.bm{color:#b06600;font-weight:700;font-family:var(--mono)}
+.bl{color:#cc1000;font-weight:700;font-family:var(--mono)}
+.bn{color:var(--muted);font-family:var(--mono)}
+.empty{text-align:center;padding:60px;color:var(--muted)}
+.ei{font-size:40px;margin-bottom:14px;opacity:0.4}
+.loader{text-align:center;padding:60px;color:var(--muted)}
+.spin{width:26px;height:26px;border:2.5px solid rgba(0,113,227,0.15);border-top-color:var(--blue);border-radius:50%;animation:spin 0.75s linear infinite;margin:0 auto 14px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.secbtn{display:inline-block;padding:4px 10px;border-radius:6px;font-size:11px;font-weight:600;color:var(--blue);border:1px solid rgba(0,113,227,0.25);text-decoration:none;transition:all 0.15s;background:rgba(0,113,227,0.06)}
+.secbtn:hover{background:var(--blue);color:white}
+.fire{font-size:13px;margin-left:3px}
 </style>
 </head>
 <body>
-
 <header>
-  <div class="header-left">
+  <div class="h-left">
     <h1>Activist Catalyst Dashboard</h1>
-    <p><span class="live-dot"></span> Live &nbsp;·&nbsp; EDGAR &nbsp;·&nbsp; Polygon &nbsp;·&nbsp; WRDS &nbsp;·&nbsp; Boutique Research</p>
+    <p><span class="dot"></span>Live &nbsp;·&nbsp; EDGAR &nbsp;·&nbsp; WRDS &nbsp;·&nbsp; Boutique Research</p>
   </div>
-  <div class="header-right" id="lastUpdated">—</div>
+  <div class="h-right" id="lastUpdated">—</div>
 </header>
 
 <div class="tabs">
-  <button class="tab active" onclick="switchTab('activist',this)">
-    Activist Filings <span class="badge alert" id="b1">0</span>
-  </button>
-  <button class="tab" onclick="switchTab('earnings',this)">
-    Earnings Catalyst <span class="badge" id="b2">0</span>
-  </button>
-  <button class="tab" onclick="switchTab('insiders',this)">
-    Insider Activity <span class="badge" id="b3">0</span>
-  </button>
+  <button class="tab active" onclick="switchTab('activist',this)">Activist Filings <span class="badge r" id="b1">0</span></button>
+  <button class="tab" onclick="switchTab('earnings',this)">Earnings Catalyst <span class="badge" id="b2">0</span></button>
+  <button class="tab" onclick="switchTab('insiders',this)">Insider Activity <span class="badge" id="b3">0</span></button>
 </div>
 
-<!-- ══════════════════ ACTIVIST ══════════════════ -->
+<!-- ACTIVIST -->
 <div class="panel active" id="panel-activist">
-
-  <div class="confluence-banner" id="confBanner">
-    <h3>🔥 Confluence Signal — Activist + Insider Buying on Same Name</h3>
-    <p style="font-size:12px;color:var(--muted);margin-bottom:10px">Highest conviction flags. 13D filing AND open-market insider purchases detected simultaneously.</p>
-    <div class="conf-chips" id="confChips"></div>
-  </div>
-
   <div class="stats">
-    <div class="stat"><div class="stat-label">13D Filings (7d)</div><div class="stat-value red" id="s1a">—</div><div class="stat-sub">Activist crossings</div></div>
-    <div class="stat"><div class="stat-label">13G Filings (7d)</div><div class="stat-value blue" id="s1b">—</div><div class="stat-sub">Passive crossings</div></div>
-    <div class="stat"><div class="stat-label">High Conviction</div><div class="stat-value green" id="s1c">—</div><div class="stat-sub">Win rate &gt; 75%</div></div>
-    <div class="stat"><div class="stat-label">Confluence Signals</div><div class="stat-value red" id="s1d">—</div><div class="stat-sub">Activist + Insider</div></div>
+    <div class="stat"><div class="sl">13D Filings (7d)</div><div class="sv r" id="s1a">—</div><div class="ss">Activist crossings</div></div>
+    <div class="stat"><div class="sl">13G Filings (7d)</div><div class="sv b" id="s1b">—</div><div class="ss">Passive crossings</div></div>
+    <div class="stat"><div class="sl">High Conviction</div><div class="sv g" id="s1c">—</div><div class="ss">Win rate &gt; 75%</div></div>
+    <div class="stat"><div class="sl">Confluence Signals</div><div class="sv r" id="s1d">—</div><div class="ss">Activist + Insider</div></div>
   </div>
-
   <div class="toolbar">
-    <button class="pill active" onclick="fActivist('all',this)">All</button>
-    <button class="pill" onclick="fActivist('13D',this)">13D Only</button>
-    <button class="pill" onclick="fActivist('13G',this)">13G Only</button>
-    <button class="pill" onclick="fActivist('conf',this)">🔥 Confluence</button>
-    <button class="pill" onclick="fActivist('hc',this)">High Conviction</button>
-    <input class="search" id="sActivist" placeholder="Search ticker / filer..." oninput="renderActivist()">
+    <button class="pill active" onclick="fa('all',this)">All</button>
+    <button class="pill" onclick="fa('13D',this)">13D Only</button>
+    <button class="pill" onclick="fa('13G',this)">13G Only</button>
+    <button class="pill" onclick="fa('conf',this)">🔥 Confluence</button>
+    <button class="pill" onclick="fa('hc',this)">High Conviction</button>
+    <input class="srch" id="sa" placeholder="Search ticker / filer..." oninput="rA()">
   </div>
-
-  <div id="activistTable" class="table-card">
-    <div class="loader"><div class="spinner"></div>Loading filings...</div>
-  </div>
+  <div id="tA" class="card"><div class="loader"><div class="spin"></div>Loading filings...</div></div>
 </div>
 
-<!-- ══════════════════ EARNINGS ══════════════════ -->
+<!-- EARNINGS -->
 <div class="panel" id="panel-earnings">
-
   <div class="stats">
-    <div class="stat"><div class="stat-label">Events (90d)</div><div class="stat-value blue" id="s2a">—</div><div class="stat-sub">Upcoming earnings</div></div>
-    <div class="stat"><div class="stat-label">Cheap Options</div><div class="stat-value green" id="s2b">—</div><div class="stat-sub">Implied &lt; Realized</div></div>
-    <div class="stat"><div class="stat-label">Rich Options</div><div class="stat-value red" id="s2c">—</div><div class="stat-sub">Implied &gt; Realized</div></div>
-    <div class="stat"><div class="stat-label">Avg Beat Rate</div><div class="stat-value" id="s2d">—</div><div class="stat-sub">IBES consensus</div></div>
+    <div class="stat"><div class="sl">Events (90d)</div><div class="sv b" id="s2a">—</div><div class="ss">Upcoming earnings</div></div>
+    <div class="stat"><div class="sl">Cheap Options</div><div class="sv g" id="s2b">—</div><div class="ss">Implied &lt; Realized</div></div>
+    <div class="stat"><div class="sl">Rich Options</div><div class="sv r" id="s2c">—</div><div class="ss">Implied &gt; Realized</div></div>
+    <div class="stat"><div class="sl">Avg Beat Rate</div><div class="sv" id="s2d">—</div><div class="ss">IBES consensus</div></div>
   </div>
-
   <div class="toolbar">
-    <button class="pill active" onclick="fEarnings('all',this)">All</button>
-    <button class="pill" onclick="fEarnings('7d',this)">Next 7 Days</button>
-    <button class="pill" onclick="fEarnings('14d',this)">Next 14 Days</button>
-    <button class="pill" onclick="fEarnings('cheap',this)">📉 Cheap Vol</button>
-    <button class="pill" onclick="fEarnings('rich',this)">📈 Rich Vol</button>
-    <button class="pill" onclick="fEarnings('tech',this)">Tech</button>
-    <button class="pill" onclick="fEarnings('fin',this)">Financials</button>
-    <button class="pill" onclick="fEarnings('health',this)">Healthcare</button>
-    <input class="search" id="sEarnings" placeholder="Search ticker..." oninput="renderEarnings()">
+    <button class="pill active" onclick="fe('all',this)">All</button>
+    <button class="pill" onclick="fe('7d',this)">Next 7 Days</button>
+    <button class="pill" onclick="fe('14d',this)">Next 14 Days</button>
+    <button class="pill" onclick="fe('cheap',this)">📉 Cheap Vol</button>
+    <button class="pill" onclick="fe('rich',this)">📈 Rich Vol</button>
+    <button class="pill" onclick="fe('tech',this)">Tech</button>
+    <button class="pill" onclick="fe('fin',this)">Financials</button>
+    <button class="pill" onclick="fe('health',this)">Healthcare</button>
+    <input class="srch" id="se" placeholder="Search ticker..." oninput="rE()">
   </div>
-
-  <div id="earningsTable" class="table-card">
-    <div class="loader"><div class="spinner"></div>Loading earnings...</div>
-  </div>
+  <div id="tE" class="card"><div class="loader"><div class="spin"></div>Loading earnings...</div></div>
 </div>
 
-<!-- ══════════════════ INSIDERS ══════════════════ -->
+<!-- INSIDERS -->
 <div class="panel" id="panel-insiders">
-
   <div class="stats">
-    <div class="stat"><div class="stat-label">Form 4 Filings (3d)</div><div class="stat-value blue" id="s3a">—</div><div class="stat-sub">Open-mkt purchases</div></div>
-    <div class="stat"><div class="stat-label">Unique Tickers</div><div class="stat-value green" id="s3b">—</div><div class="stat-sub">Companies with buys</div></div>
-    <div class="stat"><div class="stat-label">Confluence Names</div><div class="stat-value red" id="s3c">—</div><div class="stat-sub">Also has 13D filing</div></div>
-    <div class="stat"><div class="stat-label">Total Value</div><div class="stat-value" id="s3d">—</div><div class="stat-sub">Estimated</div></div>
+    <div class="stat"><div class="sl">Open Mkt Buys (3d)</div><div class="sv b" id="s3a">—</div><div class="ss">$50K+ purchases</div></div>
+    <div class="stat"><div class="sl">Unique Tickers</div><div class="sv g" id="s3b">—</div><div class="ss">Companies with buys</div></div>
+    <div class="stat"><div class="sl">Confluence Names</div><div class="sv r" id="s3c">—</div><div class="ss">Also has 13D filing</div></div>
+    <div class="stat"><div class="sl">Total Value</div><div class="sv" id="s3d">—</div><div class="ss">Estimated</div></div>
   </div>
-
   <div class="toolbar">
-    <button class="pill active" onclick="fInsiders('all',this)">All</button>
-    <button class="pill" onclick="fInsiders('conf',this)">🔥 Confluence</button>
-    <input class="search" id="sInsiders" placeholder="Search ticker / insider..." oninput="renderInsiders()">
+    <button class="pill active" onclick="fi('all',this)">All</button>
+    <button class="pill" onclick="fi('conf',this)">🔥 Confluence</button>
+    <button class="pill" onclick="fi('big',this)">$500K+ Only</button>
+    <input class="srch" id="si" placeholder="Search ticker / insider..." oninput="rI()">
   </div>
-
-  <div id="insidersTable" class="table-card">
-    <div class="loader"><div class="spinner"></div>Loading insider data...</div>
-  </div>
+  <div id="tI" class="card"><div class="loader"><div class="spin"></div>Loading insider data...</div></div>
 </div>
 
 <script>
-// ── DATA ──────────────────────────────────────────────────────────────────────
-let aData=null, eData=null, iData=null, rData=null, ibData=null;
-let confluence=[];
-let afFilter='all', eFilter='all', inFilter='all';
+var aData=null,eData=null,iData=null,rData={},ibData={};
+var confluence=[];
+var afF='all',eF='all',inF='all';
 
-const SECTORS = {
-  'AAPL':'Technology','MSFT':'Technology','GOOGL':'Technology','AMZN':'Consumer',
-  'NVDA':'Technology','META':'Technology','TSLA':'Consumer','JPM':'Financials',
-  'V':'Financials','UNH':'Healthcare','XOM':'Energy','LLY':'Healthcare',
-  'JNJ':'Healthcare','WMT':'Consumer','MA':'Financials','PG':'Consumer',
-  'HD':'Consumer','MRK':'Healthcare','ORCL':'Technology','BAC':'Financials',
-  'ABBV':'Healthcare','KO':'Consumer','CVX':'Energy','PEP':'Consumer',
-  'COST':'Consumer','TMO':'Healthcare','MCD':'Consumer','CRM':'Technology',
-  'NFLX':'Technology','AMD':'Technology','ADBE':'Technology','WFC':'Financials',
-  'TXN':'Technology','LIN':'Materials','PM':'Consumer','DHR':'Healthcare',
-  'NEE':'Utilities','INTC':'Technology','QCOM':'Technology','HON':'Industrials',
-  'AMGN':'Healthcare','IBM':'Technology','GE':'Industrials','CAT':'Industrials',
-  'BA':'Industrials','GS':'Financials','MS':'Financials','BLK':'Financials',
-  'SPGI':'Financials','AXP':'Financials','SBUX':'Consumer','NOW':'Technology',
-  'ISRG':'Healthcare','PLD':'Real Estate','DE':'Industrials','CI':'Healthcare',
-  'SYK':'Healthcare','MDLZ':'Consumer','ADI':'Technology','TJX':'Consumer',
-  'C':'Financials','USB':'Financials','MMC':'Financials','CME':'Financials',
-  'EOG':'Energy','SO':'Utilities','DUK':'Utilities','ZTS':'Healthcare',
-  'BSX':'Healthcare','HCA':'Healthcare','REGN':'Healthcare','VRTX':'Healthcare',
-  'PANW':'Technology','KLAC':'Technology','AMAT':'Technology','LRCX':'Technology',
-  'MU':'Technology','SNPS':'Technology','CDNS':'Technology','FTNT':'Technology'
-};
+var SECTORS={AAPL:'Technology',MSFT:'Technology',GOOGL:'Technology',AMZN:'Consumer',NVDA:'Technology',META:'Technology',TSLA:'Consumer',JPM:'Financials',V:'Financials',UNH:'Healthcare',XOM:'Energy',LLY:'Healthcare',JNJ:'Healthcare',WMT:'Consumer',MA:'Financials',PG:'Consumer',HD:'Consumer',MRK:'Healthcare',ORCL:'Technology',BAC:'Financials',ABBV:'Healthcare',KO:'Consumer',CVX:'Energy',PEP:'Consumer',COST:'Consumer',TMO:'Healthcare',MCD:'Consumer',CRM:'Technology',NFLX:'Technology',AMD:'Technology',ADBE:'Technology',WFC:'Financials',TXN:'Technology',LIN:'Materials',PM:'Consumer',DHR:'Healthcare',NEE:'Utilities',INTC:'Technology',QCOM:'Technology',HON:'Industrials',AMGN:'Healthcare',IBM:'Technology',GE:'Industrials',CAT:'Industrials',BA:'Industrials',GS:'Financials',MS:'Financials',BLK:'Financials',SPGI:'Financials',AXP:'Financials',SBUX:'Consumer',NOW:'Technology',ISRG:'Healthcare',PLD:'Real Estate',DE:'Industrials',CI:'Healthcare',SYK:'Healthcare',MDLZ:'Consumer',ADI:'Technology',TJX:'Consumer',C:'Financials',USB:'Financials',MMC:'Financials',CME:'Financials',EOG:'Energy',SO:'Utilities',DUK:'Utilities',ZTS:'Healthcare',BSX:'Healthcare',HCA:'Healthcare',REGN:'Healthcare',VRTX:'Healthcare',PANW:'Technology',KLAC:'Technology',AMAT:'Technology',LRCX:'Technology',MU:'Technology',SNPS:'Technology',CDNS:'Technology',FTNT:'Technology'};
 
-function sectorClass(s){
-  if(!s) return 's-other';
-  if(s==='Technology') return 's-tech';
-  if(s==='Financials') return 's-fin';
-  if(s==='Healthcare') return 's-health';
-  if(s==='Consumer')   return 's-consumer';
-  if(s==='Energy')     return 's-energy';
-  if(s==='Industrials') return 's-ind';
-  return 's-other';
-}
+function scls(s){if(!s)return'so';if(s==='Technology')return'st';if(s==='Financials')return'sf';if(s==='Healthcare')return'sh';if(s==='Consumer')return'sc';if(s==='Energy')return'se';if(s==='Industrials')return'si';return'so';}
+function daysTo(d){var t=new Date();t.setHours(0,0,0,0);var dd=new Date(d);dd.setHours(0,0,0,0);return Math.round((dd-t)/86400000);}
+function dbadge(d){var n=daysTo(d);var c=n<=7?'ds':n<=21?'dm':'df';return '<span class="db '+c+'">in '+n+'d</span>';}
+function bcls(r){if(r==null)return'bn';if(r>=0.8)return'bh';if(r>=0.5)return'bm';return'bl';}
 
-function daysTo(dateStr){
-  const today = new Date(); today.setHours(0,0,0,0);
-  const d = new Date(dateStr); d.setHours(0,0,0,0);
-  return Math.round((d-today)/(1000*86400));
-}
-
-function daysBadge(dateStr){
-  const d = daysTo(dateStr);
-  const cls = d<=7 ? 'soon' : d<=21 ? 'medium' : 'far';
-  return `<span class="days-badge ${cls}">in ${d}d</span>`;
-}
-
-function beatClass(rate){
-  if(rate==null) return 'beat-none';
-  if(rate>=0.8)  return 'beat-high';
-  if(rate>=0.5)  return 'beat-mid';
-  return 'beat-low';
-}
-
-// ── LOAD ─────────────────────────────────────────────────────────────────────
 async function loadAll(){
-  const [a,e,i,r,ib] = await Promise.all([
-    fetch('data/activist_filings.json').then(r=>r.json()).catch(()=>null),
-    fetch('data/earnings_catalyst.json').then(r=>r.json()).catch(()=>null),
-    fetch('data/insider_trades.json').then(r=>r.json()).catch(()=>null),
-    fetch('data/realized_moves.json').then(r=>r.json()).catch(()=>null),
-    fetch('data/ibes_enrichment.json').then(r=>r.json()).catch(()=>null),
-  ]);
-  aData=a; eData=e; iData=i;
-  rData=r?.data||{}; ibData=ib?.data||{};
-  confluence=a?.confluence_tickers||[];
-
-  const ts=a?.last_updated||e?.last_updated;
-  if(ts) document.getElementById('lastUpdated').innerHTML=
-    `Last refreshed<br><strong>${new Date(ts).toLocaleString()}</strong>`;
-
-  document.getElementById('b1').textContent=(a?.filings_13d?.length||0)+(a?.filings_13g?.length||0);
-  document.getElementById('b2').textContent=e?.events?.length||0;
-  document.getElementById('b3').textContent=i?.trades?.length||0;
-
-  renderActivist(); renderEarnings(); renderInsiders();
-  renderConfluence();
+  try{
+    var rs=await Promise.all([
+      fetch('data/activist_filings.json').then(function(r){return r.json()}).catch(function(){return null}),
+      fetch('data/earnings_catalyst.json').then(function(r){return r.json()}).catch(function(){return null}),
+      fetch('data/insider_trades.json').then(function(r){return r.json()}).catch(function(){return null}),
+      fetch('data/realized_moves.json').then(function(r){return r.json()}).catch(function(){return null}),
+      fetch('data/ibes_enrichment.json').then(function(r){return r.json()}).catch(function(){return null})
+    ]);
+    aData=rs[0];eData=rs[1];iData=rs[2];
+    rData=(rs[3]&&rs[3].data)||{};
+    ibData=(rs[4]&&rs[4].data)||{};
+    confluence=(aData&&aData.confluence_tickers)||[];
+    var ts=(aData&&aData.last_updated)||(eData&&eData.last_updated);
+    if(ts)document.getElementById('lastUpdated').innerHTML='Last refreshed<br><strong>'+new Date(ts).toLocaleString()+'</strong>';
+    document.getElementById('b1').textContent=((aData&&aData.filings_13d&&aData.filings_13d.length)||0)+((aData&&aData.filings_13g&&aData.filings_13g.length)||0);
+    document.getElementById('b2').textContent=(eData&&eData.events&&eData.events.length)||0;
+    document.getElementById('b3').textContent=(iData&&iData.trades&&iData.trades.length)||0;
+    rA();rE();rI();
+  }catch(err){console.error('Load error:',err);}
 }
 
-function renderConfluence(){
-  if(!confluence.length) return;
-  const b=document.getElementById('confBanner');
-  b.classList.add('show');
-  document.getElementById('confChips').innerHTML=
-    confluence.map(t=>`<span class="conf-chip">${t}</span>`).join('');
-}
-
-// ── TABS ─────────────────────────────────────────────────────────────────────
-function switchTab(name,btn){
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+function switchTab(n,btn){
+  document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});
+  document.querySelectorAll('.panel').forEach(function(p){p.classList.remove('active')});
   btn.classList.add('active');
-  document.getElementById('panel-'+name).classList.add('active');
+  document.getElementById('panel-'+n).classList.add('active');
 }
 
-// ── ACTIVIST ─────────────────────────────────────────────────────────────────
-function fActivist(f,btn){
-  afFilter=f;
-  document.querySelectorAll('#panel-activist .pill').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  renderActivist();
-}
+function fa(f,btn){afF=f;document.querySelectorAll('#panel-activist .pill').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');rA();}
+function fe(f,btn){eF=f;document.querySelectorAll('#panel-earnings .pill').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');rE();}
+function fi(f,btn){inF=f;document.querySelectorAll('#panel-insiders .pill').forEach(function(b){b.classList.remove('active')});btn.classList.add('active');rI();}
 
-function renderActivist(){
-  if(!aData) return;
-  const all=[...(aData.filings_13d||[]),...(aData.filings_13g||[])];
-  const s=document.getElementById('sActivist')?.value.toLowerCase()||'';
-  let rows=all;
-  if(afFilter==='13D')  rows=aData.filings_13d||[];
-  if(afFilter==='13G')  rows=aData.filings_13g||[];
-  if(afFilter==='conf') rows=rows.filter(r=>confluence.includes(r.ticker));
-  if(afFilter==='hc')   rows=rows.filter(r=>r.high_conviction);
-  if(s) rows=rows.filter(r=>(r.ticker||'').toLowerCase().includes(s)||(r.filer||'').toLowerCase().includes(s));
-
-  document.getElementById('s1a').textContent=aData.filings_13d?.length||0;
-  document.getElementById('s1b').textContent=aData.filings_13g?.length||0;
-  document.getElementById('s1c').textContent=(aData.filings_13d||[]).filter(r=>r.high_conviction).length;
+function rA(){
+  if(!aData)return;
+  var all=(aData.filings_13d||[]).concat(aData.filings_13g||[]);
+  var s=document.getElementById('sa').value.toLowerCase();
+  var rows=all;
+  if(afF==='13D')rows=aData.filings_13d||[];
+  if(afF==='13G')rows=aData.filings_13g||[];
+  if(afF==='conf')rows=rows.filter(function(r){return confluence.indexOf(r.ticker)>=0});
+  if(afF==='hc')rows=rows.filter(function(r){return r.high_conviction});
+  if(s)rows=rows.filter(function(r){return (r.ticker||'').toLowerCase().indexOf(s)>=0||(r.filer||'').toLowerCase().indexOf(s)>=0});
+  document.getElementById('s1a').textContent=(aData.filings_13d||[]).length;
+  document.getElementById('s1b').textContent=(aData.filings_13g||[]).length;
+  document.getElementById('s1c').textContent=(aData.filings_13d||[]).filter(function(r){return r.high_conviction}).length;
   document.getElementById('s1d').textContent=confluence.length;
-
-  if(!rows.length){
-    document.getElementById('activistTable').innerHTML=
-      '<div class="empty"><div class="empty-icon">📭</div>No filings match filter</div>';
-    return;
-  }
-
-  document.getElementById('activistTable').innerHTML=`
-  <table>
-    <thead><tr>
-      <th>Date</th><th>Type</th><th>Ticker</th><th>Filer</th>
-      <th>Style</th><th>Win Rate</th><th>Avg 6M Return</th>
-      <th>Conviction</th><th>Confluence</th><th>Filing</th>
-    </tr></thead>
-    <tbody>${rows.map(r=>{
-      const isC=confluence.includes(r.ticker);
-      const wr=r.win_rate!=null?(r.win_rate*100).toFixed(0)+'%':'—';
-      const ret=r.avg_return_6m!=null?'+'+(r.avg_return_6m*100).toFixed(0)+'%':'—';
-      return `<tr>
-        <td class="muted-text">${r.filed_date||'—'}</td>
-        <td><span class="tag ${r.type==='13D'?'red':'blue'}">${r.type||'—'}</span></td>
-        <td class="ticker">${r.ticker||'—'}${isC?'<span class="fire">🔥</span>':''}</td>
-        <td>${r.filer||'—'}</td>
-        <td><span class="tag gray">${r.filer_style||'—'}</span></td>
-        <td class="mono ${r.win_rate>0.75?'positive':''}">${wr}</td>
-        <td class="positive mono">${ret}</td>
-        <td>${r.high_conviction?'<span class="tag green">HIGH</span>':'<span class="tag gray">—</span>'}</td>
-        <td>${isC?'<span class="tag red">ACTIVE</span>':'<span class="tag gray">—</span>'}</td>
-        <td>${r.sec_link?`<a class="sec-btn" href="${r.sec_link}" target="_blank">SEC ↗</a>`:'—'}</td>
-      </tr>`;
-    }).join('')}</tbody>
-  </table>`;
+  if(!rows.length){document.getElementById('tA').innerHTML='<div class="empty"><div class="ei">📭</div>No filings match filter</div>';return;}
+  var html='<table><thead><tr><th>Date</th><th>Type</th><th>Ticker</th><th>Filer</th><th>Style</th><th>Win Rate</th><th>Avg 6M</th><th>Conviction</th><th>Confluence</th><th>Filing</th></tr></thead><tbody>';
+  rows.forEach(function(r){
+    var isC=confluence.indexOf(r.ticker)>=0;
+    var wr=r.win_rate!=null?(r.win_rate*100).toFixed(0)+'%':'—';
+    var ret=r.avg_return_6m!=null?'+'+(r.avg_return_6m*100).toFixed(0)+'%':'—';
+    html+='<tr>';
+    html+='<td class="mu">'+( r.filed_date||'—')+'</td>';
+    html+='<td><span class="tag '+(r.type==='13D'?'r':'b')+'">'+( r.type||'—')+'</span></td>';
+    html+='<td class="ticker">'+( r.ticker||'—')+(isC?'<span class="fire">🔥</span>':'')+'</td>';
+    html+='<td>'+(r.filer||'—')+'</td>';
+    html+='<td><span class="tag gr">'+(r.filer_style||'—')+'</span></td>';
+    html+='<td class="mo '+(r.win_rate>0.75?'pos':'')+'">'+wr+'</td>';
+    html+='<td class="pos mo">'+ret+'</td>';
+    html+='<td>'+(r.high_conviction?'<span class="tag g">HIGH</span>':'<span class="tag gr">—</span>')+'</td>';
+    html+='<td>'+(isC?'<span class="tag r">ACTIVE</span>':'<span class="tag gr">—</span>')+'</td>';
+    html+='<td>'+(r.sec_link?'<a class="secbtn" href="'+r.sec_link+'" target="_blank">SEC ↗</a>':'—')+'</td>';
+    html+='</tr>';
+  });
+  html+='</tbody></table>';
+  document.getElementById('tA').innerHTML=html;
 }
 
-// ── EARNINGS ─────────────────────────────────────────────────────────────────
-function fEarnings(f,btn){
-  eFilter=f;
-  document.querySelectorAll('#panel-earnings .pill').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  renderEarnings();
-}
-
-function renderEarnings(){
-  if(!eData) return;
-  let evts=eData.events||[];
-  const s=document.getElementById('sEarnings')?.value.toLowerCase()||'';
-  const today=new Date(); today.setHours(0,0,0,0);
-
-  if(eFilter==='7d')    evts=evts.filter(e=>daysTo(e.earnings_date)<=7  && daysTo(e.earnings_date)>=0);
-  if(eFilter==='14d')   evts=evts.filter(e=>daysTo(e.earnings_date)<=14 && daysTo(e.earnings_date)>=0);
-  if(eFilter==='cheap') evts=evts.filter(e=>e.mispricing?.signal==='CHEAP');
-  if(eFilter==='rich')  evts=evts.filter(e=>e.mispricing?.signal==='RICH');
-  if(eFilter==='tech')  evts=evts.filter(e=>SECTORS[e.ticker]==='Technology');
-  if(eFilter==='fin')   evts=evts.filter(e=>SECTORS[e.ticker]==='Financials');
-  if(eFilter==='health')evts=evts.filter(e=>SECTORS[e.ticker]==='Healthcare');
-  if(s) evts=evts.filter(e=>(e.ticker||'').toLowerCase().includes(s));
-
-  const all=eData.events||[];
+function rE(){
+  if(!eData)return;
+  var evts=eData.events||[];
+  var s=document.getElementById('se').value.toLowerCase();
+  if(eF==='7d')evts=evts.filter(function(e){var d=daysTo(e.earnings_date);return d>=0&&d<=7});
+  if(eF==='14d')evts=evts.filter(function(e){var d=daysTo(e.earnings_date);return d>=0&&d<=14});
+  if(eF==='cheap')evts=evts.filter(function(e){return e.mispricing&&e.mispricing.signal==='CHEAP'});
+  if(eF==='rich')evts=evts.filter(function(e){return e.mispricing&&e.mispricing.signal==='RICH'});
+  if(eF==='tech')evts=evts.filter(function(e){return SECTORS[e.ticker]==='Technology'});
+  if(eF==='fin')evts=evts.filter(function(e){return SECTORS[e.ticker]==='Financials'});
+  if(eF==='health')evts=evts.filter(function(e){return SECTORS[e.ticker]==='Healthcare'});
+  if(s)evts=evts.filter(function(e){return (e.ticker||'').toLowerCase().indexOf(s)>=0});
+  var all=eData.events||[];
   document.getElementById('s2a').textContent=all.length;
-  document.getElementById('s2b').textContent=all.filter(e=>e.mispricing?.signal==='CHEAP').length;
-  document.getElementById('s2c').textContent=all.filter(e=>e.mispricing?.signal==='RICH').length;
-  const beats=all.filter(e=>e.beat_rate!=null).map(e=>e.beat_rate);
-  document.getElementById('s2d').textContent=beats.length
-    ?(beats.reduce((a,b)=>a+b,0)/beats.length*100).toFixed(0)+'%':'—';
-
-  if(!evts.length){
-    document.getElementById('earningsTable').innerHTML=
-      '<div class="empty"><div class="empty-icon">📅</div>No events match filter</div>';
-    return;
-  }
-
-  document.getElementById('earningsTable').innerHTML=`
-  <table>
-    <thead><tr>
-      <th>Ticker</th><th>Sector</th><th>Date</th><th>In</th>
-      <th>Implied Move</th><th>Avg Realized (8Q)</th><th>Ratio</th>
-      <th>Signal</th><th>Beat Rate</th><th>Last Surprise</th>
-    </tr></thead>
-    <tbody>${evts.map(e=>{
-      const sec=SECTORS[e.ticker]||'Other';
-      const scls=sectorClass(sec);
-      const days=daysTo(e.earnings_date);
-      const impl=e.implied_move_pct!=null?e.implied_move_pct.toFixed(1)+'%':'—';
-      // Enrich with WRDS realized moves
-      const rm=rData[e.ticker];
-      const rl=rm?((rm.avg_realized_move||0)*100).toFixed(1)+'%':'—';
-      const beat=e.beat_rate??ibData[e.ticker]?.beat_rate;
-      const surp=e.last_surprise??ibData[e.ticker]?.last_surprise;
-      const sig=e.mispricing?.signal;
-      const ratio=e.mispricing?.ratio;
-      return `<tr>
-        <td class="ticker">${e.ticker}</td>
-        <td><span class="sector-pill ${scls}">${sec}</span></td>
-        <td class="muted-text">${e.earnings_date}</td>
-        <td>${daysBadge(e.earnings_date)}</td>
-        <td class="mono">${impl}</td>
-        <td class="mono">${rl}</td>
-        <td class="mono">${ratio!=null?ratio.toFixed(2)+'x':'—'}</td>
-        <td>${sig?`<span class="tag ${sig==='CHEAP'?'green':sig==='RICH'?'red':'gray'}">${sig}</span>`:'<span class="tag gray">N/A</span>'}</td>
-        <td class="${beatClass(beat)}">${beat!=null?(beat*100).toFixed(0)+'%':'—'}</td>
-        <td class="${surp!=null?(surp>0?'positive':'negative'):'muted-text'}">${surp!=null?(surp>0?'+':'')+surp.toFixed(2):'—'}</td>
-      </tr>`;
-    }).join('')}</tbody>
-  </table>`;
+  document.getElementById('s2b').textContent=all.filter(function(e){return e.mispricing&&e.mispricing.signal==='CHEAP'}).length;
+  document.getElementById('s2c').textContent=all.filter(function(e){return e.mispricing&&e.mispricing.signal==='RICH'}).length;
+  var beats=all.filter(function(e){return e.beat_rate!=null}).map(function(e){return e.beat_rate});
+  document.getElementById('s2d').textContent=beats.length?(beats.reduce(function(a,b){return a+b},0)/beats.length*100).toFixed(0)+'%':'—';
+  if(!evts.length){document.getElementById('tE').innerHTML='<div class="empty"><div class="ei">📅</div>No events match filter</div>';return;}
+  var html='<table><thead><tr><th>Ticker</th><th>Sector</th><th>Date</th><th>In</th><th>Implied Move</th><th>Avg Realized (8Q)</th><th>Ratio</th><th>Signal</th><th>Beat Rate</th><th>Last Surprise</th></tr></thead><tbody>';
+  evts.forEach(function(e){
+    var sec=SECTORS[e.ticker]||'Other';
+    var rm=rData[e.ticker];
+    var rl=rm?((rm.avg_realized_move||0)*100).toFixed(1)+'%':'—';
+    var beat=e.beat_rate!=null?e.beat_rate:((ibData[e.ticker]&&ibData[e.ticker].beat_rate!=null)?ibData[e.ticker].beat_rate:null);
+    var surp=e.last_surprise!=null?e.last_surprise:((ibData[e.ticker]&&ibData[e.ticker].last_surprise!=null)?ibData[e.ticker].last_surprise:null);
+    var impl=e.implied_move_pct!=null?e.implied_move_pct.toFixed(1)+'%':'—';
+    var sig=e.mispricing&&e.mispricing.signal;
+    var ratio=e.mispricing&&e.mispricing.ratio;
+    html+='<tr>';
+    html+='<td class="ticker">'+e.ticker+'</td>';
+    html+='<td><span class="sp '+scls(sec)+'">'+sec+'</span></td>';
+    html+='<td class="mu">'+e.earnings_date+'</td>';
+    html+=('<td>'+dbadge(e.earnings_date)+'</td>');
+    html+='<td class="mo">'+impl+'</td>';
+    html+='<td class="mo">'+rl+'</td>';
+    html+='<td class="mo">'+(ratio!=null?ratio.toFixed(2)+'x':'—')+'</td>';
+    html+='<td>'+(sig?'<span class="tag '+(sig==='CHEAP'?'g':sig==='RICH'?'r':'gr')+'">'+sig+'</span>':'<span class="tag gr">N/A</span>')+'</td>';
+    html+='<td class="'+bcls(beat)+'">'+(beat!=null?(beat*100).toFixed(0)+'%':'—')+'</td>';
+    html+='<td class="'+(surp!=null?(surp>0?'pos':'neg'):'mu')+'">'+(surp!=null?(surp>0?'+':'')+surp.toFixed(2):'—')+'</td>';
+    html+='</tr>';
+  });
+  html+='</tbody></table>';
+  document.getElementById('tE').innerHTML=html;
 }
 
-// ── INSIDERS ─────────────────────────────────────────────────────────────────
-function fInsiders(f,btn){
-  inFilter=f;
-  document.querySelectorAll('#panel-insiders .pill').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  renderInsiders();
-}
-
-function renderInsiders(){
-  if(!iData) return;
-  let trades=iData.trades||[];
-  const s=document.getElementById('sInsiders')?.value.toLowerCase()||'';
-  if(inFilter==='conf') trades=trades.filter(t=>confluence.includes((t.ticker||'').toUpperCase()));
-  if(s) trades=trades.filter(t=>
-    (t.ticker||'').toLowerCase().includes(s)||
-    (t.insider||t.rptownername||'').toLowerCase().includes(s));
-
-  const all=iData.trades||[];
-  const uniq=new Set(all.map(t=>t.ticker).filter(Boolean)).size;
-  const confT=all.filter(t=>confluence.includes((t.ticker||'').toUpperCase()));
+function rI(){
+  if(!iData)return;
+  var trades=iData.trades||[];
+  var s=document.getElementById('si').value.toLowerCase();
+  if(inF==='conf')trades=trades.filter(function(t){return confluence.indexOf((t.ticker||'').toUpperCase())>=0});
+  if(inF==='big')trades=trades.filter(function(t){return (t.value_usd||0)>=500000});
+  if(s)trades=trades.filter(function(t){return (t.ticker||'').toLowerCase().indexOf(s)>=0||(t.insider||'').toLowerCase().indexOf(s)>=0});
+  var all=iData.trades||[];
+  var uniq=new Set(all.map(function(t){return t.ticker}).filter(Boolean)).size;
+  var confT=all.filter(function(t){return confluence.indexOf((t.ticker||'').toUpperCase())>=0});
+  var totalVal=all.reduce(function(s,t){return s+(t.value_usd||0)},0);
   document.getElementById('s3a').textContent=all.length;
   document.getElementById('s3b').textContent=uniq;
   document.getElementById('s3c').textContent=confT.length;
-  document.getElementById('s3d').textContent='—';
-
+  document.getElementById('s3d').textContent=totalVal>0?'$'+(totalVal/1e6).toFixed(1)+'M':'—';
   if(!trades.length){
-    document.getElementById('insidersTable').innerHTML=
-      `<div class="empty"><div class="empty-icon">👤</div>
-      ${all.length===0
-        ? 'Form 4 data parsing in progress. Re-run pipeline to populate.'
-        : 'No trades match current filter.'}</div>`;
+    document.getElementById('tI').innerHTML='<div class="empty"><div class="ei">👤</div>'+(all.length===0?'No open-market purchases found today. Re-run pipeline.':'No trades match filter.')+'</div>';
     return;
   }
-
-  document.getElementById('insidersTable').innerHTML=`
-  <table>
-    <thead><tr>
-      <th>Date</th><th>Ticker</th><th>Insider</th>
-      <th>Title</th><th>Confluence</th><th>SEC Filing</th>
-    </tr></thead>
-    <tbody>${trades.slice(0,100).map(t=>{
-      const tick=(t.ticker||'—').toUpperCase();
-      const isC=confluence.includes(tick);
-      const name=t.insider||t.rptownername||'—';
-      return `<tr>
-        <td class="muted-text">${t.filed_date||'—'}</td>
-        <td class="ticker">${tick}${isC?'<span class="fire">🔥</span>':''}</td>
-        <td>${name}</td>
-        <td class="muted-text" style="max-width:280px;overflow:hidden;text-overflow:ellipsis">${t.title||'—'}</td>
-        <td>${isC?'<span class="tag red">ACTIVIST + INSIDER</span>':'<span class="tag gray">—</span>'}</td>
-        <td>${t.link?`<a class="sec-btn" href="${t.link}" target="_blank">SEC ↗</a>`:'—'}</td>
-      </tr>`;
-    }).join('')}</tbody>
-  </table>`;
+  var html='<table><thead><tr><th>Date</th><th>Ticker</th><th>Company</th><th>Insider</th><th>Role</th><th>Shares</th><th>Price</th><th>Value</th><th>Confluence</th><th>Filing</th></tr></thead><tbody>';
+  trades.forEach(function(t){
+    var tick=(t.ticker||'—').toUpperCase();
+    var isC=confluence.indexOf(tick)>=0;
+    var val=t.value_usd||0;
+    var valStr=val>=1e6?'$'+(val/1e6).toFixed(2)+'M':'$'+(val/1e3).toFixed(0)+'K';
+    var role=t.is_ceo?'<span class="tag r">CEO</span>':t.is_director?'<span class="tag b">Director</span>':t.is_ten_pct?'<span class="tag p">10%+ Owner</span>':'<span class="tag gr">'+(t.role||'Insider')+'</span>';
+    html+='<tr>';
+    html+='<td class="mu">'+(t.filed_date||'—')+'</td>';
+    html+='<td class="ticker">'+tick+(isC?'<span class="fire">🔥</span>':'')+'</td>';
+    html+='<td class="mu">'+(t.company||'—')+'</td>';
+    html+='<td>'+(t.insider||'—')+'</td>';
+    html+=('<td>'+role+'</td>');
+    html+='<td class="mo">'+(t.shares||0).toLocaleString()+'</td>';
+    html+='<td class="mo">$'+(t.price||0).toFixed(2)+'</td>';
+    html+='<td class="mo pos" style="font-weight:700">'+valStr+'</td>';
+    html+='<td>'+(isC?'<span class="tag r">ACTIVIST+INSIDER</span>':'<span class="tag gr">—</span>')+'</td>';
+    html+='<td>'+(t.sec_link?'<a class="secbtn" href="'+t.sec_link+'" target="_blank">SEC ↗</a>':'—')+'</td>';
+    html+='</tr>';
+  });
+  html+='</tbody></table>';
+  document.getElementById('tI').innerHTML=html;
 }
 
 loadAll();
-setInterval(loadAll, 5*60*1000);
+setInterval(loadAll,5*60*1000);
 </script>
 </body>
 </html>

@@ -1,4 +1,80 @@
 {
-  "last_updated": "2026-05-14T17:34:49.421308",
-  "trades": []
+  "last_updated": "2026-05-14T17:51:30.416542",
+  "trades": [
+    {
+      "ticker": "PFX",
+      "company": "PhenixFIN Corp",
+      "insider": "Lorber David A",
+      "role": "CHAIRMAN AND CEO",
+      "shares": 42065,
+      "price": 39.95,
+      "value_usd": 1680497.0,
+      "value_m": 1.68,
+      "is_ceo": false,
+      "is_director": true,
+      "is_ten_pct": true,
+      "filed_date": "2026-05-14",
+      "sec_link": "https://www.sec.gov/Archives/edgar/data/1490349/000121390026056877/0001213900-26-056877-index.htm"
+    },
+    {
+      "ticker": "LODE",
+      "company": "Comstock Inc.",
+      "insider": "Pei Steven Yu-Tsung",
+      "role": "Director",
+      "shares": 345000,
+      "price": 3.38,
+      "value_usd": 1164375.0,
+      "value_m": 1.164,
+      "is_ceo": false,
+      "is_director": true,
+      "is_ten_pct": false,
+      "filed_date": "2026-05-14",
+      "sec_link": "https://www.sec.gov/Archives/edgar/data/2128873/000143774926017150/0001437749-26-017150-index.htm"
+    },
+    {
+      "ticker": "JKHY",
+      "company": "JACK HENRY &amp; ASSOCIATES INC",
+      "insider": "Adelson Gregory R.",
+      "role": "President &amp; CEO",
+      "shares": 2000,
+      "price": 133.42,
+      "value_usd": 266840.0,
+      "value_m": 0.267,
+      "is_ceo": false,
+      "is_director": true,
+      "is_ten_pct": false,
+      "filed_date": "2026-05-14",
+      "sec_link": "https://www.sec.gov/Archives/edgar/data/1746071/000077915226000031/0000779152-26-000031-index.htm"
+    },
+    {
+      "ticker": "TMCI",
+      "company": "TREACE MEDICAL CONCEPTS, INC.",
+      "insider": "Treace John T.",
+      "role": "Chief Executive Officer",
+      "shares": 43000,
+      "price": 2.17,
+      "value_usd": 93478.0,
+      "value_m": 0.093,
+      "is_ceo": true,
+      "is_director": false,
+      "is_ten_pct": false,
+      "filed_date": "2026-05-14",
+      "sec_link": "https://www.sec.gov/Archives/edgar/data/1856380/000119312526224391/0001193125-26-224391-index.htm"
+    },
+    {
+      "ticker": "JKHY",
+      "company": "JACK HENRY &amp; ASSOCIATES INC",
+      "insider": "Carsley Mimi",
+      "role": "CFO and Treasurer",
+      "shares": 375,
+      "price": 134.12,
+      "value_usd": 50295.0,
+      "value_m": 0.05,
+      "is_ceo": false,
+      "is_director": false,
+      "is_ten_pct": false,
+      "filed_date": "2026-05-14",
+      "sec_link": "https://www.sec.gov/Archives/edgar/data/1806833/000077915226000030/0000779152-26-000030-index.htm"
+    }
+  ]
 }

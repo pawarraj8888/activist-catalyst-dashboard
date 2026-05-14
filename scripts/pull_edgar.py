@@ -138,12 +138,100 @@ def fetch_13g_filings(days_back=7):
     return filings
 
 
+def parse_form4_xml(filing_index_url):
+    """
+    Fetch and parse Form 4 XML to extract open-market purchases only.
+    Returns dict with transaction details or None if not a purchase.
+    """
+    import re
+    try:
+        # Get filing index page to find XML document
+        idx = requests.get(filing_index_url, headers=HEADERS, timeout=10).text
+        # Find the actual form4 XML link
+        # XML is under issuer CIK, not filer CIK — find non-xsl XML link
+        xml_matches = re.findall(r'href="(/Archives/edgar/data/[^"]+\.xml)"', idx)
+        xml_matches = [x for x in xml_matches if 'xslF' not in x]
+        xml_match = type('M', (), {'group': lambda self,n: xml_matches[0]})() if xml_matches else None
+        if not xml_match:
+            return None
+        xml_url = "https://www.sec.gov" + xml_match.group(1)
+        xml = requests.get(xml_url, headers=HEADERS, timeout=10).text
+
+        # Must have nonDerivativeTable with transactionCode P
+        if "<nonDerivativeTable>" not in xml:
+            return None
+
+        # Extract only nonDerivative section
+        nd_match = re.search(r"<nonDerivativeTable>(.*?)</nonDerivativeTable>", xml, re.DOTALL)
+        if not nd_match:
+            return None
+        nd = nd_match.group(1)
+
+        # Find P (open-market purchase) transaction block
+        trans_blocks = re.findall(r"<nonDerivativeTransaction>(.*?)</nonDerivativeTransaction>", nd, re.DOTALL)
+        purchase_block = None
+        for block in trans_blocks:
+            code = re.search(r"<transactionCode>([^<]+)</transactionCode>", block)
+            if code and code.group(1).strip() == "P":
+                purchase_block = block
+                break
+        if not purchase_block:
+            return None
+
+        # Extract values — EDGAR nests amounts in <value> tags
+        def extract(tag, src=xml):
+            m = re.search(rf"<{tag}>\s*<value>([^<]+)</value>", src)
+            return m.group(1).strip() if m else None
+
+        def extract_plain(tag, src=xml):
+            m = re.search(rf"<{tag}>([^<]+)</{tag}>", src)
+            return m.group(1).strip() if m else None
+
+        shares  = extract("transactionShares", purchase_block)
+        price   = extract("transactionPricePerShare", purchase_block)
+        ticker  = extract_plain("issuerTradingSymbol")
+        company = extract_plain("issuerName")
+        name    = extract_plain("rptOwnerName")
+        role_tags = re.findall(r"<officerTitle>([^<]+)</officerTitle>", xml)
+        is_director = "<isDirector>1</isDirector>" in xml
+        is_officer  = "<isOfficer>1</isOfficer>" in xml
+        is_ten_pct  = "<isTenPercentOwner>1</isTenPercentOwner>" in xml
+
+        role = role_tags[0] if role_tags else ("Director" if is_director else ("10%+ Owner" if is_ten_pct else "Insider"))
+
+        if not shares or not price:
+            return None
+
+        shares_n = float(shares)
+        price_n  = float(price)
+        value    = shares_n * price_n
+
+        # Filter: only surface meaningful purchases ($50K+)
+        if value < 50000:
+            return None
+
+        return {
+            "ticker":    ticker,
+            "company":   company,
+            "insider":   name,
+            "role":      role,
+            "shares":    int(shares_n),
+            "price":     round(price_n, 2),
+            "value_usd": round(value, 0),
+            "value_m":   round(value / 1e6, 3),
+            "is_ceo":    any(t.lower() in ["chief executive officer","ceo","president & ceo"] for t in role_tags),
+            "is_director": is_director,
+            "is_ten_pct":  is_ten_pct,
+        }
+    except Exception as e:
+        return None
+
+
 def fetch_form4_recent(days_back=3):
     """
-    Recent Form 4 open-market purchases from EDGAR.
-    Cross-referenced later with activist filings for confluence signal.
+    Fetch Form 4 filings, parse XML for each, return only open-market purchases $50K+.
     """
-    print("  Fetching Form 4 filings...")
+    print("  Fetching & parsing Form 4 filings (open-market purchases only)...")
     url = ("https://www.sec.gov/cgi-bin/browse-edgar"
            "?action=getcurrent&type=4&dateb=&owner=include&count=100&output=atom")
 
@@ -154,35 +242,29 @@ def fetch_form4_recent(days_back=3):
         print(f"  Form4 feed error: {e}")
         return []
 
-    cutoff  = datetime.today() - timedelta(days=days_back)
-    form4s  = []
-
+    cutoff = datetime.today() - timedelta(days=days_back)
+    entries = []
     for entry in feed.entries:
         try:
             filed_dt = datetime(*entry.updated_parsed[:6])
             if filed_dt < cutoff:
                 continue
-            title = entry.get("title", "")
-            # Parse ticker from title: "4 - COMPANY NAME (TICKER) (CIK)"
-            import re
-            ticker_match = re.search(r"\(([A-Z]{1,5})\)\s*\(\d", title)
-            ticker = ticker_match.group(1) if ticker_match else None
-            # Parse company and insider name
-            # Title format: "4 - INSIDER NAME - COMPANY (TICKER) (CIK)"
-            parts = title.split(" - ")
-            insider = parts[1].strip() if len(parts) > 1 else "Unknown"
-            form4s.append({
-                "filed_date":  filed_dt.strftime("%Y-%m-%d"),
-                "ticker":      ticker,
-                "insider":     insider,
-                "title":       title,
-                "link":        entry.get("link", ""),
-            })
+            entries.append((filed_dt, entry.get("link", "")))
         except:
             continue
 
-    print(f"  Form4: {len(form4s)} recent filings")
-    return form4s
+    print(f"  Parsing {len(entries)} Form 4 filings for open-market purchases...")
+    purchases = []
+    for filed_dt, link in entries:
+        parsed = parse_form4_xml(link)
+        if parsed:
+            parsed["filed_date"] = filed_dt.strftime("%Y-%m-%d")
+            parsed["sec_link"]   = link
+            purchases.append(parsed)
+
+    purchases.sort(key=lambda x: x["value_usd"], reverse=True)
+    print(f"  Form4: {len(purchases)} open-market purchases $50K+ found")
+    return purchases
 
 
 def compute_confluence(activist_filings, insider_trades):
@@ -202,29 +284,76 @@ def compute_confluence(activist_filings, insider_trades):
     return confluence
 
 
+def fetch_13d_filer_names(days_back=7):
+    """
+    Use EDGAR full-text search JSON API for richer 13D data including filer names.
+    """
+    from datetime import date, timedelta
+    start = (date.today() - timedelta(days=days_back)).strftime("%Y-%m-%d")
+    url = (f"https://efts.sec.gov/LATEST/search-index?q=%22beneficial+owner%22"
+           f"&forms=SC+13D&dateRange=custom&startdt={start}")
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15).json()
+        hits = resp.get("hits", {}).get("hits", [])
+        results = []
+        for h in hits:
+            src = h.get("_source", {})
+            import re
+            # Extract ticker from entity name or file_date
+            entity = src.get("entity_name", "") or src.get("display_names", [""])[0]
+            ticker_m = re.search(r"\(([A-Z]{1,5})\)", entity)
+            ticker = ticker_m.group(1) if ticker_m else None
+            filer_list = src.get("display_names", [])
+            filer = filer_list[0] if filer_list else "Unknown"
+            track = ACTIVIST_TRACK_RECORDS.get(filer, {
+                "win_rate": None, "avg_return_6m": None, "style": "Unknown"
+            })
+            if len(results) >= 20: break
+            results.append({
+                "type": "13D",
+                "filed_date": src.get("file_date", ""),
+                "ticker": ticker,
+                "filer": filer,
+                "win_rate": track.get("win_rate"),
+                "avg_return_6m": track.get("avg_return_6m"),
+                "filer_style": track.get("style", "Unknown"),
+                "sec_link": f"https://www.sec.gov/Archives/edgar/data/{src.get('entity_id','')}/",
+                "high_conviction": bool(track.get("win_rate") and track["win_rate"] > 0.75),
+                "confluence_signal": False,
+            })
+        return results
+    except Exception as e:
+        print(f"  13D search error: {e}")
+        return []
+
+
 def run():
-    filings_13d = fetch_13d_filings(days_back=7)
+    # Try richer API first, fall back to ATOM feed
+    filings_13d = fetch_13d_filer_names(days_back=7)
+    if not filings_13d:
+        filings_13d = fetch_13d_filings(days_back=7)
+
     filings_13g = fetch_13g_filings(days_back=7)
     form4s      = fetch_form4_recent(days_back=3)
 
-    # Load insider trades from WRDS pull for confluence check
-    try:
-        with open("data/insider_trades.json") as f:
-            insider_data = json.load(f)
-        insider_trades = insider_data.get("trades", [])
-    except:
-        insider_trades = []
+    # Save Form 4 data to insider_trades.json
+    with open("data/insider_trades.json", "w") as f:
+        json.dump({
+            "last_updated": datetime.now().isoformat(),
+            "trades": form4s
+        }, f, indent=2, default=str)
+    print(f"  Saved {len(form4s)} Form 4 filings to insider_trades.json")
 
-    confluence = compute_confluence(filings_13d + filings_13g, insider_trades)
+    # Confluence: activist + insider on same ticker
+    confluence = compute_confluence(filings_13d + filings_13g, form4s)
 
-    # Tag confluence on activist filings
     for f in filings_13d:
         f["confluence_signal"] = f.get("ticker") in confluence
 
     output = {
-        "last_updated":    datetime.now().isoformat(),
-        "filings_13d":     filings_13d,
-        "filings_13g":     filings_13g[:20],
+        "last_updated":       datetime.now().isoformat(),
+        "filings_13d":        filings_13d,
+        "filings_13g":        filings_13g[:20],
         "confluence_tickers": confluence,
     }
 
