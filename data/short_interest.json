@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T18:25:14.321873",
+  "last_updated": "2026-05-14T18:42:59.852634",
   "data": {
     "JNJ": {
       "short_pct_float": 1.03,
@@ -552,6 +552,26 @@
       "days_to_cover": 1.6,
       "shares_short": 2721338,
       "float_shares": 295289600,
+      "squeeze_risk": "LOW"
+    },
+    "PFX": {
+      "short_pct_float": 0.01,
+      "days_to_cover": 0.2,
+      "squeeze_risk": "LOW"
+    },
+    "LODE": {
+      "short_pct_float": 4.86,
+      "days_to_cover": 3.6,
+      "squeeze_risk": "LOW"
+    },
+    "JKHY": {
+      "short_pct_float": 8.32,
+      "days_to_cover": 6.1,
+      "squeeze_risk": "LOW"
+    },
+    "TMCI": {
+      "short_pct_float": 7.66,
+      "days_to_cover": 4.3,
       "squeeze_risk": "LOW"
     }
   }
