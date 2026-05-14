@@ -1,4 +1,75 @@
 {
-  "last_updated": "2026-05-14T18:14:03.727651",
-  "trades": []
+  "last_updated": "2026-05-14T18:29:32.258011",
+  "trades": [
+    {
+      "ticker": "PFX",
+      "company": "PhenixFIN Corp",
+      "insider": "Lorber David A",
+      "role": "Director",
+      "is_director": true,
+      "is_ceo": false,
+      "is_ten_pct": false,
+      "shares": 42065,
+      "price": 39.95,
+      "value_usd": 1680497.75,
+      "filed_date": "2026-05-14",
+      "sec_link": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=4&dateb=&owner=include&count=40"
+    },
+    {
+      "ticker": "LODE",
+      "company": "Comstock Inc.",
+      "insider": "Pei Steven Yu-Tsung",
+      "role": "Director",
+      "is_director": true,
+      "is_ceo": false,
+      "is_ten_pct": false,
+      "shares": 345000,
+      "price": 3.38,
+      "value_usd": 1166100.0,
+      "filed_date": "2026-05-14",
+      "sec_link": ""
+    },
+    {
+      "ticker": "JKHY",
+      "company": "Jack Henry & Associates Inc",
+      "insider": "Adelson Gregory R.",
+      "role": "Director",
+      "is_director": true,
+      "is_ceo": false,
+      "is_ten_pct": false,
+      "shares": 2000,
+      "price": 133.42,
+      "value_usd": 266840.0,
+      "filed_date": "2026-05-14",
+      "sec_link": ""
+    },
+    {
+      "ticker": "TMCI",
+      "company": "Treace Medical Concepts Inc",
+      "insider": "Treace John T.",
+      "role": "CEO",
+      "is_director": false,
+      "is_ceo": true,
+      "is_ten_pct": false,
+      "shares": 43000,
+      "price": 2.17,
+      "value_usd": 93310.0,
+      "filed_date": "2026-05-14",
+      "sec_link": ""
+    },
+    {
+      "ticker": "JKHY",
+      "company": "Jack Henry & Associates Inc",
+      "insider": "Carsley Mimi",
+      "role": "CFO and Treasurer",
+      "is_director": false,
+      "is_ceo": false,
+      "is_ten_pct": false,
+      "shares": 375,
+      "price": 134.12,
+      "value_usd": 50295.0,
+      "filed_date": "2026-05-14",
+      "sec_link": ""
+    }
+  ]
 }
