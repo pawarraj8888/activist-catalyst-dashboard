@@ -6,3 +6,4 @@ python-dotenv
 feedparser
 beautifulsoup4
 lxml
+yfinance
