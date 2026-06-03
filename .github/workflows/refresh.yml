@@ -23,11 +23,8 @@ jobs:
         env:
           POLYGON_API_KEY: ${{ secrets.POLYGON_API_KEY }}
           FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
-      - if: github.event.schedule == '0 */6 * * *'
-        run: python scripts/pull_wrds.py
-        env:
-          WRDS_USERNAME: ${{ secrets.WRDS_USERNAME }}
-          WRDS_PASSWORD: ${{ secrets.WRDS_PASSWORD }}
+      # WRDS runs locally only - requires institutional access
+      # - run: python scripts/pull_wrds.py
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
