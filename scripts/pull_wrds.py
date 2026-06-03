@@ -16,6 +16,10 @@ WRDS_USER = os.getenv("WRDS_USERNAME", "rajpawar88")
 
 
 def connect():
+    import os
+    pwd = os.getenv("WRDS_PASSWORD", "")
+    if pwd:
+        return wrds.Connection(wrds_username=WRDS_USER, password=pwd)
     return wrds.Connection(wrds_username=WRDS_USER)
 
 
