@@ -56,14 +56,29 @@ def fetch_13d_filings(days_back=7):
             if filed_dt < cutoff:
                 continue
 
-            title  = entry.get("title", "")
-            link   = entry.get("link", "")
+            title   = entry.get("title", "")
+            link    = entry.get("link", "")
             summary = entry.get("summary", "")
 
-            # Parse: "SC 13D - COMPANY NAME (TICKER) (0000123456) (Filer)"
             import re
-            ticker_match = re.search(r"\(([A-Z]{1,5})\)", title)
-            ticker = ticker_match.group(1) if ticker_match else None
+            # Extract CIK from link URL
+            cik_match = re.search(r"/edgar/data/(\d+)/", link)
+            ticker = None
+            if cik_match:
+                cik = cik_match.group(1).zfill(10)
+                try:
+                    sub = requests.get(
+                        f"https://data.sec.gov/submissions/CIK{cik}.json",
+                        headers=HEADERS, timeout=8
+                    ).json()
+                    tickers = sub.get("tickers", [])
+                    ticker = tickers[0] if tickers else None
+                except:
+                    pass
+            # Fallback: parse from title
+            if not ticker:
+                tm = re.search(r"\(([A-Z]{1,5})\)", title)
+                ticker = tm.group(1) if tm else None
 
             # Try to extract filer name from summary
             filer = "Unknown"
