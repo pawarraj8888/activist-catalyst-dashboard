@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-14T18:28:35.968899",
+  "last_updated": "2026-06-03T11:47:42.688973",
   "events": [
     {
       "ticker": "AAPL",
@@ -75,7 +75,7 @@
     },
     {
       "ticker": "NVDA",
-      "earnings_date": "2026-05-20",
+      "earnings_date": "2026-08-26",
       "eps_estimate": null,
       "revenue_estimate": null,
       "implied_move": null,
@@ -237,7 +237,7 @@
     },
     {
       "ticker": "WMT",
-      "earnings_date": "2026-05-21",
+      "earnings_date": "2026-08-20",
       "eps_estimate": null,
       "revenue_estimate": null,
       "implied_move": null,
@@ -291,7 +291,7 @@
     },
     {
       "ticker": "HD",
-      "earnings_date": "2026-05-19",
+      "earnings_date": "2026-08-18",
       "eps_estimate": null,
       "revenue_estimate": null,
       "implied_move": null,
@@ -434,24 +434,6 @@
       "avg_analysts": null
     },
     {
-      "ticker": "COST",
-      "earnings_date": "2026-05-28",
-      "eps_estimate": null,
-      "revenue_estimate": null,
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0111,
-      "avg_realized_pct": 1.11,
-      "mispricing": null,
-      "beat_rate": null,
-      "avg_surprise": null,
-      "last_surprise": null,
-      "avg_analysts": null
-    },
-    {
       "ticker": "TMO",
       "earnings_date": "2026-07-22",
       "eps_estimate": null,
@@ -485,24 +467,6 @@
       "beat_rate": 0.875,
       "avg_surprise": 2.2314,
       "last_surprise": 1.91,
-      "avg_analysts": null
-    },
-    {
-      "ticker": "CRM",
-      "earnings_date": "2026-05-27",
-      "eps_estimate": null,
-      "revenue_estimate": null,
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0074,
-      "avg_realized_pct": 0.74,
-      "mispricing": null,
-      "beat_rate": null,
-      "avg_surprise": null,
-      "last_surprise": null,
       "avg_analysts": null
     },
     {
@@ -579,7 +543,7 @@
     },
     {
       "ticker": "TXN",
-      "earnings_date": "2026-07-28",
+      "earnings_date": "2026-07-22",
       "eps_estimate": null,
       "revenue_estimate": null,
       "implied_move": null,
@@ -975,7 +939,7 @@
     },
     {
       "ticker": "DE",
-      "earnings_date": "2026-05-21",
+      "earnings_date": "2026-08-20",
       "eps_estimate": null,
       "revenue_estimate": null,
       "implied_move": null,
@@ -1047,7 +1011,7 @@
     },
     {
       "ticker": "ADI",
-      "earnings_date": "2026-05-20",
+      "earnings_date": "2026-08-19",
       "eps_estimate": null,
       "revenue_estimate": null,
       "implied_move": null,
@@ -1065,7 +1029,7 @@
     },
     {
       "ticker": "TJX",
-      "earnings_date": "2026-05-20",
+      "earnings_date": "2026-08-19",
       "eps_estimate": null,
       "revenue_estimate": null,
       "implied_move": null,
@@ -1263,7 +1227,7 @@
     },
     {
       "ticker": "PANW",
-      "earnings_date": "2026-06-02",
+      "earnings_date": "2026-08-18",
       "eps_estimate": null,
       "revenue_estimate": null,
       "implied_move": null,
@@ -1295,6 +1259,24 @@
       "beat_rate": 1.0,
       "avg_surprise": 11.982,
       "last_surprise": 38.1267,
+      "avg_analysts": null
+    },
+    {
+      "ticker": "AMAT",
+      "earnings_date": "2026-08-13",
+      "eps_estimate": null,
+      "revenue_estimate": null,
+      "implied_move": null,
+      "implied_move_pct": null,
+      "stock_price": null,
+      "straddle_cost": null,
+      "options_expiry": null,
+      "avg_realized_move": 0.0212,
+      "avg_realized_pct": 2.12,
+      "mispricing": null,
+      "beat_rate": 1.0,
+      "avg_surprise": 4.9152,
+      "last_surprise": 2.154,
       "avg_analysts": null
     },
     {
@@ -1331,24 +1313,6 @@
       "beat_rate": null,
       "avg_surprise": null,
       "last_surprise": null,
-      "avg_analysts": null
-    },
-    {
-      "ticker": "SNPS",
-      "earnings_date": "2026-05-27",
-      "eps_estimate": null,
-      "revenue_estimate": null,
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0343,
-      "avg_realized_pct": 3.43,
-      "mispricing": null,
-      "beat_rate": 0.75,
-      "avg_surprise": 2.2845,
-      "last_surprise": 0.0,
       "avg_analysts": null
     },
     {
