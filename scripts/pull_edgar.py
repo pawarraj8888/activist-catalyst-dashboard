@@ -326,12 +326,16 @@ def run():
 
     # Save Form 4 data to insider_trades.json
     # Save today's trades
-    with open("data/insider_trades.json", "w") as f:
-        json.dump({
-            "last_updated": datetime.now().isoformat(),
-            "trades": form4s
-        }, f, indent=2, default=str)
-    print(f"  Saved {len(form4s)} Form 4 filings to insider_trades.json")
+    # Only overwrite insider_trades.json if we found real purchases
+    if form4s:
+        with open("data/insider_trades.json", "w") as f:
+            json.dump({
+                "last_updated": datetime.now().isoformat(),
+                "trades": form4s
+            }, f, indent=2, default=str)
+        print(f"  Saved {len(form4s)} Form 4 filings to insider_trades.json")
+    else:
+        print(f"  No new Form 4 purchases found, keeping existing insider_trades.json")
 
     # Append to rolling history (deduplicated)
     try:
