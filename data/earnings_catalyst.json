@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-06-10T09:51:01.931165",
+  "last_updated": "2026-06-10T15:23:35.422146",
   "events": [
     {
       "ticker": "UNH",
       "earnings_date": "2026-07-28",
-      "implied_move": 0.1197,
-      "implied_move_pct": 11.97,
-      "stock_price": 413.0,
-      "straddle_cost": 49.45,
+      "implied_move": 0.1213,
+      "implied_move_pct": 12.13,
+      "stock_price": 408.64,
+      "straddle_cost": 49.58,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.1076,
       "avg_realized_pct": 10.76,
       "mispricing": {
-        "ratio": 1.11,
+        "ratio": 1.13,
         "signal": "FAIR"
       },
       "beat_rate": null,
@@ -21,15 +21,15 @@
     {
       "ticker": "AAPL",
       "earnings_date": "2026-07-30",
-      "implied_move": 0.0961,
-      "implied_move_pct": 9.61,
-      "stock_price": 290.55,
-      "straddle_cost": 27.93,
+      "implied_move": 0.0953,
+      "implied_move_pct": 9.53,
+      "stock_price": 289.79,
+      "straddle_cost": 27.62,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0116,
       "avg_realized_pct": 1.16,
       "mispricing": {
-        "ratio": 8.28,
+        "ratio": 8.22,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -40,8 +40,8 @@
       "earnings_date": "2026-07-29",
       "implied_move": 0.127,
       "implied_move_pct": 12.7,
-      "stock_price": 403.41,
-      "straddle_cost": 51.25,
+      "stock_price": 402.12,
+      "straddle_cost": 51.08,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0061,
       "avg_realized_pct": 0.61,
@@ -55,15 +55,15 @@
     {
       "ticker": "GOOGL",
       "earnings_date": "2026-07-23",
-      "implied_move": 0.0907,
-      "implied_move_pct": 9.07,
-      "stock_price": 364.26,
-      "straddle_cost": 33.05,
+      "implied_move": 0.0941,
+      "implied_move_pct": 9.41,
+      "stock_price": 362.22,
+      "straddle_cost": 34.08,
       "options_expiry": "2026-07-24",
       "avg_realized_move": 0.0173,
       "avg_realized_pct": 1.73,
       "mispricing": {
-        "ratio": 5.24,
+        "ratio": 5.44,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -72,15 +72,15 @@
     {
       "ticker": "AMZN",
       "earnings_date": "2026-07-30",
-      "implied_move": 0.1333,
-      "implied_move_pct": 13.33,
-      "stock_price": 244.19,
-      "straddle_cost": 32.56,
+      "implied_move": 0.1321,
+      "implied_move_pct": 13.21,
+      "stock_price": 239.6,
+      "straddle_cost": 31.65,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0228,
       "avg_realized_pct": 2.28,
       "mispricing": {
-        "ratio": 5.85,
+        "ratio": 5.79,
         "signal": "RICH"
       },
       "beat_rate": 0.875,
@@ -89,15 +89,15 @@
     {
       "ticker": "NVDA",
       "earnings_date": "2026-08-26",
-      "implied_move": 0.1862,
-      "implied_move_pct": 18.62,
-      "stock_price": 208.19,
-      "straddle_cost": 38.77,
+      "implied_move": 0.1844,
+      "implied_move_pct": 18.44,
+      "stock_price": 202.87,
+      "straddle_cost": 37.4,
       "options_expiry": "2026-09-18",
       "avg_realized_move": 0.015,
       "avg_realized_pct": 1.5,
       "mispricing": {
-        "ratio": 12.41,
+        "ratio": 12.29,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -106,15 +106,15 @@
     {
       "ticker": "META",
       "earnings_date": "2026-07-29",
-      "implied_move": 0.1407,
-      "implied_move_pct": 14.07,
-      "stock_price": 584.59,
-      "straddle_cost": 82.24,
+      "implied_move": 0.1423,
+      "implied_move_pct": 14.23,
+      "stock_price": 577.59,
+      "straddle_cost": 82.2,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0102,
       "avg_realized_pct": 1.02,
       "mispricing": {
-        "ratio": 13.79,
+        "ratio": 13.95,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -123,15 +123,15 @@
     {
       "ticker": "TSLA",
       "earnings_date": "2026-07-22",
-      "implied_move": 0.139,
-      "implied_move_pct": 13.9,
-      "stock_price": 396.68,
-      "straddle_cost": 55.14,
+      "implied_move": 0.1411,
+      "implied_move_pct": 14.11,
+      "stock_price": 385.25,
+      "straddle_cost": 54.38,
       "options_expiry": "2026-07-24",
       "avg_realized_move": 0.0272,
       "avg_realized_pct": 2.72,
       "mispricing": {
-        "ratio": 5.11,
+        "ratio": 5.19,
         "signal": "RICH"
       },
       "beat_rate": 0.875,
@@ -142,8 +142,8 @@
       "earnings_date": "2026-07-14",
       "implied_move": 0.0757,
       "implied_move_pct": 7.57,
-      "stock_price": 312.7,
-      "straddle_cost": 23.66,
+      "stock_price": 311.13,
+      "straddle_cost": 23.55,
       "options_expiry": "2026-07-17",
       "avg_realized_move": 0.0291,
       "avg_realized_pct": 2.91,
@@ -157,15 +157,15 @@
     {
       "ticker": "V",
       "earnings_date": "2026-07-28",
-      "implied_move": 0.0948,
-      "implied_move_pct": 9.48,
-      "stock_price": 325.05,
-      "straddle_cost": 30.8,
+      "implied_move": 0.0943,
+      "implied_move_pct": 9.43,
+      "stock_price": 321.17,
+      "straddle_cost": 30.28,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0131,
       "avg_realized_pct": 1.31,
       "mispricing": {
-        "ratio": 7.24,
+        "ratio": 7.2,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -174,15 +174,15 @@
     {
       "ticker": "XOM",
       "earnings_date": "2026-07-31",
-      "implied_move": 0.1179,
-      "implied_move_pct": 11.79,
-      "stock_price": 148.91,
-      "straddle_cost": 17.55,
+      "implied_move": 0.1165,
+      "implied_move_pct": 11.65,
+      "stock_price": 151.49,
+      "straddle_cost": 17.65,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0113,
       "avg_realized_pct": 1.13,
       "mispricing": {
-        "ratio": 10.43,
+        "ratio": 10.31,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -191,15 +191,15 @@
     {
       "ticker": "LLY",
       "earnings_date": "2026-08-05",
-      "implied_move": 0.1454,
-      "implied_move_pct": 14.54,
-      "stock_price": 1144.68,
-      "straddle_cost": 166.45,
+      "implied_move": 0.1428,
+      "implied_move_pct": 14.28,
+      "stock_price": 1162.5,
+      "straddle_cost": 166.02,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0769,
       "avg_realized_pct": 7.69,
       "mispricing": {
-        "ratio": 1.89,
+        "ratio": 1.86,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -208,15 +208,15 @@
     {
       "ticker": "JNJ",
       "earnings_date": "2026-07-15",
-      "implied_move": 0.0667,
-      "implied_move_pct": 6.67,
-      "stock_price": 237.0,
-      "straddle_cost": 15.8,
+      "implied_move": 0.0636,
+      "implied_move_pct": 6.36,
+      "stock_price": 239.65,
+      "straddle_cost": 15.25,
       "options_expiry": "2026-07-17",
       "avg_realized_move": 0.0191,
       "avg_realized_pct": 1.91,
       "mispricing": {
-        "ratio": 3.49,
+        "ratio": 3.33,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -225,10 +225,10 @@
     {
       "ticker": "WMT",
       "earnings_date": "2026-08-20",
-      "implied_move": 0.1022,
-      "implied_move_pct": 10.22,
-      "stock_price": 118.88,
-      "straddle_cost": 12.15,
+      "implied_move": 0.1024,
+      "implied_move_pct": 10.24,
+      "stock_price": 119.85,
+      "straddle_cost": 12.28,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0472,
       "avg_realized_pct": 4.72,
@@ -242,15 +242,15 @@
     {
       "ticker": "MA",
       "earnings_date": "2026-07-30",
-      "implied_move": 0.1004,
-      "implied_move_pct": 10.04,
-      "stock_price": 495.24,
-      "straddle_cost": 49.7,
+      "implied_move": 0.0978,
+      "implied_move_pct": 9.78,
+      "stock_price": 488.82,
+      "straddle_cost": 47.8,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0244,
       "avg_realized_pct": 2.44,
       "mispricing": {
-        "ratio": 4.11,
+        "ratio": 4.01,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -259,15 +259,15 @@
     {
       "ticker": "PG",
       "earnings_date": "2026-07-29",
-      "implied_move": 0.0887,
-      "implied_move_pct": 8.87,
-      "stock_price": 148.67,
-      "straddle_cost": 13.19,
+      "implied_move": 0.0877,
+      "implied_move_pct": 8.77,
+      "stock_price": 149.93,
+      "straddle_cost": 13.15,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0261,
       "avg_realized_pct": 2.61,
       "mispricing": {
-        "ratio": 3.4,
+        "ratio": 3.36,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -276,15 +276,15 @@
     {
       "ticker": "HD",
       "earnings_date": "2026-08-18",
-      "implied_move": 0.1107,
-      "implied_move_pct": 11.07,
-      "stock_price": 321.33,
-      "straddle_cost": 35.57,
+      "implied_move": 0.11,
+      "implied_move_pct": 11.0,
+      "stock_price": 321.19,
+      "straddle_cost": 35.33,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0149,
       "avg_realized_pct": 1.49,
       "mispricing": {
-        "ratio": 7.43,
+        "ratio": 7.38,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -293,15 +293,15 @@
     {
       "ticker": "MRK",
       "earnings_date": "2026-08-04",
-      "implied_move": 0.115,
-      "implied_move_pct": 11.5,
-      "stock_price": 119.6,
-      "straddle_cost": 13.75,
+      "implied_move": 0.1128,
+      "implied_move_pct": 11.28,
+      "stock_price": 118.76,
+      "straddle_cost": 13.4,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0567,
       "avg_realized_pct": 5.67,
       "mispricing": {
-        "ratio": 2.03,
+        "ratio": 1.99,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -310,15 +310,15 @@
     {
       "ticker": "BAC",
       "earnings_date": "2026-07-14",
-      "implied_move": 0.0755,
-      "implied_move_pct": 7.55,
-      "stock_price": 54.42,
-      "straddle_cost": 4.11,
+      "implied_move": 0.0747,
+      "implied_move_pct": 7.47,
+      "stock_price": 54.72,
+      "straddle_cost": 4.08,
       "options_expiry": "2026-07-17",
       "avg_realized_move": 0.0262,
       "avg_realized_pct": 2.62,
       "mispricing": {
-        "ratio": 2.88,
+        "ratio": 2.85,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -327,10 +327,10 @@
     {
       "ticker": "ABBV",
       "earnings_date": "2026-07-30",
-      "implied_move": 0.1082,
-      "implied_move_pct": 10.82,
-      "stock_price": 225.42,
-      "straddle_cost": 24.4,
+      "implied_move": 0.1081,
+      "implied_move_pct": 10.81,
+      "stock_price": 226.69,
+      "straddle_cost": 24.5,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.044,
       "avg_realized_pct": 4.4,
@@ -344,15 +344,15 @@
     {
       "ticker": "CVX",
       "earnings_date": "2026-07-31",
-      "implied_move": 0.1083,
-      "implied_move_pct": 10.83,
-      "stock_price": 186.76,
-      "straddle_cost": 20.22,
+      "implied_move": 0.1066,
+      "implied_move_pct": 10.66,
+      "stock_price": 191.09,
+      "straddle_cost": 20.38,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0293,
       "avg_realized_pct": 2.93,
       "mispricing": {
-        "ratio": 3.7,
+        "ratio": 3.64,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -361,32 +361,49 @@
     {
       "ticker": "PEP",
       "earnings_date": "2026-07-09",
-      "implied_move": 0.0686,
-      "implied_move_pct": 6.86,
-      "stock_price": 142.78,
-      "straddle_cost": 9.8,
+      "implied_move": 0.0656,
+      "implied_move_pct": 6.56,
+      "stock_price": 145.15,
+      "straddle_cost": 9.52,
       "options_expiry": "2026-07-10",
       "avg_realized_move": 0.0288,
       "avg_realized_pct": 2.88,
       "mispricing": {
-        "ratio": 2.38,
+        "ratio": 2.28,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
       "last_surprise": 4.035
     },
     {
+      "ticker": "TMO",
+      "earnings_date": "2026-07-22",
+      "implied_move": 0.1009,
+      "implied_move_pct": 10.09,
+      "stock_price": 487.99,
+      "straddle_cost": 49.25,
+      "options_expiry": "2026-07-24",
+      "avg_realized_move": 0.0331,
+      "avg_realized_pct": 3.31,
+      "mispricing": {
+        "ratio": 3.05,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 5.22
+    },
+    {
       "ticker": "MCD",
       "earnings_date": "2026-08-06",
-      "implied_move": 0.0861,
-      "implied_move_pct": 8.61,
-      "stock_price": 282.25,
-      "straddle_cost": 24.29,
+      "implied_move": 0.0836,
+      "implied_move_pct": 8.36,
+      "stock_price": 285.79,
+      "straddle_cost": 23.9,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0275,
       "avg_realized_pct": 2.75,
       "mispricing": {
-        "ratio": 3.13,
+        "ratio": 3.04,
         "signal": "RICH"
       },
       "beat_rate": 0.875,
@@ -395,15 +412,15 @@
     {
       "ticker": "CRM",
       "earnings_date": "2026-09-02",
-      "implied_move": 0.1998,
-      "implied_move_pct": 19.98,
-      "stock_price": 175.35,
-      "straddle_cost": 35.03,
+      "implied_move": 0.2008,
+      "implied_move_pct": 20.08,
+      "stock_price": 173.78,
+      "straddle_cost": 34.9,
       "options_expiry": "2026-09-18",
       "avg_realized_move": 0.0074,
       "avg_realized_pct": 0.74,
       "mispricing": {
-        "ratio": 27.0,
+        "ratio": 27.14,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -412,15 +429,15 @@
     {
       "ticker": "NFLX",
       "earnings_date": "2026-07-16",
-      "implied_move": 0.1075,
-      "implied_move_pct": 10.75,
-      "stock_price": 81.41,
-      "straddle_cost": 8.75,
+      "implied_move": 0.1058,
+      "implied_move_pct": 10.58,
+      "stock_price": 82.48,
+      "straddle_cost": 8.72,
       "options_expiry": "2026-07-17",
       "avg_realized_move": 0.0132,
       "avg_realized_pct": 1.32,
       "mispricing": {
-        "ratio": 8.14,
+        "ratio": 8.02,
         "signal": "RICH"
       },
       "beat_rate": 0.75,
@@ -429,15 +446,15 @@
     {
       "ticker": "AMD",
       "earnings_date": "2026-08-04",
-      "implied_move": 0.2767,
-      "implied_move_pct": 27.67,
-      "stock_price": 475.5,
-      "straddle_cost": 131.59,
+      "implied_move": 0.2746,
+      "implied_move_pct": 27.46,
+      "stock_price": 456.81,
+      "straddle_cost": 125.42,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0286,
       "avg_realized_pct": 2.86,
       "mispricing": {
-        "ratio": 9.67,
+        "ratio": 9.6,
         "signal": "RICH"
       },
       "beat_rate": 0.875,
@@ -446,15 +463,15 @@
     {
       "ticker": "ADBE",
       "earnings_date": "2026-06-11",
-      "implied_move": 0.0945,
-      "implied_move_pct": 9.45,
-      "stock_price": 237.88,
-      "straddle_cost": 22.49,
+      "implied_move": 0.092,
+      "implied_move_pct": 9.2,
+      "stock_price": 236.05,
+      "straddle_cost": 21.72,
       "options_expiry": "2026-06-12",
       "avg_realized_move": 0.0064,
       "avg_realized_pct": 0.64,
       "mispricing": {
-        "ratio": 14.77,
+        "ratio": 14.37,
         "signal": "RICH"
       },
       "beat_rate": 0.875,
@@ -463,10 +480,10 @@
     {
       "ticker": "WFC",
       "earnings_date": "2026-07-14",
-      "implied_move": 0.0849,
-      "implied_move_pct": 8.49,
-      "stock_price": 82.0,
-      "straddle_cost": 6.96,
+      "implied_move": 0.085,
+      "implied_move_pct": 8.5,
+      "stock_price": 82.63,
+      "straddle_cost": 7.02,
       "options_expiry": "2026-07-17",
       "avg_realized_move": 0.0482,
       "avg_realized_pct": 4.82,
@@ -480,15 +497,15 @@
     {
       "ticker": "TXN",
       "earnings_date": "2026-07-22",
-      "implied_move": 0.1613,
-      "implied_move_pct": 16.13,
-      "stock_price": 288.63,
-      "straddle_cost": 46.57,
+      "implied_move": 0.1624,
+      "implied_move_pct": 16.24,
+      "stock_price": 285.91,
+      "straddle_cost": 46.42,
       "options_expiry": "2026-07-24",
       "avg_realized_move": 0.0252,
       "avg_realized_pct": 2.52,
       "mispricing": {
-        "ratio": 6.4,
+        "ratio": 6.44,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -497,15 +514,15 @@
     {
       "ticker": "LIN",
       "earnings_date": "2026-07-31",
-      "implied_move": 0.1224,
-      "implied_move_pct": 12.24,
-      "stock_price": 515.59,
-      "straddle_cost": 63.1,
+      "implied_move": 0.1069,
+      "implied_move_pct": 10.69,
+      "stock_price": 514.75,
+      "straddle_cost": 55.05,
       "options_expiry": "2026-09-18",
       "avg_realized_move": 0.0162,
       "avg_realized_pct": 1.62,
       "mispricing": {
-        "ratio": 7.56,
+        "ratio": 6.6,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -514,15 +531,15 @@
     {
       "ticker": "NEE",
       "earnings_date": "2026-07-22",
-      "implied_move": 0.0773,
-      "implied_move_pct": 7.73,
-      "stock_price": 84.83,
-      "straddle_cost": 6.56,
+      "implied_move": 0.0809,
+      "implied_move_pct": 8.09,
+      "stock_price": 84.75,
+      "straddle_cost": 6.86,
       "options_expiry": "2026-07-24",
       "avg_realized_move": 0.0306,
       "avg_realized_pct": 3.06,
       "mispricing": {
-        "ratio": 2.53,
+        "ratio": 2.64,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -531,15 +548,15 @@
     {
       "ticker": "INTC",
       "earnings_date": "2026-07-23",
-      "implied_move": 0.2446,
-      "implied_move_pct": 24.46,
-      "stock_price": 107.92,
-      "straddle_cost": 26.4,
+      "implied_move": 0.2484,
+      "implied_move_pct": 24.84,
+      "stock_price": 106.89,
+      "straddle_cost": 26.55,
       "options_expiry": "2026-07-24",
       "avg_realized_move": 0.0367,
       "avg_realized_pct": 3.67,
       "mispricing": {
-        "ratio": 6.66,
+        "ratio": 6.77,
         "signal": "RICH"
       },
       "beat_rate": 0.625,
@@ -548,32 +565,49 @@
     {
       "ticker": "QCOM",
       "earnings_date": "2026-07-29",
-      "implied_move": 0.2841,
-      "implied_move_pct": 28.41,
-      "stock_price": 205.42,
-      "straddle_cost": 58.37,
+      "implied_move": 0.2872,
+      "implied_move_pct": 28.72,
+      "stock_price": 194.97,
+      "straddle_cost": 56.0,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0384,
       "avg_realized_pct": 3.84,
       "mispricing": {
-        "ratio": 7.4,
+        "ratio": 7.48,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
       "last_surprise": 0.9033
     },
     {
+      "ticker": "HON",
+      "earnings_date": "2026-07-23",
+      "implied_move": 0.1015,
+      "implied_move_pct": 10.15,
+      "stock_price": 210.31,
+      "straddle_cost": 21.35,
+      "options_expiry": "2026-07-24",
+      "avg_realized_move": 0.0534,
+      "avg_realized_pct": 5.34,
+      "mispricing": {
+        "ratio": 1.9,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "AMGN",
       "earnings_date": "2026-08-04",
-      "implied_move": 0.1109,
-      "implied_move_pct": 11.09,
-      "stock_price": 344.56,
-      "straddle_cost": 38.21,
+      "implied_move": 0.1067,
+      "implied_move_pct": 10.67,
+      "stock_price": 347.06,
+      "straddle_cost": 37.03,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0095,
       "avg_realized_pct": 0.95,
       "mispricing": {
-        "ratio": 11.67,
+        "ratio": 11.23,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -582,15 +616,15 @@
     {
       "ticker": "IBM",
       "earnings_date": "2026-07-22",
-      "implied_move": 0.1463,
-      "implied_move_pct": 14.63,
-      "stock_price": 277.49,
-      "straddle_cost": 40.6,
+      "implied_move": 0.1484,
+      "implied_move_pct": 14.84,
+      "stock_price": 275.79,
+      "straddle_cost": 40.92,
       "options_expiry": "2026-07-24",
       "avg_realized_move": 0.0087,
       "avg_realized_pct": 0.87,
       "mispricing": {
-        "ratio": 16.82,
+        "ratio": 17.06,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -599,15 +633,15 @@
     {
       "ticker": "GE",
       "earnings_date": "2026-07-16",
-      "implied_move": 0.1066,
-      "implied_move_pct": 10.66,
-      "stock_price": 330.44,
-      "straddle_cost": 35.24,
+      "implied_move": 0.1041,
+      "implied_move_pct": 10.41,
+      "stock_price": 321.02,
+      "straddle_cost": 33.42,
       "options_expiry": "2026-07-17",
       "avg_realized_move": 0.0685,
       "avg_realized_pct": 6.85,
       "mispricing": {
-        "ratio": 1.56,
+        "ratio": 1.52,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -616,15 +650,15 @@
     {
       "ticker": "CAT",
       "earnings_date": "2026-08-04",
-      "implied_move": 0.1625,
-      "implied_move_pct": 16.25,
-      "stock_price": 914.7,
-      "straddle_cost": 148.67,
+      "implied_move": 0.1644,
+      "implied_move_pct": 16.44,
+      "stock_price": 861.78,
+      "straddle_cost": 141.65,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0261,
       "avg_realized_pct": 2.61,
       "mispricing": {
-        "ratio": 6.23,
+        "ratio": 6.3,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -633,15 +667,15 @@
     {
       "ticker": "BA",
       "earnings_date": "2026-07-28",
-      "implied_move": 0.1337,
-      "implied_move_pct": 13.37,
-      "stock_price": 214.51,
-      "straddle_cost": 28.67,
+      "implied_move": 0.1378,
+      "implied_move_pct": 13.78,
+      "stock_price": 208.77,
+      "straddle_cost": 28.78,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0283,
       "avg_realized_pct": 2.83,
       "mispricing": {
-        "ratio": 4.72,
+        "ratio": 4.87,
         "signal": "RICH"
       },
       "beat_rate": 0.25,
@@ -650,15 +684,15 @@
     {
       "ticker": "GS",
       "earnings_date": "2026-07-14",
-      "implied_move": 0.0973,
-      "implied_move_pct": 9.73,
-      "stock_price": 1032.01,
-      "straddle_cost": 100.45,
+      "implied_move": 0.0956,
+      "implied_move_pct": 9.56,
+      "stock_price": 1014.03,
+      "straddle_cost": 96.98,
       "options_expiry": "2026-07-17",
       "avg_realized_move": 0.0265,
       "avg_realized_pct": 2.65,
       "mispricing": {
-        "ratio": 3.67,
+        "ratio": 3.61,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -667,336 +701,13 @@
     {
       "ticker": "MS",
       "earnings_date": "2026-07-15",
-      "implied_move": 0.0957,
-      "implied_move_pct": 9.57,
-      "stock_price": 210.25,
-      "straddle_cost": 20.13,
+      "implied_move": 0.0908,
+      "implied_move_pct": 9.08,
+      "stock_price": 207.49,
+      "straddle_cost": 18.85,
       "options_expiry": "2026-07-17",
       "avg_realized_move": 0.0322,
       "avg_realized_pct": 3.22,
-      "mispricing": {
-        "ratio": 2.97,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "BLK",
-      "earnings_date": "2026-07-15",
-      "implied_move": 0.0868,
-      "implied_move_pct": 8.68,
-      "stock_price": 1011.96,
-      "straddle_cost": 87.85,
-      "options_expiry": "2026-07-17",
-      "avg_realized_move": 0.0294,
-      "avg_realized_pct": 2.94,
-      "mispricing": {
-        "ratio": 2.95,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "SPGI",
-      "earnings_date": "2026-07-30",
-      "implied_move": 0.119,
-      "implied_move_pct": 11.9,
-      "stock_price": 424.82,
-      "straddle_cost": 50.56,
-      "options_expiry": "2026-08-21",
-      "avg_realized_move": 0.028,
-      "avg_realized_pct": 2.8,
-      "mispricing": {
-        "ratio": 4.25,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "SBUX",
-      "earnings_date": "2026-07-28",
-      "implied_move": 0.1238,
-      "implied_move_pct": 12.38,
-      "stock_price": 97.41,
-      "straddle_cost": 12.06,
-      "options_expiry": "2026-08-21",
-      "avg_realized_move": 0.0064,
-      "avg_realized_pct": 0.64,
-      "mispricing": {
-        "ratio": 19.34,
-        "signal": "RICH"
-      },
-      "beat_rate": 0.875,
-      "last_surprise": 0.96
-    },
-    {
-      "ticker": "NOW",
-      "earnings_date": "2026-07-22",
-      "implied_move": 0.2141,
-      "implied_move_pct": 21.41,
-      "stock_price": 106.97,
-      "straddle_cost": 22.9,
-      "options_expiry": "2026-07-24",
-      "avg_realized_move": 0.0348,
-      "avg_realized_pct": 3.48,
-      "mispricing": {
-        "ratio": 6.15,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "ISRG",
-      "earnings_date": "2026-07-21",
-      "implied_move": 0.1247,
-      "implied_move_pct": 12.47,
-      "stock_price": 426.61,
-      "straddle_cost": 53.2,
-      "options_expiry": "2026-07-24",
-      "avg_realized_move": 0.0137,
-      "avg_realized_pct": 1.37,
-      "mispricing": {
-        "ratio": 9.1,
-        "signal": "RICH"
-      },
-      "beat_rate": 0.875,
-      "last_surprise": 3.38
-    },
-    {
-      "ticker": "PLD",
-      "earnings_date": "2026-07-16",
-      "implied_move": 0.0895,
-      "implied_move_pct": 8.95,
-      "stock_price": 147.52,
-      "straddle_cost": 13.2,
-      "options_expiry": "2026-07-17",
-      "avg_realized_move": 0.0374,
-      "avg_realized_pct": 3.74,
-      "mispricing": {
-        "ratio": 2.39,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "DE",
-      "earnings_date": "2026-08-20",
-      "implied_move": 0.1374,
-      "implied_move_pct": 13.74,
-      "stock_price": 577.33,
-      "straddle_cost": 79.31,
-      "options_expiry": "2026-09-18",
-      "avg_realized_move": 0.05,
-      "avg_realized_pct": 5.0,
-      "mispricing": {
-        "ratio": 2.75,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 1.6467
-    },
-    {
-      "ticker": "CI",
-      "earnings_date": "2026-07-30",
-      "implied_move": 0.1317,
-      "implied_move_pct": 13.17,
-      "stock_price": 295.0,
-      "straddle_cost": 38.84,
-      "options_expiry": "2026-09-18",
-      "avg_realized_move": 0.0301,
-      "avg_realized_pct": 3.01,
-      "mispricing": {
-        "ratio": 4.38,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 6.8846
-    },
-    {
-      "ticker": "SYK",
-      "earnings_date": "2026-07-30",
-      "implied_move": 0.1098,
-      "implied_move_pct": 10.98,
-      "stock_price": 314.01,
-      "straddle_cost": 34.48,
-      "options_expiry": "2026-09-18",
-      "avg_realized_move": 0.0074,
-      "avg_realized_pct": 0.74,
-      "mispricing": {
-        "ratio": 14.84,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "MDLZ",
-      "earnings_date": "2026-07-28",
-      "implied_move": 0.0998,
-      "implied_move_pct": 9.98,
-      "stock_price": 62.93,
-      "straddle_cost": 6.28,
-      "options_expiry": "2026-09-18",
-      "avg_realized_move": 0.0093,
-      "avg_realized_pct": 0.93,
-      "mispricing": {
-        "ratio": 10.73,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "ADI",
-      "earnings_date": "2026-08-19",
-      "implied_move": 0.2032,
-      "implied_move_pct": 20.32,
-      "stock_price": 404.62,
-      "straddle_cost": 82.2,
-      "options_expiry": "2026-09-18",
-      "avg_realized_move": 0.0581,
-      "avg_realized_pct": 5.81,
-      "mispricing": {
-        "ratio": 3.5,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 2.3112
-    },
-    {
-      "ticker": "TJX",
-      "earnings_date": "2026-08-19",
-      "implied_move": 0.1013,
-      "implied_move_pct": 10.13,
-      "stock_price": 164.87,
-      "straddle_cost": 16.7,
-      "options_expiry": "2026-09-18",
-      "avg_realized_move": 0.0289,
-      "avg_realized_pct": 2.89,
-      "mispricing": {
-        "ratio": 3.51,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "C",
-      "earnings_date": "2026-07-14",
-      "implied_move": 0.0932,
-      "implied_move_pct": 9.32,
-      "stock_price": 134.73,
-      "straddle_cost": 12.56,
-      "options_expiry": "2026-07-17",
-      "avg_realized_move": 0.0379,
-      "avg_realized_pct": 3.79,
-      "mispricing": {
-        "ratio": 2.46,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "USB",
-      "earnings_date": "2026-07-16",
-      "implied_move": 0.0718,
-      "implied_move_pct": 7.18,
-      "stock_price": 56.02,
-      "straddle_cost": 4.02,
-      "options_expiry": "2026-07-17",
-      "avg_realized_move": 0.0425,
-      "avg_realized_pct": 4.25,
-      "mispricing": {
-        "ratio": 1.69,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "SO",
-      "earnings_date": "2026-07-30",
-      "implied_move": 0.0754,
-      "implied_move_pct": 7.54,
-      "stock_price": 92.95,
-      "straddle_cost": 7.01,
-      "options_expiry": "2026-08-21",
-      "avg_realized_move": 0.0218,
-      "avg_realized_pct": 2.18,
-      "mispricing": {
-        "ratio": 3.46,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 0.765
-    },
-    {
-      "ticker": "DUK",
-      "earnings_date": "2026-08-04",
-      "implied_move": 0.0905,
-      "implied_move_pct": 9.05,
-      "stock_price": 123.82,
-      "straddle_cost": 11.2,
-      "options_expiry": "2026-09-18",
-      "avg_realized_move": 0.0196,
-      "avg_realized_pct": 1.96,
-      "mispricing": {
-        "ratio": 4.62,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 1.0728
-    },
-    {
-      "ticker": "ZTS",
-      "earnings_date": "2026-08-04",
-      "implied_move": 0.1905,
-      "implied_move_pct": 19.05,
-      "stock_price": 82.2,
-      "straddle_cost": 15.66,
-      "options_expiry": "2026-09-18",
-      "avg_realized_move": 0.0501,
-      "avg_realized_pct": 5.01,
-      "mispricing": {
-        "ratio": 3.8,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "BSX",
-      "earnings_date": "2026-07-29",
-      "implied_move": 0.1532,
-      "implied_move_pct": 15.32,
-      "stock_price": 48.96,
-      "straddle_cost": 7.5,
-      "options_expiry": "2026-08-21",
-      "avg_realized_move": 0.0179,
-      "avg_realized_pct": 1.79,
-      "mispricing": {
-        "ratio": 8.56,
-        "signal": "RICH"
-      },
-      "beat_rate": 0.75,
-      "last_surprise": 0.0
-    },
-    {
-      "ticker": "HCA",
-      "earnings_date": "2026-07-24",
-      "implied_move": 0.1487,
-      "implied_move_pct": 14.87,
-      "stock_price": 374.9,
-      "straddle_cost": 55.74,
-      "options_expiry": "2026-08-21",
-      "avg_realized_move": 0.0528,
-      "avg_realized_pct": 5.28,
       "mispricing": {
         "ratio": 2.82,
         "signal": "RICH"
@@ -1005,17 +716,340 @@
       "last_surprise": null
     },
     {
+      "ticker": "BLK",
+      "earnings_date": "2026-07-15",
+      "implied_move": 0.0815,
+      "implied_move_pct": 8.15,
+      "stock_price": 1004.32,
+      "straddle_cost": 81.9,
+      "options_expiry": "2026-07-17",
+      "avg_realized_move": 0.0294,
+      "avg_realized_pct": 2.94,
+      "mispricing": {
+        "ratio": 2.77,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "SPGI",
+      "earnings_date": "2026-07-30",
+      "implied_move": 0.1133,
+      "implied_move_pct": 11.33,
+      "stock_price": 428.63,
+      "straddle_cost": 48.55,
+      "options_expiry": "2026-08-21",
+      "avg_realized_move": 0.028,
+      "avg_realized_pct": 2.8,
+      "mispricing": {
+        "ratio": 4.05,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "SBUX",
+      "earnings_date": "2026-07-28",
+      "implied_move": 0.122,
+      "implied_move_pct": 12.2,
+      "stock_price": 99.0,
+      "straddle_cost": 12.08,
+      "options_expiry": "2026-08-21",
+      "avg_realized_move": 0.0064,
+      "avg_realized_pct": 0.64,
+      "mispricing": {
+        "ratio": 19.06,
+        "signal": "RICH"
+      },
+      "beat_rate": 0.875,
+      "last_surprise": 0.96
+    },
+    {
+      "ticker": "NOW",
+      "earnings_date": "2026-07-22",
+      "implied_move": 0.1884,
+      "implied_move_pct": 18.84,
+      "stock_price": 108.0,
+      "straddle_cost": 20.35,
+      "options_expiry": "2026-07-24",
+      "avg_realized_move": 0.0348,
+      "avg_realized_pct": 3.48,
+      "mispricing": {
+        "ratio": 5.41,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "ISRG",
+      "earnings_date": "2026-07-21",
+      "implied_move": 0.1178,
+      "implied_move_pct": 11.78,
+      "stock_price": 418.5,
+      "straddle_cost": 49.3,
+      "options_expiry": "2026-07-24",
+      "avg_realized_move": 0.0137,
+      "avg_realized_pct": 1.37,
+      "mispricing": {
+        "ratio": 8.6,
+        "signal": "RICH"
+      },
+      "beat_rate": 0.875,
+      "last_surprise": 3.38
+    },
+    {
+      "ticker": "PLD",
+      "earnings_date": "2026-07-16",
+      "implied_move": 0.0676,
+      "implied_move_pct": 6.76,
+      "stock_price": 147.12,
+      "straddle_cost": 9.95,
+      "options_expiry": "2026-07-17",
+      "avg_realized_move": 0.0374,
+      "avg_realized_pct": 3.74,
+      "mispricing": {
+        "ratio": 1.81,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "DE",
+      "earnings_date": "2026-08-20",
+      "implied_move": 0.1425,
+      "implied_move_pct": 14.25,
+      "stock_price": 567.45,
+      "straddle_cost": 80.85,
+      "options_expiry": "2026-09-18",
+      "avg_realized_move": 0.05,
+      "avg_realized_pct": 5.0,
+      "mispricing": {
+        "ratio": 2.85,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 1.6467
+    },
+    {
+      "ticker": "CI",
+      "earnings_date": "2026-07-30",
+      "implied_move": 0.1302,
+      "implied_move_pct": 13.02,
+      "stock_price": 295.63,
+      "straddle_cost": 38.5,
+      "options_expiry": "2026-09-18",
+      "avg_realized_move": 0.0301,
+      "avg_realized_pct": 3.01,
+      "mispricing": {
+        "ratio": 4.33,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 6.8846
+    },
+    {
+      "ticker": "SYK",
+      "earnings_date": "2026-07-30",
+      "implied_move": 0.1357,
+      "implied_move_pct": 13.57,
+      "stock_price": 310.65,
+      "straddle_cost": 42.15,
+      "options_expiry": "2026-09-18",
+      "avg_realized_move": 0.0074,
+      "avg_realized_pct": 0.74,
+      "mispricing": {
+        "ratio": 18.34,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "MDLZ",
+      "earnings_date": "2026-07-28",
+      "implied_move": 0.1083,
+      "implied_move_pct": 10.83,
+      "stock_price": 63.96,
+      "straddle_cost": 6.92,
+      "options_expiry": "2026-09-18",
+      "avg_realized_move": 0.0093,
+      "avg_realized_pct": 0.93,
+      "mispricing": {
+        "ratio": 11.65,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "ADI",
+      "earnings_date": "2026-08-19",
+      "implied_move": 0.2075,
+      "implied_move_pct": 20.75,
+      "stock_price": 399.43,
+      "straddle_cost": 82.9,
+      "options_expiry": "2026-09-18",
+      "avg_realized_move": 0.0581,
+      "avg_realized_pct": 5.81,
+      "mispricing": {
+        "ratio": 3.57,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 2.3112
+    },
+    {
+      "ticker": "TJX",
+      "earnings_date": "2026-08-19",
+      "implied_move": 0.1006,
+      "implied_move_pct": 10.06,
+      "stock_price": 166.54,
+      "straddle_cost": 16.75,
+      "options_expiry": "2026-09-18",
+      "avg_realized_move": 0.0289,
+      "avg_realized_pct": 2.89,
+      "mispricing": {
+        "ratio": 3.48,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "C",
+      "earnings_date": "2026-07-14",
+      "implied_move": 0.089,
+      "implied_move_pct": 8.9,
+      "stock_price": 133.2,
+      "straddle_cost": 11.85,
+      "options_expiry": "2026-07-17",
+      "avg_realized_move": 0.0379,
+      "avg_realized_pct": 3.79,
+      "mispricing": {
+        "ratio": 2.35,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "USB",
+      "earnings_date": "2026-07-16",
+      "implied_move": 0.0771,
+      "implied_move_pct": 7.71,
+      "stock_price": 57.11,
+      "straddle_cost": 4.4,
+      "options_expiry": "2026-07-17",
+      "avg_realized_move": 0.0425,
+      "avg_realized_pct": 4.25,
+      "mispricing": {
+        "ratio": 1.81,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "SO",
+      "earnings_date": "2026-07-30",
+      "implied_move": 0.0825,
+      "implied_move_pct": 8.25,
+      "stock_price": 93.92,
+      "straddle_cost": 7.75,
+      "options_expiry": "2026-08-21",
+      "avg_realized_move": 0.0218,
+      "avg_realized_pct": 2.18,
+      "mispricing": {
+        "ratio": 3.78,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 0.765
+    },
+    {
+      "ticker": "DUK",
+      "earnings_date": "2026-08-04",
+      "implied_move": 0.0874,
+      "implied_move_pct": 8.74,
+      "stock_price": 125.34,
+      "straddle_cost": 10.95,
+      "options_expiry": "2026-09-18",
+      "avg_realized_move": 0.0196,
+      "avg_realized_pct": 1.96,
+      "mispricing": {
+        "ratio": 4.46,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 1.0728
+    },
+    {
+      "ticker": "ZTS",
+      "earnings_date": "2026-08-04",
+      "implied_move": 0.1893,
+      "implied_move_pct": 18.93,
+      "stock_price": 82.39,
+      "straddle_cost": 15.6,
+      "options_expiry": "2026-09-18",
+      "avg_realized_move": 0.0501,
+      "avg_realized_pct": 5.01,
+      "mispricing": {
+        "ratio": 3.78,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "BSX",
+      "earnings_date": "2026-07-29",
+      "implied_move": 0.1565,
+      "implied_move_pct": 15.65,
+      "stock_price": 48.24,
+      "straddle_cost": 7.55,
+      "options_expiry": "2026-08-21",
+      "avg_realized_move": 0.0179,
+      "avg_realized_pct": 1.79,
+      "mispricing": {
+        "ratio": 8.74,
+        "signal": "RICH"
+      },
+      "beat_rate": 0.75,
+      "last_surprise": 0.0
+    },
+    {
+      "ticker": "HCA",
+      "earnings_date": "2026-07-24",
+      "implied_move": 0.1347,
+      "implied_move_pct": 13.47,
+      "stock_price": 376.81,
+      "straddle_cost": 50.75,
+      "options_expiry": "2026-08-21",
+      "avg_realized_move": 0.0528,
+      "avg_realized_pct": 5.28,
+      "mispricing": {
+        "ratio": 2.55,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "REGN",
       "earnings_date": "2026-07-30",
-      "implied_move": 0.1149,
-      "implied_move_pct": 11.49,
-      "stock_price": 616.18,
-      "straddle_cost": 70.79,
+      "implied_move": 0.1281,
+      "implied_move_pct": 12.81,
+      "stock_price": 610.5,
+      "straddle_cost": 78.2,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0546,
       "avg_realized_pct": 5.46,
       "mispricing": {
-        "ratio": 2.1,
+        "ratio": 2.35,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -1024,15 +1058,15 @@
     {
       "ticker": "VRTX",
       "earnings_date": "2026-08-03",
-      "implied_move": 0.1353,
-      "implied_move_pct": 13.53,
-      "stock_price": 445.77,
-      "straddle_cost": 60.3,
+      "implied_move": 0.1381,
+      "implied_move_pct": 13.81,
+      "stock_price": 440.19,
+      "straddle_cost": 60.8,
       "options_expiry": "2026-09-18",
       "avg_realized_move": 0.0068,
       "avg_realized_pct": 0.68,
       "mispricing": {
-        "ratio": 19.9,
+        "ratio": 20.31,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -1041,49 +1075,32 @@
     {
       "ticker": "PANW",
       "earnings_date": "2026-08-18",
-      "implied_move": 0.1875,
-      "implied_move_pct": 18.75,
-      "stock_price": 260.52,
-      "straddle_cost": 48.84,
+      "implied_move": 0.1861,
+      "implied_move_pct": 18.61,
+      "stock_price": 263.57,
+      "straddle_cost": 49.05,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0172,
       "avg_realized_pct": 1.72,
       "mispricing": {
-        "ratio": 10.9,
+        "ratio": 10.82,
         "signal": "RICH"
       },
       "beat_rate": null,
       "last_surprise": null
     },
     {
-      "ticker": "KLAC",
-      "earnings_date": "2026-07-30",
-      "implied_move": 0.2442,
-      "implied_move_pct": 24.42,
-      "stock_price": 2139.37,
-      "straddle_cost": 522.48,
-      "options_expiry": "2026-08-21",
-      "avg_realized_move": 0.0333,
-      "avg_realized_pct": 3.33,
-      "mispricing": {
-        "ratio": 7.33,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 38.1267
-    },
-    {
       "ticker": "AMAT",
       "earnings_date": "2026-08-13",
-      "implied_move": 0.249,
-      "implied_move_pct": 24.9,
-      "stock_price": 499.21,
-      "straddle_cost": 124.31,
+      "implied_move": 0.2606,
+      "implied_move_pct": 26.06,
+      "stock_price": 506.55,
+      "straddle_cost": 132.02,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0212,
       "avg_realized_pct": 2.12,
       "mispricing": {
-        "ratio": 11.75,
+        "ratio": 12.29,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -1092,15 +1109,15 @@
     {
       "ticker": "LRCX",
       "earnings_date": "2026-07-29",
-      "implied_move": 0.2647,
-      "implied_move_pct": 26.47,
-      "stock_price": 327.16,
-      "straddle_cost": 86.6,
+      "implied_move": 0.2819,
+      "implied_move_pct": 28.19,
+      "stock_price": 327.55,
+      "straddle_cost": 92.35,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0348,
       "avg_realized_pct": 3.48,
       "mispricing": {
-        "ratio": 7.61,
+        "ratio": 8.1,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -1109,15 +1126,15 @@
     {
       "ticker": "MU",
       "earnings_date": "2026-06-24",
-      "implied_move": 0.1926,
-      "implied_move_pct": 19.26,
-      "stock_price": 935.89,
-      "straddle_cost": 180.25,
+      "implied_move": 0.1949,
+      "implied_move_pct": 19.49,
+      "stock_price": 912.0,
+      "straddle_cost": 177.78,
       "options_expiry": "2026-06-26",
       "avg_realized_move": 0.0171,
       "avg_realized_pct": 1.71,
       "mispricing": {
-        "ratio": 11.26,
+        "ratio": 11.4,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -1126,15 +1143,15 @@
     {
       "ticker": "CDNS",
       "earnings_date": "2026-07-27",
-      "implied_move": 0.1818,
-      "implied_move_pct": 18.18,
-      "stock_price": 390.9,
-      "straddle_cost": 71.06,
+      "implied_move": 0.1868,
+      "implied_move_pct": 18.68,
+      "stock_price": 387.31,
+      "straddle_cost": 72.35,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0186,
       "avg_realized_pct": 1.86,
       "mispricing": {
-        "ratio": 9.77,
+        "ratio": 10.04,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -1143,15 +1160,15 @@
     {
       "ticker": "FTNT",
       "earnings_date": "2026-08-05",
-      "implied_move": 0.2077,
-      "implied_move_pct": 20.77,
-      "stock_price": 138.39,
-      "straddle_cost": 28.75,
+      "implied_move": 0.2056,
+      "implied_move_pct": 20.56,
+      "stock_price": 139.59,
+      "straddle_cost": 28.7,
       "options_expiry": "2026-08-21",
       "avg_realized_move": 0.0124,
       "avg_realized_pct": 1.24,
       "mispricing": {
-        "ratio": 16.75,
+        "ratio": 16.58,
         "signal": "RICH"
       },
       "beat_rate": 0.75,
@@ -1170,20 +1187,6 @@
       "mispricing": null,
       "beat_rate": 1.0,
       "last_surprise": 0.75
-    },
-    {
-      "ticker": "TMO",
-      "earnings_date": "2026-07-22",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0331,
-      "avg_realized_pct": 3.31,
-      "mispricing": null,
-      "beat_rate": 1.0,
-      "last_surprise": 5.22
     },
     {
       "ticker": "PM",
@@ -1209,20 +1212,6 @@
       "options_expiry": null,
       "avg_realized_move": 0.0571,
       "avg_realized_pct": 5.71,
-      "mispricing": null,
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "HON",
-      "earnings_date": "2026-07-23",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0534,
-      "avg_realized_pct": 5.34,
       "mispricing": null,
       "beat_rate": null,
       "last_surprise": null
@@ -1254,6 +1243,20 @@
       "mispricing": null,
       "beat_rate": 1.0,
       "last_surprise": 79.02
+    },
+    {
+      "ticker": "KLAC",
+      "earnings_date": "2026-07-30",
+      "implied_move": null,
+      "implied_move_pct": null,
+      "stock_price": null,
+      "straddle_cost": null,
+      "options_expiry": null,
+      "avg_realized_move": 0.0333,
+      "avg_realized_pct": 3.33,
+      "mispricing": null,
+      "beat_rate": 1.0,
+      "last_surprise": 38.1267
     }
   ]
 }
