@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-06-17T20:07:32.197975",
+  "last_updated": "2026-06-18T03:26:52.935821",
   "filings_13d": [
+    {
+      "type": "13D",
+      "filed_date": "2026-06-17",
+      "title": "SC 13D/A - GENCO SHIPPING & TRADING LTD (0001326200) (Subject)",
+      "ticker": "GNK",
+      "filer": "Unknown",
+      "win_rate": null,
+      "avg_return_6m": null,
+      "filer_style": "Unknown",
+      "sec_link": "https://www.sec.gov/Archives/edgar/data/1326200/000110465926075210/0001104659-26-075210-index.htm",
+      "high_conviction": null,
+      "confluence_signal": false
+    },
     {
       "type": "13D",
       "filed_date": "2026-06-16",
@@ -11,19 +24,6 @@
       "avg_return_6m": null,
       "filer_style": "Unknown",
       "sec_link": "https://www.sec.gov/Archives/edgar/data/1326200/000110465926074497/0001104659-26-074497-index.htm",
-      "high_conviction": null,
-      "confluence_signal": false
-    },
-    {
-      "type": "13D",
-      "filed_date": "2026-06-15",
-      "title": "SC 13D/A - GENCO SHIPPING & TRADING LTD (0001326200) (Subject)",
-      "ticker": "GNK",
-      "filer": "Unknown",
-      "win_rate": null,
-      "avg_return_6m": null,
-      "filer_style": "Unknown",
-      "sec_link": "https://www.sec.gov/Archives/edgar/data/1326200/000110465926073893/0001104659-26-073893-index.htm",
       "high_conviction": null,
       "confluence_signal": false
     }
