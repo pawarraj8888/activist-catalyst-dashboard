@@ -1,320 +1,26 @@
 {
-  "last_updated": "2026-06-21T03:40:05.899920",
+  "last_updated": "2026-06-21T09:44:35.259650",
   "data": {
-    "KNSL": {
-      "short_pct_float": 12.66,
-      "days_to_cover": 8.2,
-      "shares_short": 2759556,
-      "float_shares": 21800591,
-      "squeeze_risk": "MEDIUM"
-    },
-    "NVDA": {
-      "short_pct_float": 1.22,
-      "days_to_cover": 1.7,
-      "shares_short": 284722716,
-      "float_shares": 23225224000,
+    "MSEX": {
+      "short_pct_float": 5.23,
+      "days_to_cover": 6.7,
+      "shares_short": 787334,
+      "float_shares": 18102475,
       "squeeze_risk": "LOW"
     },
-    "GXO": {
-      "short_pct_float": 5.73,
+    "JKHY": {
+      "short_pct_float": 9.01,
       "days_to_cover": 3.4,
-      "shares_short": 5816604,
-      "float_shares": 113748540,
+      "shares_short": 5586730,
+      "float_shares": 70578292,
       "squeeze_risk": "LOW"
     },
-    "DHR": {
-      "short_pct_float": 1.47,
-      "days_to_cover": 1.9,
-      "shares_short": 9289510,
-      "float_shares": 630630706,
-      "squeeze_risk": "LOW"
-    },
-    "LIN": {
-      "short_pct_float": 1.4,
-      "days_to_cover": 3.0,
-      "shares_short": 6446659,
-      "float_shares": 461035953,
-      "squeeze_risk": "LOW"
-    },
-    "TFIN": {
-      "short_pct_float": 14.06,
-      "days_to_cover": 11.3,
-      "shares_short": 2710384,
-      "float_shares": 21165663,
-      "squeeze_risk": "MEDIUM"
-    },
-    "WMT": {
-      "short_pct_float": 1.8,
-      "days_to_cover": 3.8,
-      "shares_short": 80020606,
-      "float_shares": 4366598032,
-      "squeeze_risk": "LOW"
-    },
-    "MTN": {
-      "short_pct_float": 34.37,
-      "days_to_cover": 10.6,
-      "shares_short": 7302942,
-      "float_shares": 32994507,
-      "squeeze_risk": "HIGH"
-    },
-    "MELI": {
-      "short_pct_float": 2.18,
-      "days_to_cover": 1.5,
-      "shares_short": 1104412,
-      "float_shares": 47035325,
-      "squeeze_risk": "LOW"
-    },
-    "BFC": {
-      "short_pct_float": 4.59,
-      "days_to_cover": 5.0,
-      "shares_short": 489438,
-      "float_shares": 10012470,
-      "squeeze_risk": "LOW"
-    },
-    "TFX": {
-      "short_pct_float": 8.25,
-      "days_to_cover": 3.1,
-      "shares_short": 2384970,
-      "float_shares": 44107297,
-      "squeeze_risk": "LOW"
-    },
-    "MUSA": {
-      "short_pct_float": 6.39,
-      "days_to_cover": 3.5,
-      "shares_short": 1143787,
-      "float_shares": 16682723,
-      "squeeze_risk": "LOW"
-    },
-    "SIGI": {
-      "short_pct_float": 3.1,
-      "days_to_cover": 2.9,
-      "shares_short": 1407222,
-      "float_shares": 55388286,
-      "squeeze_risk": "LOW"
-    },
-    "SON": {
-      "short_pct_float": 11.06,
-      "days_to_cover": 6.6,
-      "shares_short": 8523240,
-      "float_shares": 97720824,
-      "squeeze_risk": "MEDIUM"
-    },
-    "UBER": {
-      "short_pct_float": 3.12,
-      "days_to_cover": 3.1,
-      "shares_short": 61176999,
-      "float_shares": 2023914675,
-      "squeeze_risk": "LOW"
-    },
-    "LNG": {
-      "short_pct_float": 1.9,
-      "days_to_cover": 1.6,
-      "shares_short": 3956590,
-      "float_shares": 208145775,
-      "squeeze_risk": "LOW"
-    },
-    "WFC": {
-      "short_pct_float": 0.0,
-      "days_to_cover": null,
-      "shares_short": 1242,
-      "float_shares": 3051804575,
-      "squeeze_risk": "LOW"
-    },
-    "GLP": {
-      "short_pct_float": 0.95,
-      "days_to_cover": 2.7,
-      "shares_short": 222500,
-      "float_shares": 27568139,
-      "squeeze_risk": "LOW"
-    },
-    "AAON": {
-      "short_pct_float": 6.9,
-      "days_to_cover": 3.3,
-      "shares_short": 4698837,
-      "float_shares": 68213615,
-      "squeeze_risk": "LOW"
-    },
-    "LQDA": {
-      "short_pct_float": 13.91,
-      "days_to_cover": 6.0,
-      "shares_short": 9955978,
-      "float_shares": 62796577,
-      "squeeze_risk": "MEDIUM"
-    },
-    "ETR": {
-      "short_pct_float": 5.62,
-      "days_to_cover": 5.3,
-      "shares_short": 22763313,
-      "float_shares": 455341464,
-      "squeeze_risk": "LOW"
-    },
-    "COP": {
-      "short_pct_float": 1.83,
-      "days_to_cover": 2.9,
-      "shares_short": 22268790,
-      "float_shares": 1215808687,
-      "squeeze_risk": "LOW"
-    },
-    "PTN": {
-      "short_pct_float": 10.33,
-      "days_to_cover": 11.4,
-      "shares_short": 183059,
-      "float_shares": 1384205,
-      "squeeze_risk": "MEDIUM"
-    },
-    "SXT": {
-      "short_pct_float": 5.24,
-      "days_to_cover": 3.1,
-      "shares_short": 1282475,
-      "float_shares": 41866998,
-      "squeeze_risk": "LOW"
-    },
-    "FRPT": {
-      "short_pct_float": 21.92,
-      "days_to_cover": 4.9,
-      "shares_short": 9384787,
-      "float_shares": 48116690,
-      "squeeze_risk": "HIGH"
-    },
-    "BALL": {
-      "short_pct_float": 2.95,
-      "days_to_cover": 2.2,
-      "shares_short": 6756570,
-      "float_shares": 265186850,
-      "squeeze_risk": "LOW"
-    },
-    "TCBI": {
-      "short_pct_float": 10.26,
-      "days_to_cover": 7.9,
-      "shares_short": 3277588,
-      "float_shares": 40355441,
-      "squeeze_risk": "MEDIUM"
-    },
-    "DLTR": {
-      "short_pct_float": 8.03,
-      "days_to_cover": 2.8,
-      "shares_short": 12414171,
-      "float_shares": 179481456,
-      "squeeze_risk": "LOW"
-    },
-    "ASND": {
-      "short_pct_float": 3.34,
+    "ELF": {
+      "short_pct_float": 21.47,
       "days_to_cover": 2.6,
-      "shares_short": 1720143,
-      "float_shares": 62106626,
-      "squeeze_risk": "LOW"
-    },
-    "NIC": {
-      "short_pct_float": 2.94,
-      "days_to_cover": 4.2,
-      "shares_short": 593475,
-      "float_shares": 20137880,
-      "squeeze_risk": "LOW"
-    },
-    "HWKN": {
-      "short_pct_float": 7.96,
-      "days_to_cover": 9.3,
-      "shares_short": 1335554,
-      "float_shares": 9662578,
-      "squeeze_risk": "LOW"
-    },
-    "BATRK": {
-      "short_pct_float": 2.98,
-      "days_to_cover": 4.4,
-      "shares_short": 1558284,
-      "float_shares": 58378574,
-      "squeeze_risk": "LOW"
-    },
-    "BRO": {
-      "short_pct_float": 6.36,
-      "days_to_cover": 4.5,
-      "shares_short": 16341902,
-      "float_shares": 291986618,
-      "squeeze_risk": "LOW"
-    },
-    "AUGO": {
-      "short_pct_float": 8.8,
-      "days_to_cover": 3.3,
-      "shares_short": 3013412,
-      "float_shares": 39911321,
-      "squeeze_risk": "LOW"
-    },
-    "THO": {
-      "short_pct_float": 11.67,
-      "days_to_cover": 7.0,
-      "shares_short": 4444715,
-      "float_shares": 49565907,
-      "squeeze_risk": "MEDIUM"
-    },
-    "ABBV": {
-      "short_pct_float": 1.46,
-      "days_to_cover": 3.9,
-      "shares_short": 23158744,
-      "float_shares": 1763612594,
-      "squeeze_risk": "LOW"
-    },
-    "NKE": {
-      "short_pct_float": 5.43,
-      "days_to_cover": 2.4,
-      "shares_short": 51395885,
-      "float_shares": 1174254564,
-      "squeeze_risk": "LOW"
-    },
-    "TXN": {
-      "short_pct_float": 2.32,
-      "days_to_cover": 2.5,
-      "shares_short": 18984838,
-      "float_shares": 907908568,
-      "squeeze_risk": "LOW"
-    },
-    "POST": {
-      "short_pct_float": 17.13,
-      "days_to_cover": 7.7,
-      "shares_short": 6590844,
-      "float_shares": 35383343,
-      "squeeze_risk": "MEDIUM"
-    },
-    "LPX": {
-      "short_pct_float": 9.35,
-      "days_to_cover": 5.1,
-      "shares_short": 6492387,
-      "float_shares": 63265443,
-      "squeeze_risk": "LOW"
-    },
-    "CINF": {
-      "short_pct_float": 2.23,
-      "days_to_cover": 4.8,
-      "shares_short": 2960919,
-      "float_shares": 151803381,
-      "squeeze_risk": "LOW"
-    },
-    "SBUX": {
-      "short_pct_float": 4.7,
-      "days_to_cover": 5.8,
-      "shares_short": 48175294,
-      "float_shares": 1137409203,
-      "squeeze_risk": "LOW"
-    },
-    "OKE": {
-      "short_pct_float": 4.4,
-      "days_to_cover": 5.7,
-      "shares_short": 24634610,
-      "float_shares": 628268760,
-      "squeeze_risk": "LOW"
-    },
-    "EFSC": {
-      "short_pct_float": 2.23,
-      "days_to_cover": 3.4,
-      "shares_short": 799941,
-      "float_shares": 35480914,
-      "squeeze_risk": "LOW"
-    },
-    "BA": {
-      "short_pct_float": 0.07,
-      "days_to_cover": 0.1,
-      "shares_short": 543354,
-      "float_shares": 756431268,
-      "squeeze_risk": "LOW"
+      "shares_short": 10722779,
+      "float_shares": 21935054,
+      "squeeze_risk": "HIGH"
     },
     "FIS": {
       "short_pct_float": 3.85,
@@ -323,25 +29,88 @@
       "float_shares": 515664485,
       "squeeze_risk": "LOW"
     },
-    "AJG": {
-      "short_pct_float": 1.99,
-      "days_to_cover": 2.6,
-      "shares_short": 5058267,
-      "float_shares": 254084376,
+    "PAYX": {
+      "short_pct_float": 6.25,
+      "days_to_cover": 6.3,
+      "shares_short": 20011633,
+      "float_shares": null,
       "squeeze_risk": "LOW"
     },
-    "APPF": {
-      "short_pct_float": 11.37,
-      "days_to_cover": 8.0,
-      "shares_short": 2727149,
-      "float_shares": 22904197,
+    "IONQ": {
+      "short_pct_float": 15.61,
+      "days_to_cover": 1.7,
+      "shares_short": 57963134,
+      "float_shares": 370511483,
       "squeeze_risk": "MEDIUM"
     },
-    "TEAM": {
-      "short_pct_float": 12.3,
+    "ALSN": {
+      "short_pct_float": 4.11,
       "days_to_cover": 2.3,
-      "shares_short": 19580648,
-      "float_shares": 157534013,
+      "shares_short": 2462924,
+      "float_shares": 82188728,
+      "squeeze_risk": "LOW"
+    },
+    "CMC": {
+      "short_pct_float": 6.04,
+      "days_to_cover": 5.3,
+      "shares_short": 5069762,
+      "float_shares": 109806232,
+      "squeeze_risk": "LOW"
+    },
+    "LMND": {
+      "short_pct_float": 14.6,
+      "days_to_cover": 6.0,
+      "shares_short": 11169397,
+      "float_shares": 71119918,
+      "squeeze_risk": "MEDIUM"
+    },
+    "THFF": {
+      "short_pct_float": 2.12,
+      "days_to_cover": 3.5,
+      "shares_short": 239430,
+      "float_shares": 11291593,
+      "squeeze_risk": "LOW"
+    },
+    "PLD": {
+      "short_pct_float": 1.66,
+      "days_to_cover": 4.2,
+      "shares_short": 13468265,
+      "float_shares": 927760220,
+      "squeeze_risk": "LOW"
+    },
+    "AMRZ": {
+      "short_pct_float": 1.33,
+      "days_to_cover": 2.4,
+      "shares_short": 7333516,
+      "float_shares": 493204364,
+      "squeeze_risk": "LOW"
+    },
+    "ECL": {
+      "short_pct_float": 1.44,
+      "days_to_cover": 2.1,
+      "shares_short": 3564476,
+      "float_shares": 280826783,
+      "squeeze_risk": "LOW"
+    },
+    "DBD": {
+      "short_pct_float": 14.72,
+      "days_to_cover": 7.8,
+      "shares_short": 2552361,
+      "float_shares": 29682072,
+      "squeeze_risk": "MEDIUM"
+    },
+    "SNEX": {
+      "short_pct_float": 5.39,
+      "days_to_cover": 4.8,
+      "shares_short": 3010116,
+      "float_shares": 69386270,
+      "squeeze_risk": "LOW"
+    },
+    "POOL": {
+      "short_pct_float": 12.09,
+      "days_to_cover": 4.1,
+      "shares_short": 3714701,
+      "float_shares": 35151099,
       "squeeze_risk": "MEDIUM"
     },
     "PG": {
@@ -351,102 +120,53 @@
       "float_shares": 2324291070,
       "squeeze_risk": "LOW"
     },
-    "USPH": {
-      "short_pct_float": 8.18,
-      "days_to_cover": 4.0,
-      "shares_short": 1043584,
-      "float_shares": 14836950,
+    "PM": {
+      "short_pct_float": 1.04,
+      "days_to_cover": 3.4,
+      "shares_short": 16240111,
+      "float_shares": 1554553350,
       "squeeze_risk": "LOW"
     },
-    "MS": {
-      "short_pct_float": 0.0,
-      "days_to_cover": null,
-      "shares_short": 13912,
-      "float_shares": 1196323215,
+    "ASTS": {
+      "short_pct_float": 18.39,
+      "days_to_cover": 2.2,
+      "shares_short": 54759454,
+      "float_shares": 265967930,
+      "squeeze_risk": "MEDIUM"
+    },
+    "D": {
+      "short_pct_float": 3.4,
+      "days_to_cover": 2.9,
+      "shares_short": 26286735,
+      "float_shares": 877696492,
       "squeeze_risk": "LOW"
+    },
+    "APPF": {
+      "short_pct_float": 11.37,
+      "days_to_cover": 8.0,
+      "shares_short": 2727149,
+      "float_shares": 22904197,
+      "squeeze_risk": "MEDIUM"
+    },
+    "GPN": {
+      "short_pct_float": 6.32,
+      "days_to_cover": 4.0,
+      "shares_short": 14491889,
+      "float_shares": 228507304,
+      "squeeze_risk": "LOW"
+    },
+    "POST": {
+      "short_pct_float": 17.13,
+      "days_to_cover": 7.7,
+      "shares_short": 6590844,
+      "float_shares": 35383343,
+      "squeeze_risk": "MEDIUM"
     },
     "AMGN": {
       "short_pct_float": 2.2,
       "days_to_cover": 4.4,
       "shares_short": 11852360,
       "float_shares": 538213282,
-      "squeeze_risk": "LOW"
-    },
-    "BAC": {
-      "short_pct_float": 0.0,
-      "days_to_cover": null,
-      "shares_short": 2704,
-      "float_shares": 7068984913,
-      "squeeze_risk": "LOW"
-    },
-    "HOOD": {
-      "short_pct_float": 4.4,
-      "days_to_cover": 1.2,
-      "shares_short": 34408802,
-      "float_shares": 784168809,
-      "squeeze_risk": "LOW"
-    },
-    "AGYS": {
-      "short_pct_float": 5.76,
-      "days_to_cover": 2.8,
-      "shares_short": 1298739,
-      "float_shares": 26607745,
-      "squeeze_risk": "LOW"
-    },
-    "BLDR": {
-      "short_pct_float": 9.77,
-      "days_to_cover": 2.6,
-      "shares_short": 8797863,
-      "float_shares": 104404069,
-      "squeeze_risk": "LOW"
-    },
-    "MCB": {
-      "short_pct_float": 4.84,
-      "days_to_cover": 4.8,
-      "shares_short": 566787,
-      "float_shares": 11129288,
-      "squeeze_risk": "LOW"
-    },
-    "KLAC": {
-      "short_pct_float": 2.99,
-      "days_to_cover": 3.3,
-      "shares_short": 35041000,
-      "float_shares": 1303270777,
-      "squeeze_risk": "LOW"
-    },
-    "NTRS": {
-      "short_pct_float": 1.54,
-      "days_to_cover": 2.2,
-      "shares_short": 2467657,
-      "float_shares": 181877398,
-      "squeeze_risk": "LOW"
-    },
-    "AMD": {
-      "short_pct_float": 2.71,
-      "days_to_cover": 1.1,
-      "shares_short": 44067722,
-      "float_shares": 1622023680,
-      "squeeze_risk": "LOW"
-    },
-    "FBK": {
-      "short_pct_float": 4.88,
-      "days_to_cover": 6.8,
-      "shares_short": 1827330,
-      "float_shares": 50375004,
-      "squeeze_risk": "LOW"
-    },
-    "IEX": {
-      "short_pct_float": 3.47,
-      "days_to_cover": 3.0,
-      "shares_short": 2246093,
-      "float_shares": 73804849,
-      "squeeze_risk": "LOW"
-    },
-    "PANW": {
-      "short_pct_float": 3.17,
-      "days_to_cover": 3.2,
-      "shares_short": 25677921,
-      "float_shares": 808178450,
       "squeeze_risk": "LOW"
     },
     "EMN": {
@@ -456,74 +176,60 @@
       "float_shares": 113207605,
       "squeeze_risk": "LOW"
     },
-    "MAA": {
-      "short_pct_float": 3.22,
-      "days_to_cover": 4.0,
-      "shares_short": 3724864,
-      "float_shares": 115216299,
+    "ZTS": {
+      "short_pct_float": 3.63,
+      "days_to_cover": 1.4,
+      "shares_short": 13462233,
+      "float_shares": 418368700,
       "squeeze_risk": "LOW"
     },
-    "MDT": {
-      "short_pct_float": 1.31,
-      "days_to_cover": 1.6,
-      "shares_short": 16762517,
-      "float_shares": 1281368549,
+    "ETR": {
+      "short_pct_float": 5.62,
+      "days_to_cover": 5.3,
+      "shares_short": 22763313,
+      "float_shares": 455341464,
       "squeeze_risk": "LOW"
     },
-    "FDS": {
-      "short_pct_float": 18.1,
-      "days_to_cover": 6.6,
-      "shares_short": 5753765,
-      "float_shares": 36298518,
-      "squeeze_risk": "MEDIUM"
+    "JBHT": {
+      "short_pct_float": 4.33,
+      "days_to_cover": 2.9,
+      "shares_short": 2758482,
+      "float_shares": 73623160,
+      "squeeze_risk": "LOW"
     },
-    "CDNS": {
-      "short_pct_float": 1.78,
+    "LULU": {
+      "short_pct_float": 6.68,
       "days_to_cover": 2.2,
-      "shares_short": 4872311,
-      "float_shares": 274538972,
+      "shares_short": 7231844,
+      "float_shares": 98065164,
       "squeeze_risk": "LOW"
     },
-    "NEU": {
-      "short_pct_float": 9.82,
-      "days_to_cover": 7.6,
-      "shares_short": 721347,
-      "float_shares": 7614120,
+    "XYL": {
+      "short_pct_float": 4.13,
+      "days_to_cover": 3.7,
+      "shares_short": 7624725,
+      "float_shares": 237056474,
       "squeeze_risk": "LOW"
     },
-    "STRA": {
-      "short_pct_float": 6.81,
-      "days_to_cover": 3.9,
-      "shares_short": 1065565,
-      "float_shares": 21485972,
+    "NUTX": {
+      "short_pct_float": 24.47,
+      "days_to_cover": 6.6,
+      "shares_short": 1065264,
+      "float_shares": 4223972,
+      "squeeze_risk": "HIGH"
+    },
+    "SAIA": {
+      "short_pct_float": 4.18,
+      "days_to_cover": 2.8,
+      "shares_short": 1109079,
+      "float_shares": 26494716,
       "squeeze_risk": "LOW"
     },
-    "FTAI": {
-      "short_pct_float": 9.38,
-      "days_to_cover": 4.2,
-      "shares_short": 6026297,
-      "float_shares": 101435069,
-      "squeeze_risk": "LOW"
-    },
-    "ISRG": {
-      "short_pct_float": 2.06,
-      "days_to_cover": 3.2,
-      "shares_short": 7266942,
-      "float_shares": 352098073,
-      "squeeze_risk": "LOW"
-    },
-    "EFX": {
-      "short_pct_float": 5.73,
-      "days_to_cover": 3.8,
-      "shares_short": 5893038,
-      "float_shares": 118561588,
-      "squeeze_risk": "LOW"
-    },
-    "MKL": {
-      "short_pct_float": 2.41,
-      "days_to_cover": 3.4,
-      "shares_short": 298481,
-      "float_shares": 12192483,
+    "XOM": {
+      "short_pct_float": 1.14,
+      "days_to_cover": 2.4,
+      "shares_short": 42132243,
+      "float_shares": 4136159874,
       "squeeze_risk": "LOW"
     },
     "WRB": {
@@ -533,11 +239,690 @@
       "float_shares": 256603761,
       "squeeze_risk": "LOW"
     },
+    "BMI": {
+      "short_pct_float": 20.42,
+      "days_to_cover": 7.7,
+      "shares_short": 4089214,
+      "float_shares": 28997907,
+      "squeeze_risk": "HIGH"
+    },
+    "SSB": {
+      "short_pct_float": 2.79,
+      "days_to_cover": 3.3,
+      "shares_short": 2452309,
+      "float_shares": 96685030,
+      "squeeze_risk": "LOW"
+    },
+    "HTO": {
+      "short_pct_float": 15.29,
+      "days_to_cover": 10.0,
+      "shares_short": 4813221,
+      "float_shares": 36474654,
+      "squeeze_risk": "MEDIUM"
+    },
     "CHMG": {
       "short_pct_float": 0.77,
       "days_to_cover": 0.8,
       "shares_short": 32302,
       "float_shares": 3512878,
+      "squeeze_risk": "LOW"
+    },
+    "PVLA": {
+      "short_pct_float": 16.72,
+      "days_to_cover": 10.3,
+      "shares_short": 2118329,
+      "float_shares": 9577434,
+      "squeeze_risk": "MEDIUM"
+    },
+    "TSM": {
+      "short_pct_float": 0.58,
+      "days_to_cover": 2.2,
+      "shares_short": 28282997,
+      "float_shares": 37818523654,
+      "squeeze_risk": "LOW"
+    },
+    "MIDD": {
+      "short_pct_float": 6.73,
+      "days_to_cover": 3.5,
+      "shares_short": 2349184,
+      "float_shares": 37668649,
+      "squeeze_risk": "LOW"
+    },
+    "EXP": {
+      "short_pct_float": 8.72,
+      "days_to_cover": 5.0,
+      "shares_short": 2062733,
+      "float_shares": 30540250,
+      "squeeze_risk": "LOW"
+    },
+    "SAIC": {
+      "short_pct_float": 7.7,
+      "days_to_cover": 5.9,
+      "shares_short": 2899383,
+      "float_shares": 39657770,
+      "squeeze_risk": "LOW"
+    },
+    "CNS": {
+      "short_pct_float": 3.7,
+      "days_to_cover": 3.9,
+      "shares_short": 1045220,
+      "float_shares": 27675751,
+      "squeeze_risk": "LOW"
+    },
+    "VAC": {
+      "short_pct_float": 11.05,
+      "days_to_cover": 4.8,
+      "shares_short": 2470195,
+      "float_shares": 28328907,
+      "squeeze_risk": "MEDIUM"
+    },
+    "ARES": {
+      "short_pct_float": 16.14,
+      "days_to_cover": 5.9,
+      "shares_short": 16996666,
+      "float_shares": 216021755,
+      "squeeze_risk": "MEDIUM"
+    },
+    "NVDA": {
+      "short_pct_float": 1.22,
+      "days_to_cover": 1.7,
+      "shares_short": 284722716,
+      "float_shares": 23225224000,
+      "squeeze_risk": "LOW"
+    },
+    "LRCX": {
+      "short_pct_float": 2.87,
+      "days_to_cover": 3.5,
+      "shares_short": 32072543,
+      "float_shares": 1245606233,
+      "squeeze_risk": "LOW"
+    },
+    "TXT": {
+      "short_pct_float": 3.15,
+      "days_to_cover": 3.3,
+      "shares_short": 4735010,
+      "float_shares": 172617853,
+      "squeeze_risk": "LOW"
+    },
+    "JPM": {
+      "short_pct_float": 1.07,
+      "days_to_cover": 3.4,
+      "shares_short": 28627082,
+      "float_shares": 2665149237,
+      "squeeze_risk": "LOW"
+    },
+    "BA": {
+      "short_pct_float": 0.07,
+      "days_to_cover": 0.1,
+      "shares_short": 543354,
+      "float_shares": 756431268,
+      "squeeze_risk": "LOW"
+    },
+    "BJ": {
+      "short_pct_float": 7.24,
+      "days_to_cover": 3.8,
+      "shares_short": 9181410,
+      "float_shares": 126975070,
+      "squeeze_risk": "LOW"
+    },
+    "JCI": {
+      "short_pct_float": 1.99,
+      "days_to_cover": 2.6,
+      "shares_short": 9539038,
+      "float_shares": 608163233,
+      "squeeze_risk": "LOW"
+    },
+    "HSY": {
+      "short_pct_float": 6.68,
+      "days_to_cover": 4.2,
+      "shares_short": 8461484,
+      "float_shares": 146063455,
+      "squeeze_risk": "LOW"
+    },
+    "SJM": {
+      "short_pct_float": 5.54,
+      "days_to_cover": 2.8,
+      "shares_short": 5060741,
+      "float_shares": 104320899,
+      "squeeze_risk": "LOW"
+    },
+    "MDT": {
+      "short_pct_float": 1.31,
+      "days_to_cover": 1.6,
+      "shares_short": 16762517,
+      "float_shares": 1281368549,
+      "squeeze_risk": "LOW"
+    },
+    "AAPL": {
+      "short_pct_float": 1.06,
+      "days_to_cover": 3.1,
+      "shares_short": 155886024,
+      "float_shares": 14662240621,
+      "squeeze_risk": "LOW"
+    },
+    "ORCL": {
+      "short_pct_float": 2.04,
+      "days_to_cover": 1.6,
+      "shares_short": 34872175,
+      "float_shares": 1710078820,
+      "squeeze_risk": "LOW"
+    },
+    "DKS": {
+      "short_pct_float": 12.66,
+      "days_to_cover": 5.0,
+      "shares_short": 6278597,
+      "float_shares": 61640397,
+      "squeeze_risk": "MEDIUM"
+    },
+    "COST": {
+      "short_pct_float": 1.78,
+      "days_to_cover": 3.5,
+      "shares_short": 7878688,
+      "float_shares": 440903005,
+      "squeeze_risk": "LOW"
+    },
+    "CMS": {
+      "short_pct_float": 0.0,
+      "days_to_cover": null,
+      "shares_short": 7777,
+      "float_shares": 306794235,
+      "squeeze_risk": "LOW"
+    },
+    "CHTR": {
+      "short_pct_float": 44.29,
+      "days_to_cover": 6.3,
+      "shares_short": 21381446,
+      "float_shares": 80358096,
+      "squeeze_risk": "HIGH"
+    },
+    "V": {
+      "short_pct_float": 1.29,
+      "days_to_cover": 2.6,
+      "shares_short": 21356037,
+      "float_shares": 1688137014,
+      "squeeze_risk": "LOW"
+    },
+    "SLGL": {
+      "short_pct_float": 5.04,
+      "days_to_cover": 1.8,
+      "shares_short": 53063,
+      "float_shares": 533990,
+      "squeeze_risk": "LOW"
+    },
+    "BHRB": {
+      "short_pct_float": 3.25,
+      "days_to_cover": 4.1,
+      "shares_short": 596924,
+      "float_shares": 17107387,
+      "squeeze_risk": "LOW"
+    },
+    "TFIN": {
+      "short_pct_float": 14.06,
+      "days_to_cover": 11.3,
+      "shares_short": 2710384,
+      "float_shares": 21165663,
+      "squeeze_risk": "MEDIUM"
+    },
+    "ABT": {
+      "short_pct_float": 1.41,
+      "days_to_cover": 1.7,
+      "shares_short": 22044423,
+      "float_shares": 1731135119,
+      "squeeze_risk": "LOW"
+    },
+    "ALG": {
+      "short_pct_float": 5.16,
+      "days_to_cover": 2.0,
+      "shares_short": 451739,
+      "float_shares": 11981316,
+      "squeeze_risk": "LOW"
+    },
+    "NEU": {
+      "short_pct_float": 9.82,
+      "days_to_cover": 7.6,
+      "shares_short": 721347,
+      "float_shares": 7614120,
+      "squeeze_risk": "LOW"
+    },
+    "AXSM": {
+      "short_pct_float": 9.41,
+      "days_to_cover": 3.5,
+      "shares_short": 3093253,
+      "float_shares": 43559663,
+      "squeeze_risk": "LOW"
+    },
+    "STZ": {
+      "short_pct_float": 5.16,
+      "days_to_cover": 3.9,
+      "shares_short": 7767156,
+      "float_shares": 155122297,
+      "squeeze_risk": "LOW"
+    },
+    "TCBI": {
+      "short_pct_float": 10.26,
+      "days_to_cover": 7.9,
+      "shares_short": 3277588,
+      "float_shares": 40355441,
+      "squeeze_risk": "MEDIUM"
+    },
+    "EG": {
+      "short_pct_float": 3.61,
+      "days_to_cover": 3.5,
+      "shares_short": 1225774,
+      "float_shares": 27047981,
+      "squeeze_risk": "LOW"
+    },
+    "ABBV": {
+      "short_pct_float": 1.46,
+      "days_to_cover": 3.9,
+      "shares_short": 23158744,
+      "float_shares": 1763612594,
+      "squeeze_risk": "LOW"
+    },
+    "TMO": {
+      "short_pct_float": 1.26,
+      "days_to_cover": 1.8,
+      "shares_short": 4693391,
+      "float_shares": 370666398,
+      "squeeze_risk": "LOW"
+    },
+    "NHC": {
+      "short_pct_float": 4.7,
+      "days_to_cover": 5.8,
+      "shares_short": 594600,
+      "float_shares": 12643162,
+      "squeeze_risk": "LOW"
+    },
+    "AZO": {
+      "short_pct_float": 2.93,
+      "days_to_cover": 1.3,
+      "shares_short": 427500,
+      "float_shares": 16273277,
+      "squeeze_risk": "LOW"
+    },
+    "LOAR": {
+      "short_pct_float": 15.84,
+      "days_to_cover": 8.1,
+      "shares_short": 6976311,
+      "float_shares": 43457671,
+      "squeeze_risk": "MEDIUM"
+    },
+    "ITGR": {
+      "short_pct_float": 16.05,
+      "days_to_cover": 6.6,
+      "shares_short": 4580665,
+      "float_shares": 33463173,
+      "squeeze_risk": "MEDIUM"
+    },
+    "NDAQ": {
+      "short_pct_float": 1.87,
+      "days_to_cover": 2.4,
+      "shares_short": 7208162,
+      "float_shares": 502997641,
+      "squeeze_risk": "LOW"
+    },
+    "MMS": {
+      "short_pct_float": 11.31,
+      "days_to_cover": 3.9,
+      "shares_short": 3332970,
+      "float_shares": 51785358,
+      "squeeze_risk": "MEDIUM"
+    },
+    "PLMR": {
+      "short_pct_float": 3.8,
+      "days_to_cover": 2.8,
+      "shares_short": 847015,
+      "float_shares": 25848165,
+      "squeeze_risk": "LOW"
+    },
+    "NOW": {
+      "short_pct_float": 5.93,
+      "days_to_cover": 2.0,
+      "shares_short": 61047279,
+      "float_shares": 1028750356,
+      "squeeze_risk": "LOW"
+    },
+    "BALL": {
+      "short_pct_float": 2.95,
+      "days_to_cover": 2.2,
+      "shares_short": 6756570,
+      "float_shares": 265186850,
+      "squeeze_risk": "LOW"
+    },
+    "HUBB": {
+      "short_pct_float": 5.98,
+      "days_to_cover": 3.6,
+      "shares_short": 2746363,
+      "float_shares": 52600818,
+      "squeeze_risk": "LOW"
+    },
+    "MRVL": {
+      "short_pct_float": 4.71,
+      "days_to_cover": 1.3,
+      "shares_short": 35215842,
+      "float_shares": 872333064,
+      "squeeze_risk": "LOW"
+    },
+    "FRPT": {
+      "short_pct_float": 21.92,
+      "days_to_cover": 4.9,
+      "shares_short": 9384787,
+      "float_shares": 48116690,
+      "squeeze_risk": "HIGH"
+    },
+    "CLS": {
+      "short_pct_float": 3.14,
+      "days_to_cover": 1.6,
+      "shares_short": 3573565,
+      "float_shares": 113645168,
+      "squeeze_risk": "LOW"
+    },
+    "MP": {
+      "short_pct_float": 17.16,
+      "days_to_cover": 4.0,
+      "shares_short": 28088299,
+      "float_shares": 144246046,
+      "squeeze_risk": "MEDIUM"
+    },
+    "AMR": {
+      "short_pct_float": 19.41,
+      "days_to_cover": 6.2,
+      "shares_short": 1706049,
+      "float_shares": 10243537,
+      "squeeze_risk": "MEDIUM"
+    },
+    "EXE": {
+      "short_pct_float": 2.6,
+      "days_to_cover": 2.1,
+      "shares_short": 6209752,
+      "float_shares": 238109258,
+      "squeeze_risk": "LOW"
+    },
+    "AAON": {
+      "short_pct_float": 6.9,
+      "days_to_cover": 3.3,
+      "shares_short": 4698837,
+      "float_shares": 68213615,
+      "squeeze_risk": "LOW"
+    },
+    "CAVA": {
+      "short_pct_float": 13.3,
+      "days_to_cover": 4.2,
+      "shares_short": 14598436,
+      "float_shares": 104619147,
+      "squeeze_risk": "MEDIUM"
+    },
+    "C": {
+      "short_pct_float": 0.04,
+      "days_to_cover": 0.1,
+      "shares_short": 619197,
+      "float_shares": 1700016774,
+      "squeeze_risk": "LOW"
+    },
+    "CDNS": {
+      "short_pct_float": 1.78,
+      "days_to_cover": 2.2,
+      "shares_short": 4872311,
+      "float_shares": 274538972,
+      "squeeze_risk": "LOW"
+    },
+    "ZION": {
+      "short_pct_float": 5.08,
+      "days_to_cover": 4.6,
+      "shares_short": 6377018,
+      "float_shares": 144772179,
+      "squeeze_risk": "LOW"
+    },
+    "USPH": {
+      "short_pct_float": 8.18,
+      "days_to_cover": 4.0,
+      "shares_short": 1043584,
+      "float_shares": 14836950,
+      "squeeze_risk": "LOW"
+    },
+    "NEGG": {
+      "short_pct_float": 17.63,
+      "days_to_cover": 1.8,
+      "shares_short": 184340,
+      "float_shares": 1346854,
+      "squeeze_risk": "MEDIUM"
+    },
+    "CR": {
+      "short_pct_float": 2.49,
+      "days_to_cover": 2.2,
+      "shares_short": 1227409,
+      "float_shares": 49325210,
+      "squeeze_risk": "LOW"
+    },
+    "AMT": {
+      "short_pct_float": 2.24,
+      "days_to_cover": 3.1,
+      "shares_short": 9063793,
+      "float_shares": 464383575,
+      "squeeze_risk": "LOW"
+    },
+    "AIG": {
+      "short_pct_float": 2.08,
+      "days_to_cover": 2.2,
+      "shares_short": 9557797,
+      "float_shares": 528419426,
+      "squeeze_risk": "LOW"
+    },
+    "NSC": {
+      "short_pct_float": 3.64,
+      "days_to_cover": 6.4,
+      "shares_short": 8160523,
+      "float_shares": 224254864,
+      "squeeze_risk": "LOW"
+    },
+    "KMPR": {
+      "short_pct_float": 6.99,
+      "days_to_cover": 3.4,
+      "shares_short": 3672371,
+      "float_shares": 58185992,
+      "squeeze_risk": "LOW"
+    },
+    "SBUX": {
+      "short_pct_float": 4.7,
+      "days_to_cover": 5.8,
+      "shares_short": 48175294,
+      "float_shares": 1137409203,
+      "squeeze_risk": "LOW"
+    },
+    "REGN": {
+      "short_pct_float": 3.03,
+      "days_to_cover": 2.6,
+      "shares_short": 3001968,
+      "float_shares": 97668453,
+      "squeeze_risk": "LOW"
+    },
+    "GGG": {
+      "short_pct_float": 4.11,
+      "days_to_cover": 3.5,
+      "shares_short": 5360871,
+      "float_shares": 164291898,
+      "squeeze_risk": "LOW"
+    },
+    "FND": {
+      "short_pct_float": 12.34,
+      "days_to_cover": 3.8,
+      "shares_short": 13166267,
+      "float_shares": 106427338,
+      "squeeze_risk": "MEDIUM"
+    },
+    "SPGI": {
+      "short_pct_float": 1.54,
+      "days_to_cover": 2.2,
+      "shares_short": 4548380,
+      "float_shares": 295283680,
+      "squeeze_risk": "LOW"
+    },
+    "WAT": {
+      "short_pct_float": 4.56,
+      "days_to_cover": 3.7,
+      "shares_short": 4475854,
+      "float_shares": 98002247,
+      "squeeze_risk": "LOW"
+    },
+    "NIC": {
+      "short_pct_float": 2.94,
+      "days_to_cover": 4.2,
+      "shares_short": 593475,
+      "float_shares": 20137880,
+      "squeeze_risk": "LOW"
+    },
+    "IT": {
+      "short_pct_float": 25.25,
+      "days_to_cover": 6.3,
+      "shares_short": 12221013,
+      "float_shares": 60949652,
+      "squeeze_risk": "HIGH"
+    },
+    "TCI": {
+      "short_pct_float": 0.67,
+      "days_to_cover": 3.8,
+      "shares_short": 12423,
+      "float_shares": 1171578,
+      "squeeze_risk": "LOW"
+    },
+    "AJG": {
+      "short_pct_float": 1.99,
+      "days_to_cover": 2.6,
+      "shares_short": 5058267,
+      "float_shares": 254084376,
+      "squeeze_risk": "LOW"
+    },
+    "DHR": {
+      "short_pct_float": 1.47,
+      "days_to_cover": 1.9,
+      "shares_short": 9289510,
+      "float_shares": 630630706,
+      "squeeze_risk": "LOW"
+    },
+    "BFH": {
+      "short_pct_float": 0.01,
+      "days_to_cover": null,
+      "shares_short": 2718,
+      "float_shares": 39776715,
+      "squeeze_risk": "LOW"
+    },
+    "PEP": {
+      "short_pct_float": 2.04,
+      "days_to_cover": 3.7,
+      "shares_short": 25087625,
+      "float_shares": 1362845690,
+      "squeeze_risk": "LOW"
+    },
+    "WTW": {
+      "short_pct_float": 3.61,
+      "days_to_cover": 3.2,
+      "shares_short": 2989239,
+      "float_shares": 93986125,
+      "squeeze_risk": "LOW"
+    },
+    "RHLD": {
+      "short_pct_float": 11.46,
+      "days_to_cover": 4.8,
+      "shares_short": 918958,
+      "float_shares": 3445034,
+      "squeeze_risk": "MEDIUM"
+    },
+    "CLH": {
+      "short_pct_float": 2.17,
+      "days_to_cover": 1.7,
+      "shares_short": 1087806,
+      "float_shares": 50108079,
+      "squeeze_risk": "LOW"
+    },
+    "ENVA": {
+      "short_pct_float": 9.62,
+      "days_to_cover": 9.2,
+      "shares_short": 1916417,
+      "float_shares": 23763583,
+      "squeeze_risk": "LOW"
+    },
+    "CROX": {
+      "short_pct_float": 14.63,
+      "days_to_cover": 4.3,
+      "shares_short": 5459934,
+      "float_shares": 47928150,
+      "squeeze_risk": "MEDIUM"
+    },
+    "LKFN": {
+      "short_pct_float": 9.41,
+      "days_to_cover": 10.2,
+      "shares_short": 1907859,
+      "float_shares": 24061541,
+      "squeeze_risk": "LOW"
+    },
+    "MIRM": {
+      "short_pct_float": 14.11,
+      "days_to_cover": 5.2,
+      "shares_short": 6561290,
+      "float_shares": 52453612,
+      "squeeze_risk": "MEDIUM"
+    },
+    "CVX": {
+      "short_pct_float": 1.16,
+      "days_to_cover": 2.2,
+      "shares_short": 22909437,
+      "float_shares": 1882374685,
+      "squeeze_risk": "LOW"
+    },
+    "SUI": {
+      "short_pct_float": 3.74,
+      "days_to_cover": 3.9,
+      "shares_short": 3373828,
+      "float_shares": 121612737,
+      "squeeze_risk": "LOW"
+    },
+    "KYMR": {
+      "short_pct_float": 15.85,
+      "days_to_cover": 19.8,
+      "shares_short": 10103698,
+      "float_shares": 55026213,
+      "squeeze_risk": "MEDIUM"
+    },
+    "SXT": {
+      "short_pct_float": 5.24,
+      "days_to_cover": 3.1,
+      "shares_short": 1282475,
+      "float_shares": 41866998,
+      "squeeze_risk": "LOW"
+    },
+    "IEX": {
+      "short_pct_float": 3.47,
+      "days_to_cover": 3.0,
+      "shares_short": 2246093,
+      "float_shares": 73804849,
+      "squeeze_risk": "LOW"
+    },
+    "ASND": {
+      "short_pct_float": 3.34,
+      "days_to_cover": 2.6,
+      "shares_short": 1720143,
+      "float_shares": 62106626,
+      "squeeze_risk": "LOW"
+    },
+    "FTNT": {
+      "short_pct_float": 2.79,
+      "days_to_cover": 2.6,
+      "shares_short": 16866836,
+      "float_shares": 617651900,
+      "squeeze_risk": "LOW"
+    },
+    "ERIE": {
+      "short_pct_float": 10.2,
+      "days_to_cover": 12.4,
+      "shares_short": 2555090,
+      "float_shares": 25138877,
+      "squeeze_risk": "MEDIUM"
+    },
+    "RSG": {
+      "short_pct_float": 1.84,
+      "days_to_cover": 1.9,
+      "shares_short": 3628169,
+      "float_shares": 306867237,
       "squeeze_risk": "LOW"
     },
     "FCNCA": {
@@ -554,47 +939,12 @@
       "float_shares": 28902943,
       "squeeze_risk": "LOW"
     },
-    "MCD": {
-      "short_pct_float": 1.48,
-      "days_to_cover": 2.2,
-      "shares_short": 9457585,
-      "float_shares": 709468520,
+    "EFX": {
+      "short_pct_float": 5.73,
+      "days_to_cover": 3.8,
+      "shares_short": 5893038,
+      "float_shares": 118561588,
       "squeeze_risk": "LOW"
-    },
-    "CVS": {
-      "short_pct_float": 1.4,
-      "days_to_cover": 2.0,
-      "shares_short": 17760492,
-      "float_shares": 1273235100,
-      "squeeze_risk": "LOW"
-    },
-    "CECO": {
-      "short_pct_float": 20.4,
-      "days_to_cover": 6.4,
-      "shares_short": 6010071,
-      "float_shares": 32140083,
-      "squeeze_risk": "HIGH"
-    },
-    "NEE": {
-      "short_pct_float": 0.01,
-      "days_to_cover": 0.0,
-      "shares_short": 131969,
-      "float_shares": 2080920532,
-      "squeeze_risk": "LOW"
-    },
-    "SNPS": {
-      "short_pct_float": 2.96,
-      "days_to_cover": 3.1,
-      "shares_short": 5641342,
-      "float_shares": 190376404,
-      "squeeze_risk": "LOW"
-    },
-    "ABG": {
-      "short_pct_float": 11.01,
-      "days_to_cover": 4.1,
-      "shares_short": 1222438,
-      "float_shares": 14276710,
-      "squeeze_risk": "MEDIUM"
     },
     "ADC": {
       "short_pct_float": 0.01,
@@ -603,774 +953,11 @@
       "float_shares": 117636082,
       "squeeze_risk": "LOW"
     },
-    "CSW": {
-      "short_pct_float": 9.44,
-      "days_to_cover": 8.4,
-      "shares_short": 1110115,
-      "float_shares": 16086441,
-      "squeeze_risk": "LOW"
-    },
-    "ARES": {
-      "short_pct_float": 16.14,
-      "days_to_cover": 5.9,
-      "shares_short": 16996666,
-      "float_shares": 216021755,
-      "squeeze_risk": "MEDIUM"
-    },
-    "SGI": {
-      "short_pct_float": 10.79,
-      "days_to_cover": 5.4,
-      "shares_short": 18779046,
-      "float_shares": 187457668,
-      "squeeze_risk": "MEDIUM"
-    },
-    "SYBT": {
-      "short_pct_float": 4.84,
-      "days_to_cover": 9.1,
-      "shares_short": 1399159,
-      "float_shares": 26240183,
-      "squeeze_risk": "LOW"
-    },
-    "FTNT": {
-      "short_pct_float": 2.79,
-      "days_to_cover": 2.6,
-      "shares_short": 16866836,
-      "float_shares": 617651900,
-      "squeeze_risk": "LOW"
-    },
-    "ALG": {
-      "short_pct_float": 5.16,
-      "days_to_cover": 2.0,
-      "shares_short": 451739,
-      "float_shares": 11981316,
-      "squeeze_risk": "LOW"
-    },
-    "ICFI": {
-      "short_pct_float": 3.42,
-      "days_to_cover": 1.4,
-      "shares_short": 608997,
-      "float_shares": 17775951,
-      "squeeze_risk": "LOW"
-    },
-    "SYY": {
-      "short_pct_float": 3.88,
-      "days_to_cover": 4.4,
-      "shares_short": 16147413,
-      "float_shares": 476728933,
-      "squeeze_risk": "LOW"
-    },
-    "CCI": {
-      "short_pct_float": 3.5,
-      "days_to_cover": 3.7,
-      "shares_short": 12836944,
-      "float_shares": 435500518,
-      "squeeze_risk": "LOW"
-    },
-    "PM": {
-      "short_pct_float": 1.04,
-      "days_to_cover": 3.4,
-      "shares_short": 16240111,
-      "float_shares": 1554553350,
-      "squeeze_risk": "LOW"
-    },
-    "ICUI": {
-      "short_pct_float": 8.81,
-      "days_to_cover": 5.9,
-      "shares_short": 1837896,
-      "float_shares": 24505460,
-      "squeeze_risk": "LOW"
-    },
-    "ACGL": {
-      "short_pct_float": 2.95,
-      "days_to_cover": 3.3,
-      "shares_short": 8797256,
-      "float_shares": 335705881,
-      "squeeze_risk": "LOW"
-    },
-    "FRHC": {
-      "short_pct_float": 5.32,
-      "days_to_cover": 11.1,
-      "shares_short": 989188,
-      "float_shares": 18115022,
-      "squeeze_risk": "LOW"
-    },
-    "ERIE": {
-      "short_pct_float": 10.2,
-      "days_to_cover": 12.4,
-      "shares_short": 2555090,
-      "float_shares": 25138877,
-      "squeeze_risk": "MEDIUM"
-    },
-    "UPS": {
-      "short_pct_float": 3.31,
-      "days_to_cover": 3.9,
-      "shares_short": 24680797,
-      "float_shares": 745778509,
-      "squeeze_risk": "LOW"
-    },
-    "SJM": {
-      "short_pct_float": 5.54,
-      "days_to_cover": 2.8,
-      "shares_short": 5060741,
-      "float_shares": 104320899,
-      "squeeze_risk": "LOW"
-    },
-    "WTW": {
-      "short_pct_float": 3.61,
-      "days_to_cover": 3.2,
-      "shares_short": 2989239,
-      "float_shares": 93986125,
-      "squeeze_risk": "LOW"
-    },
-    "WCC": {
-      "short_pct_float": 3.79,
-      "days_to_cover": 2.5,
-      "shares_short": 1631986,
-      "float_shares": 47872525,
-      "squeeze_risk": "LOW"
-    },
-    "CAT": {
-      "short_pct_float": 1.96,
-      "days_to_cover": 3.0,
-      "shares_short": 8103454,
-      "float_shares": 459181413,
-      "squeeze_risk": "LOW"
-    },
-    "HUBB": {
-      "short_pct_float": 5.98,
-      "days_to_cover": 3.6,
-      "shares_short": 2746363,
-      "float_shares": 52600818,
-      "squeeze_risk": "LOW"
-    },
-    "CASY": {
-      "short_pct_float": 4.2,
-      "days_to_cover": 2.9,
-      "shares_short": 1381856,
-      "float_shares": 36728121,
-      "squeeze_risk": "LOW"
-    },
-    "KMPR": {
-      "short_pct_float": 6.99,
-      "days_to_cover": 3.4,
-      "shares_short": 3672371,
-      "float_shares": 58185992,
-      "squeeze_risk": "LOW"
-    },
-    "TMUS": {
-      "short_pct_float": 4.1,
-      "days_to_cover": 4.2,
-      "shares_short": 19947133,
-      "float_shares": 495812091,
-      "squeeze_risk": "LOW"
-    },
-    "MP": {
-      "short_pct_float": 17.16,
-      "days_to_cover": 4.0,
-      "shares_short": 28088299,
-      "float_shares": 144246046,
-      "squeeze_risk": "MEDIUM"
-    },
-    "NUTX": {
-      "short_pct_float": 24.47,
-      "days_to_cover": 6.6,
-      "shares_short": 1065264,
-      "float_shares": 4223972,
-      "squeeze_risk": "HIGH"
-    },
-    "IFF": {
-      "short_pct_float": 6.87,
-      "days_to_cover": 5.8,
-      "shares_short": 12779555,
-      "float_shares": 254586070,
-      "squeeze_risk": "LOW"
-    },
-    "CLH": {
-      "short_pct_float": 2.17,
-      "days_to_cover": 1.7,
-      "shares_short": 1087806,
-      "float_shares": 50108079,
-      "squeeze_risk": "LOW"
-    },
-    "PVH": {
-      "short_pct_float": 13.13,
-      "days_to_cover": 4.6,
-      "shares_short": 4269400,
-      "float_shares": 45570933,
-      "squeeze_risk": "MEDIUM"
-    },
-    "MDLZ": {
-      "short_pct_float": 3.02,
-      "days_to_cover": 4.6,
-      "shares_short": 34703971,
-      "float_shares": 1280042710,
-      "squeeze_risk": "LOW"
-    },
-    "MDGL": {
-      "short_pct_float": 19.5,
-      "days_to_cover": 13.2,
-      "shares_short": 3823127,
-      "float_shares": 13794892,
-      "squeeze_risk": "MEDIUM"
-    },
-    "RDDT": {
-      "short_pct_float": 9.51,
-      "days_to_cover": 2.2,
-      "shares_short": 13400102,
-      "float_shares": 139603706,
-      "squeeze_risk": "LOW"
-    },
-    "NHC": {
-      "short_pct_float": 4.7,
-      "days_to_cover": 5.8,
-      "shares_short": 594600,
-      "float_shares": 12643162,
-      "squeeze_risk": "LOW"
-    },
-    "SEZL": {
-      "short_pct_float": 29.16,
-      "days_to_cover": 6.9,
-      "shares_short": 5013984,
-      "float_shares": 16990388,
-      "squeeze_risk": "HIGH"
-    },
-    "IONQ": {
-      "short_pct_float": 15.61,
-      "days_to_cover": 1.7,
-      "shares_short": 57963134,
-      "float_shares": 370511483,
-      "squeeze_risk": "MEDIUM"
-    },
-    "COST": {
-      "short_pct_float": 1.78,
-      "days_to_cover": 3.5,
-      "shares_short": 7878688,
-      "float_shares": 440903005,
-      "squeeze_risk": "LOW"
-    },
-    "TXT": {
-      "short_pct_float": 3.15,
-      "days_to_cover": 3.3,
-      "shares_short": 4735010,
-      "float_shares": 172617853,
-      "squeeze_risk": "LOW"
-    },
-    "CHE": {
-      "short_pct_float": 5.64,
-      "days_to_cover": 2.9,
-      "shares_short": 637297,
-      "float_shares": 12991450,
-      "squeeze_risk": "LOW"
-    },
-    "PODD": {
-      "short_pct_float": 6.9,
-      "days_to_cover": 2.2,
-      "shares_short": 4232806,
-      "float_shares": 68987615,
-      "squeeze_risk": "LOW"
-    },
-    "GS": {
-      "short_pct_float": 2.62,
-      "days_to_cover": 3.8,
-      "shares_short": 7688517,
-      "float_shares": 304887424,
-      "squeeze_risk": "LOW"
-    },
-    "AYI": {
-      "short_pct_float": 4.9,
-      "days_to_cover": 4.2,
-      "shares_short": 1285150,
-      "float_shares": 29915203,
-      "squeeze_risk": "LOW"
-    },
-    "AZO": {
-      "short_pct_float": 2.93,
-      "days_to_cover": 1.3,
-      "shares_short": 427500,
-      "float_shares": 16273277,
-      "squeeze_risk": "LOW"
-    },
-    "JCI": {
-      "short_pct_float": 1.99,
-      "days_to_cover": 2.6,
-      "shares_short": 9539038,
-      "float_shares": 608163233,
-      "squeeze_risk": "LOW"
-    },
-    "GVH": {
-      "short_pct_float": 1.72,
-      "days_to_cover": 0.4,
-      "shares_short": 38284,
-      "float_shares": 1484786,
-      "squeeze_risk": "LOW"
-    },
-    "VRTS": {
-      "short_pct_float": 8.3,
-      "days_to_cover": 3.5,
-      "shares_short": 362833,
-      "float_shares": 6236358,
-      "squeeze_risk": "LOW"
-    },
-    "THFF": {
-      "short_pct_float": 2.12,
-      "days_to_cover": 3.5,
-      "shares_short": 239430,
-      "float_shares": 11291593,
-      "squeeze_risk": "LOW"
-    },
-    "EOG": {
-      "short_pct_float": 4.11,
-      "days_to_cover": 5.5,
-      "shares_short": 19612568,
-      "float_shares": 530849551,
-      "squeeze_risk": "LOW"
-    },
-    "AIN": {
-      "short_pct_float": 2.19,
-      "days_to_cover": 1.9,
-      "shares_short": 456333,
-      "float_shares": 28224772,
-      "squeeze_risk": "LOW"
-    },
-    "DHIL": {
-      "short_pct_float": 2.49,
-      "days_to_cover": 2.6,
-      "shares_short": 61218,
-      "float_shares": 2467004,
-      "squeeze_risk": "LOW"
-    },
-    "BG": {
-      "short_pct_float": 4.98,
-      "days_to_cover": 3.9,
-      "shares_short": 6666190,
-      "float_shares": 159649746,
-      "squeeze_risk": "LOW"
-    },
-    "WELL": {
-      "short_pct_float": 2.86,
-      "days_to_cover": 4.8,
-      "shares_short": 17755855,
-      "float_shares": 704940288,
-      "squeeze_risk": "LOW"
-    },
-    "USB": {
-      "short_pct_float": 0.0,
-      "days_to_cover": null,
-      "shares_short": 26017,
-      "float_shares": 1547549708,
-      "squeeze_risk": "LOW"
-    },
-    "EG": {
-      "short_pct_float": 3.61,
-      "days_to_cover": 3.5,
-      "shares_short": 1225774,
-      "float_shares": 27047981,
-      "squeeze_risk": "LOW"
-    },
-    "STC": {
-      "short_pct_float": 2.45,
-      "days_to_cover": 4.1,
-      "shares_short": 623802,
-      "float_shares": 29771075,
-      "squeeze_risk": "LOW"
-    },
-    "TMCI": {
-      "short_pct_float": 7.95,
-      "days_to_cover": 7.4,
-      "shares_short": 4108513,
-      "float_shares": 47289156,
-      "squeeze_risk": "LOW"
-    },
-    "HUM": {
-      "short_pct_float": 5.79,
-      "days_to_cover": 3.5,
-      "shares_short": 6117059,
-      "float_shares": 119799766,
-      "squeeze_risk": "LOW"
-    },
-    "HHH": {
-      "short_pct_float": 9.26,
-      "days_to_cover": 6.2,
-      "shares_short": 2886904,
-      "float_shares": 30464806,
-      "squeeze_risk": "LOW"
-    },
-    "BSX": {
-      "short_pct_float": 3.87,
-      "days_to_cover": 2.7,
-      "shares_short": 57491117,
-      "float_shares": 1482342020,
-      "squeeze_risk": "LOW"
-    },
-    "HII": {
-      "short_pct_float": 2.54,
-      "days_to_cover": 1.5,
-      "shares_short": 868669,
-      "float_shares": 39071065,
-      "squeeze_risk": "LOW"
-    },
-    "FOX": {
-      "short_pct_float": 8.55,
-      "days_to_cover": 11.5,
-      "shares_short": 11574148,
-      "float_shares": 329468090,
-      "squeeze_risk": "LOW"
-    },
-    "SPB": {
-      "short_pct_float": 18.81,
-      "days_to_cover": 7.6,
-      "shares_short": 3225855,
-      "float_shares": 20127780,
-      "squeeze_risk": "MEDIUM"
-    },
-    "CRH": {
-      "short_pct_float": 2.2,
-      "days_to_cover": 2.4,
-      "shares_short": 12960848,
-      "float_shares": 666549761,
-      "squeeze_risk": "LOW"
-    },
-    "SLGL": {
-      "short_pct_float": 5.04,
-      "days_to_cover": 1.8,
-      "shares_short": 53063,
-      "float_shares": 533990,
-      "squeeze_risk": "LOW"
-    },
-    "MTH": {
-      "short_pct_float": 6.99,
-      "days_to_cover": 4.1,
-      "shares_short": 3207525,
-      "float_shares": 64980176,
-      "squeeze_risk": "LOW"
-    },
-    "SRE": {
-      "short_pct_float": 1.78,
-      "days_to_cover": 2.8,
-      "shares_short": 10294382,
-      "float_shares": 652526478,
-      "squeeze_risk": "LOW"
-    },
-    "GEHC": {
-      "short_pct_float": 3.65,
-      "days_to_cover": 2.2,
-      "shares_short": 14670393,
-      "float_shares": 453399741,
-      "squeeze_risk": "LOW"
-    },
-    "CNS": {
-      "short_pct_float": 3.7,
-      "days_to_cover": 3.9,
-      "shares_short": 1045220,
-      "float_shares": 27675751,
-      "squeeze_risk": "LOW"
-    },
-    "MNPR": {
-      "short_pct_float": 34.53,
-      "days_to_cover": 8.6,
-      "shares_short": 1579320,
-      "float_shares": 4129905,
-      "squeeze_risk": "HIGH"
-    },
-    "TNL": {
-      "short_pct_float": 7.75,
-      "days_to_cover": 4.5,
-      "shares_short": 3913058,
-      "float_shares": 61007142,
-      "squeeze_risk": "LOW"
-    },
-    "CELC": {
-      "short_pct_float": 29.59,
-      "days_to_cover": 8.0,
-      "shares_short": 9601855,
-      "float_shares": 26813656,
-      "squeeze_risk": "HIGH"
-    },
-    "VRTX": {
-      "short_pct_float": 2.0,
-      "days_to_cover": 3.5,
-      "shares_short": 4491490,
-      "float_shares": 253023696,
-      "squeeze_risk": "LOW"
-    },
-    "NXPI": {
-      "short_pct_float": 3.66,
-      "days_to_cover": 2.0,
-      "shares_short": 8285183,
-      "float_shares": 251981285,
-      "squeeze_risk": "LOW"
-    },
-    "BX": {
-      "short_pct_float": 2.67,
-      "days_to_cover": 4.0,
-      "shares_short": 19720974,
-      "float_shares": 746237886,
-      "squeeze_risk": "LOW"
-    },
-    "SANM": {
-      "short_pct_float": 7.28,
-      "days_to_cover": 2.4,
-      "shares_short": 2212949,
-      "float_shares": 51876176,
-      "squeeze_risk": "LOW"
-    },
-    "MMS": {
-      "short_pct_float": 11.31,
-      "days_to_cover": 3.9,
-      "shares_short": 3332970,
-      "float_shares": 51785358,
-      "squeeze_risk": "MEDIUM"
-    },
     "AVGO": {
       "short_pct_float": 1.25,
       "days_to_cover": 3.0,
       "shares_short": 58477285,
       "float_shares": 4698491052,
-      "squeeze_risk": "LOW"
-    },
-    "CME": {
-      "short_pct_float": 1.41,
-      "days_to_cover": 1.9,
-      "shares_short": 4566985,
-      "float_shares": 357315305,
-      "squeeze_risk": "LOW"
-    },
-    "AMRZ": {
-      "short_pct_float": 1.33,
-      "days_to_cover": 2.4,
-      "shares_short": 7333516,
-      "float_shares": 493204364,
-      "squeeze_risk": "LOW"
-    },
-    "HCA": {
-      "short_pct_float": 3.57,
-      "days_to_cover": 3.6,
-      "shares_short": 5214258,
-      "float_shares": 149493404,
-      "squeeze_risk": "LOW"
-    },
-    "AMT": {
-      "short_pct_float": 2.24,
-      "days_to_cover": 3.1,
-      "shares_short": 9063793,
-      "float_shares": 464383575,
-      "squeeze_risk": "LOW"
-    },
-    "DUK": {
-      "short_pct_float": 2.23,
-      "days_to_cover": 4.8,
-      "shares_short": 15620536,
-      "float_shares": 777545879,
-      "squeeze_risk": "LOW"
-    },
-    "AWI": {
-      "short_pct_float": 3.27,
-      "days_to_cover": 3.0,
-      "shares_short": 1196761,
-      "float_shares": 41964391,
-      "squeeze_risk": "LOW"
-    },
-    "ECL": {
-      "short_pct_float": 1.44,
-      "days_to_cover": 2.1,
-      "shares_short": 3564476,
-      "float_shares": 280826783,
-      "squeeze_risk": "LOW"
-    },
-    "QCOM": {
-      "short_pct_float": 4.78,
-      "days_to_cover": 1.4,
-      "shares_short": 45037224,
-      "float_shares": 1051712820,
-      "squeeze_risk": "LOW"
-    },
-    "INTU": {
-      "short_pct_float": 4.36,
-      "days_to_cover": 2.0,
-      "shares_short": 10399643,
-      "float_shares": 267283944,
-      "squeeze_risk": "LOW"
-    },
-    "REGN": {
-      "short_pct_float": 3.03,
-      "days_to_cover": 2.6,
-      "shares_short": 3001968,
-      "float_shares": 97668453,
-      "squeeze_risk": "LOW"
-    },
-    "PNFP": {
-      "short_pct_float": 3.46,
-      "days_to_cover": 4.5,
-      "shares_short": 4637279,
-      "float_shares": 148382498,
-      "squeeze_risk": "LOW"
-    },
-    "ASST": {
-      "short_pct_float": 21.35,
-      "days_to_cover": 3.3,
-      "shares_short": 13816905,
-      "float_shares": 56745009,
-      "squeeze_risk": "HIGH"
-    },
-    "CAVA": {
-      "short_pct_float": 13.3,
-      "days_to_cover": 4.2,
-      "shares_short": 14598436,
-      "float_shares": 104619147,
-      "squeeze_risk": "MEDIUM"
-    },
-    "C": {
-      "short_pct_float": 0.04,
-      "days_to_cover": 0.1,
-      "shares_short": 619197,
-      "float_shares": 1700016774,
-      "squeeze_risk": "LOW"
-    },
-    "TDG": {
-      "short_pct_float": 2.49,
-      "days_to_cover": 2.6,
-      "shares_short": 1048245,
-      "float_shares": 55649440,
-      "squeeze_risk": "LOW"
-    },
-    "TMP": {
-      "short_pct_float": 2.11,
-      "days_to_cover": 4.6,
-      "shares_short": 255274,
-      "float_shares": 13043458,
-      "squeeze_risk": "LOW"
-    },
-    "ADBE": {
-      "short_pct_float": 5.16,
-      "days_to_cover": 4.1,
-      "shares_short": 18663125,
-      "float_shares": 396259800,
-      "squeeze_risk": "LOW"
-    },
-    "CROX": {
-      "short_pct_float": 14.63,
-      "days_to_cover": 4.3,
-      "shares_short": 5459934,
-      "float_shares": 47928150,
-      "squeeze_risk": "MEDIUM"
-    },
-    "GPN": {
-      "short_pct_float": 6.32,
-      "days_to_cover": 4.0,
-      "shares_short": 14491889,
-      "float_shares": 228507304,
-      "squeeze_risk": "LOW"
-    },
-    "GSHD": {
-      "short_pct_float": 10.67,
-      "days_to_cover": 4.1,
-      "shares_short": 1834975,
-      "float_shares": 21611080,
-      "squeeze_risk": "MEDIUM"
-    },
-    "ETN": {
-      "short_pct_float": 2.52,
-      "days_to_cover": 3.3,
-      "shares_short": 9771004,
-      "float_shares": 387647656,
-      "squeeze_risk": "LOW"
-    },
-    "BHRB": {
-      "short_pct_float": 3.25,
-      "days_to_cover": 4.1,
-      "shares_short": 596924,
-      "float_shares": 17107387,
-      "squeeze_risk": "LOW"
-    },
-    "WEX": {
-      "short_pct_float": 8.37,
-      "days_to_cover": 4.0,
-      "shares_short": 2216384,
-      "float_shares": 31946347,
-      "squeeze_risk": "LOW"
-    },
-    "CLS": {
-      "short_pct_float": 3.14,
-      "days_to_cover": 1.6,
-      "shares_short": 3573565,
-      "float_shares": 113645168,
-      "squeeze_risk": "LOW"
-    },
-    "DIS": {
-      "short_pct_float": 1.53,
-      "days_to_cover": 2.9,
-      "shares_short": 26510366,
-      "float_shares": 1733698275,
-      "squeeze_risk": "LOW"
-    },
-    "ADSK": {
-      "short_pct_float": 3.45,
-      "days_to_cover": 3.0,
-      "shares_short": 6533650,
-      "float_shares": 210436630,
-      "squeeze_risk": "LOW"
-    },
-    "EEFT": {
-      "short_pct_float": 12.5,
-      "days_to_cover": 6.2,
-      "shares_short": 4425994,
-      "float_shares": 35153592,
-      "squeeze_risk": "MEDIUM"
-    },
-    "SUNC": {
-      "short_pct_float": 2.5,
-      "days_to_cover": 2.1,
-      "shares_short": 1289011,
-      "float_shares": 51491439,
-      "squeeze_risk": "LOW"
-    },
-    "VAC": {
-      "short_pct_float": 11.05,
-      "days_to_cover": 4.8,
-      "shares_short": 2470195,
-      "float_shares": 28328907,
-      "squeeze_risk": "MEDIUM"
-    },
-    "WM": {
-      "short_pct_float": 1.43,
-      "days_to_cover": 2.6,
-      "shares_short": 5727580,
-      "float_shares": 400371025,
-      "squeeze_risk": "LOW"
-    },
-    "NFLX": {
-      "short_pct_float": 2.43,
-      "days_to_cover": 3.1,
-      "shares_short": 101569951,
-      "float_shares": 4183388967,
-      "squeeze_risk": "LOW"
-    },
-    "ALGN": {
-      "short_pct_float": 7.38,
-      "days_to_cover": 4.4,
-      "shares_short": 4629162,
-      "float_shares": 67022392,
-      "squeeze_risk": "LOW"
-    },
-    "HD": {
-      "short_pct_float": 1.34,
-      "days_to_cover": 2.2,
-      "shares_short": 12028186,
-      "float_shares": 995381699,
-      "squeeze_risk": "LOW"
-    },
-    "L": {
-      "short_pct_float": 2.69,
-      "days_to_cover": 4.8,
-      "shares_short": 4482193,
-      "float_shares": 166790075,
-      "squeeze_risk": "LOW"
-    },
-    "TPL": {
-      "short_pct_float": 9.5,
-      "days_to_cover": 10.5,
-      "shares_short": 4495255,
-      "float_shares": 58557221,
       "squeeze_risk": "LOW"
     },
     "CLX": {
@@ -1380,193 +967,39 @@
       "float_shares": 120504172,
       "squeeze_risk": "LOW"
     },
-    "CHD": {
-      "short_pct_float": 5.19,
-      "days_to_cover": 5.1,
-      "shares_short": 10700652,
-      "float_shares": 236213816,
-      "squeeze_risk": "LOW"
-    },
-    "TMO": {
-      "short_pct_float": 1.26,
-      "days_to_cover": 1.8,
-      "shares_short": 4693391,
-      "float_shares": 370666398,
-      "squeeze_risk": "LOW"
-    },
-    "CDW": {
-      "short_pct_float": 8.01,
-      "days_to_cover": 3.6,
-      "shares_short": 8871238,
-      "float_shares": 127297371,
-      "squeeze_risk": "LOW"
-    },
-    "MSTR": {
-      "short_pct_float": 11.38,
-      "days_to_cover": 2.5,
-      "shares_short": 37684181,
-      "float_shares": 329887095,
-      "squeeze_risk": "MEDIUM"
-    },
-    "TKO": {
-      "short_pct_float": 13.99,
-      "days_to_cover": 6.7,
-      "shares_short": 9536860,
-      "float_shares": 61600937,
-      "squeeze_risk": "MEDIUM"
-    },
-    "EXP": {
-      "short_pct_float": 8.72,
-      "days_to_cover": 5.0,
-      "shares_short": 2062733,
-      "float_shares": 30540250,
-      "squeeze_risk": "LOW"
-    },
-    "MOH": {
-      "short_pct_float": 5.66,
-      "days_to_cover": 2.6,
-      "shares_short": 2532174,
-      "float_shares": 48495722,
-      "squeeze_risk": "LOW"
-    },
-    "APTV": {
-      "short_pct_float": 5.82,
-      "days_to_cover": 2.3,
-      "shares_short": 9059477,
-      "float_shares": 209356187,
-      "squeeze_risk": "LOW"
-    },
-    "SSB": {
-      "short_pct_float": 2.79,
-      "days_to_cover": 3.3,
-      "shares_short": 2452309,
-      "float_shares": 96685030,
-      "squeeze_risk": "LOW"
-    },
-    "BLK": {
-      "short_pct_float": 1.32,
-      "days_to_cover": 3.4,
-      "shares_short": 2010666,
-      "float_shares": 144144073,
-      "squeeze_risk": "LOW"
-    },
-    "CBZ": {
-      "short_pct_float": 8.64,
-      "days_to_cover": 4.3,
-      "shares_short": 3838008,
-      "float_shares": 46667647,
-      "squeeze_risk": "LOW"
-    },
-    "SYK": {
-      "short_pct_float": 1.7,
-      "days_to_cover": 1.9,
-      "shares_short": 6237185,
-      "float_shares": 347566368,
-      "squeeze_risk": "LOW"
-    },
-    "NBR": {
-      "short_pct_float": 6.83,
-      "days_to_cover": 3.1,
-      "shares_short": 965859,
-      "float_shares": 13266308,
-      "squeeze_risk": "LOW"
-    },
-    "CRSP": {
-      "short_pct_float": 25.74,
-      "days_to_cover": 12.8,
-      "shares_short": 21672640,
-      "float_shares": 96029240,
-      "squeeze_risk": "HIGH"
-    },
-    "ZBRA": {
-      "short_pct_float": 10.09,
-      "days_to_cover": 3.3,
-      "shares_short": 4102024,
-      "float_shares": 47177064,
-      "squeeze_risk": "MEDIUM"
-    },
-    "NDAQ": {
-      "short_pct_float": 1.87,
-      "days_to_cover": 2.4,
-      "shares_short": 7208162,
-      "float_shares": 502997641,
-      "squeeze_risk": "LOW"
-    },
-    "WHR": {
-      "short_pct_float": 0.13,
-      "days_to_cover": 0.0,
-      "shares_short": 75154,
-      "float_shares": 64258512,
-      "squeeze_risk": "LOW"
-    },
-    "ILMN": {
-      "short_pct_float": 8.34,
-      "days_to_cover": 4.2,
-      "shares_short": 7723045,
-      "float_shares": 148025868,
-      "squeeze_risk": "LOW"
-    },
-    "ESTC": {
-      "short_pct_float": 6.89,
-      "days_to_cover": 2.8,
-      "shares_short": 6261640,
-      "float_shares": 83287088,
-      "squeeze_risk": "LOW"
-    },
-    "HSY": {
-      "short_pct_float": 6.68,
-      "days_to_cover": 4.2,
-      "shares_short": 8461484,
-      "float_shares": 146063455,
-      "squeeze_risk": "LOW"
-    },
-    "PATK": {
-      "short_pct_float": 9.5,
-      "days_to_cover": 4.0,
-      "shares_short": 2179744,
-      "float_shares": 31468946,
-      "squeeze_risk": "LOW"
-    },
-    "CALM": {
-      "short_pct_float": 12.63,
-      "days_to_cover": 6.6,
-      "shares_short": 4962437,
-      "float_shares": 42718996,
-      "squeeze_risk": "MEDIUM"
-    },
-    "SATS": {
-      "short_pct_float": 36.49,
-      "days_to_cover": 6.6,
-      "shares_short": 41066955,
-      "float_shares": 136887605,
-      "squeeze_risk": "HIGH"
-    },
-    "HON": {
-      "short_pct_float": 2.18,
+    "AMG": {
+      "short_pct_float": 5.2,
       "days_to_cover": 3.2,
-      "shares_short": 13823028,
-      "float_shares": 600886916,
+      "shares_short": 1027745,
+      "float_shares": 25371185,
       "squeeze_risk": "LOW"
     },
-    "ZION": {
-      "short_pct_float": 5.08,
-      "days_to_cover": 4.6,
-      "shares_short": 6377018,
-      "float_shares": 144772179,
+    "AYI": {
+      "short_pct_float": 4.9,
+      "days_to_cover": 4.2,
+      "shares_short": 1285150,
+      "float_shares": 29915203,
       "squeeze_risk": "LOW"
     },
-    "DKS": {
-      "short_pct_float": 12.66,
-      "days_to_cover": 5.0,
-      "shares_short": 6278597,
-      "float_shares": 61640397,
+    "MDGL": {
+      "short_pct_float": 19.5,
+      "days_to_cover": 13.2,
+      "shares_short": 3823127,
+      "float_shares": 13794892,
       "squeeze_risk": "MEDIUM"
     },
-    "XMTR": {
-      "short_pct_float": 8.07,
-      "days_to_cover": 3.3,
-      "shares_short": 3449747,
-      "float_shares": 48674402,
+    "ADI": {
+      "short_pct_float": 2.17,
+      "days_to_cover": 2.1,
+      "shares_short": 9480279,
+      "float_shares": 485260464,
+      "squeeze_risk": "LOW"
+    },
+    "KO": {
+      "short_pct_float": 1.09,
+      "days_to_cover": 3.1,
+      "shares_short": 46379257,
+      "float_shares": 3873955169,
       "squeeze_risk": "LOW"
     },
     "CI": {
@@ -1576,249 +1009,46 @@
       "float_shares": 263244131,
       "squeeze_risk": "LOW"
     },
-    "CTAS": {
-      "short_pct_float": 3.99,
-      "days_to_cover": 5.7,
-      "shares_short": 11944744,
-      "float_shares": 342074487,
-      "squeeze_risk": "LOW"
-    },
-    "RLI": {
-      "short_pct_float": 6.8,
-      "days_to_cover": 5.6,
-      "shares_short": 5525728,
-      "float_shares": 81633883,
-      "squeeze_risk": "LOW"
-    },
-    "NTB": {
-      "short_pct_float": 1.19,
-      "days_to_cover": 2.5,
-      "shares_short": 467242,
-      "float_shares": 38851246,
-      "squeeze_risk": "LOW"
-    },
-    "NSP": {
-      "short_pct_float": 13.58,
-      "days_to_cover": 5.4,
-      "shares_short": 4192247,
-      "float_shares": 35717575,
-      "squeeze_risk": "MEDIUM"
-    },
-    "WAL": {
-      "short_pct_float": 0.14,
-      "days_to_cover": 0.1,
-      "shares_short": 147728,
-      "float_shares": 102049023,
-      "squeeze_risk": "LOW"
-    },
-    "SAIC": {
-      "short_pct_float": 7.7,
-      "days_to_cover": 5.9,
-      "shares_short": 2899383,
-      "float_shares": 39657770,
-      "squeeze_risk": "LOW"
-    },
-    "CPAY": {
-      "short_pct_float": 4.87,
-      "days_to_cover": 5.3,
-      "shares_short": 3062866,
-      "float_shares": 62729141,
-      "squeeze_risk": "LOW"
-    },
-    "DINO": {
-      "short_pct_float": 5.06,
-      "days_to_cover": 3.2,
-      "shares_short": 8130963,
-      "float_shares": 168088817,
-      "squeeze_risk": "LOW"
-    },
-    "META": {
-      "short_pct_float": 1.47,
-      "days_to_cover": 1.9,
-      "shares_short": 32270039,
-      "float_shares": 2192537745,
-      "squeeze_risk": "LOW"
-    },
-    "LULU": {
-      "short_pct_float": 6.68,
-      "days_to_cover": 2.2,
-      "shares_short": 7231844,
-      "float_shares": 98065164,
-      "squeeze_risk": "LOW"
-    },
-    "BMI": {
-      "short_pct_float": 20.42,
-      "days_to_cover": 7.7,
-      "shares_short": 4089214,
-      "float_shares": 28997907,
-      "squeeze_risk": "HIGH"
-    },
-    "SHAK": {
-      "short_pct_float": 12.48,
-      "days_to_cover": 1.4,
-      "shares_short": 4107880,
-      "float_shares": 38461914,
-      "squeeze_risk": "MEDIUM"
-    },
-    "SCHW": {
-      "short_pct_float": 0.0,
-      "days_to_cover": null,
-      "shares_short": 31780,
-      "float_shares": 1635274335,
-      "squeeze_risk": "LOW"
-    },
-    "CRM": {
-      "short_pct_float": 8.61,
-      "days_to_cover": 4.5,
-      "shares_short": 60979990,
-      "float_shares": 793643760,
-      "squeeze_risk": "LOW"
-    },
-    "AMG": {
-      "short_pct_float": 5.2,
-      "days_to_cover": 3.2,
-      "shares_short": 1027745,
-      "float_shares": 25371185,
-      "squeeze_risk": "LOW"
-    },
-    "SPG": {
-      "short_pct_float": 0.0,
-      "days_to_cover": null,
-      "shares_short": 385,
-      "float_shares": 320583278,
-      "squeeze_risk": "LOW"
-    },
-    "PRIM": {
-      "short_pct_float": 10.62,
-      "days_to_cover": 1.6,
-      "shares_short": 4213881,
-      "float_shares": 53658673,
-      "squeeze_risk": "MEDIUM"
-    },
-    "PLMR": {
-      "short_pct_float": 3.8,
-      "days_to_cover": 2.8,
-      "shares_short": 847015,
-      "float_shares": 25848165,
-      "squeeze_risk": "LOW"
-    },
-    "ASTS": {
-      "short_pct_float": 18.39,
-      "days_to_cover": 2.2,
-      "shares_short": 54759454,
-      "float_shares": 265967930,
-      "squeeze_risk": "MEDIUM"
-    },
-    "XYL": {
-      "short_pct_float": 4.13,
-      "days_to_cover": 3.7,
-      "shares_short": 7624725,
-      "float_shares": 237056474,
-      "squeeze_risk": "LOW"
-    },
-    "PAYX": {
-      "short_pct_float": 6.25,
-      "days_to_cover": 6.3,
-      "shares_short": 20011633,
-      "float_shares": null,
-      "squeeze_risk": "LOW"
-    },
-    "TMDX": {
-      "short_pct_float": 33.2,
-      "days_to_cover": 3.9,
-      "shares_short": 7356977,
-      "float_shares": 33436990,
-      "squeeze_risk": "HIGH"
-    },
-    "TSLA": {
-      "short_pct_float": 2.3,
-      "days_to_cover": 1.5,
-      "shares_short": 76947758,
-      "float_shares": 2815853972,
-      "squeeze_risk": "LOW"
-    },
-    "UTHR": {
-      "short_pct_float": 6.04,
-      "days_to_cover": 4.8,
-      "shares_short": 2191540,
-      "float_shares": 38921107,
-      "squeeze_risk": "LOW"
-    },
-    "LMND": {
-      "short_pct_float": 14.6,
-      "days_to_cover": 6.0,
-      "shares_short": 11169397,
-      "float_shares": 71119918,
-      "squeeze_risk": "MEDIUM"
-    },
-    "PVLA": {
-      "short_pct_float": 16.72,
-      "days_to_cover": 10.3,
-      "shares_short": 2118329,
-      "float_shares": 9577434,
-      "squeeze_risk": "MEDIUM"
-    },
-    "TNC": {
-      "short_pct_float": 10.4,
-      "days_to_cover": 5.1,
-      "shares_short": 1204431,
-      "float_shares": 16628095,
-      "squeeze_risk": "MEDIUM"
-    },
-    "KO": {
-      "short_pct_float": 1.09,
-      "days_to_cover": 3.1,
-      "shares_short": 46379257,
-      "float_shares": 3873955169,
-      "squeeze_risk": "LOW"
-    },
-    "SPGI": {
-      "short_pct_float": 1.54,
-      "days_to_cover": 2.2,
-      "shares_short": 4548380,
-      "float_shares": 295283680,
-      "squeeze_risk": "LOW"
-    },
-    "ELF": {
-      "short_pct_float": 21.47,
+    "WM": {
+      "short_pct_float": 1.43,
       "days_to_cover": 2.6,
-      "shares_short": 10722779,
-      "float_shares": 21935054,
-      "squeeze_risk": "HIGH"
-    },
-    "HRI": {
-      "short_pct_float": 8.26,
-      "days_to_cover": 4.0,
-      "shares_short": 2057761,
-      "float_shares": 28990845,
+      "shares_short": 5727580,
+      "float_shares": 400371025,
       "squeeze_risk": "LOW"
     },
-    "ES": {
-      "short_pct_float": 3.31,
-      "days_to_cover": 3.6,
-      "shares_short": 9455423,
-      "float_shares": 375519666,
+    "CASY": {
+      "short_pct_float": 4.2,
+      "days_to_cover": 2.9,
+      "shares_short": 1381856,
+      "float_shares": 36728121,
       "squeeze_risk": "LOW"
     },
-    "ZTS": {
-      "short_pct_float": 3.63,
-      "days_to_cover": 1.4,
-      "shares_short": 13462233,
-      "float_shares": 418368700,
+    "ICUI": {
+      "short_pct_float": 8.81,
+      "days_to_cover": 5.9,
+      "shares_short": 1837896,
+      "float_shares": 24505460,
       "squeeze_risk": "LOW"
     },
-    "MU": {
-      "short_pct_float": 3.34,
-      "days_to_cover": 0.7,
-      "shares_short": 37549121,
-      "float_shares": 1123550158,
+    "TMCI": {
+      "short_pct_float": 7.95,
+      "days_to_cover": 7.4,
+      "shares_short": 4108513,
+      "float_shares": 47289156,
       "squeeze_risk": "LOW"
     },
-    "CB": {
-      "short_pct_float": 0.94,
-      "days_to_cover": 2.2,
-      "shares_short": 3630053,
-      "float_shares": 351905474,
+    "DHIL": {
+      "short_pct_float": 2.49,
+      "days_to_cover": 2.6,
+      "shares_short": 61218,
+      "float_shares": 2467004,
+      "squeeze_risk": "LOW"
+    },
+    "IFF": {
+      "short_pct_float": 6.87,
+      "days_to_cover": 5.8,
+      "shares_short": 12779555,
+      "float_shares": 254586070,
       "squeeze_risk": "LOW"
     },
     "LODE": {
@@ -1828,257 +1058,26 @@
       "float_shares": 66423189,
       "squeeze_risk": "LOW"
     },
-    "PLD": {
-      "short_pct_float": 1.66,
-      "days_to_cover": 4.2,
-      "shares_short": 13468265,
-      "float_shares": 927760220,
+    "EFSC": {
+      "short_pct_float": 2.23,
+      "days_to_cover": 3.4,
+      "shares_short": 799941,
+      "float_shares": 35480914,
       "squeeze_risk": "LOW"
     },
-    "TJX": {
-      "short_pct_float": 1.59,
-      "days_to_cover": 2.8,
-      "shares_short": 17571385,
-      "float_shares": 1102141532,
-      "squeeze_risk": "LOW"
-    },
-    "SNEX": {
-      "short_pct_float": 5.39,
-      "days_to_cover": 4.8,
-      "shares_short": 3010116,
-      "float_shares": 69386270,
-      "squeeze_risk": "LOW"
-    },
-    "RHLD": {
-      "short_pct_float": 11.46,
-      "days_to_cover": 4.8,
-      "shares_short": 918958,
-      "float_shares": 3445034,
+    "SGI": {
+      "short_pct_float": 10.79,
+      "days_to_cover": 5.4,
+      "shares_short": 18779046,
+      "float_shares": 187457668,
       "squeeze_risk": "MEDIUM"
     },
-    "MSCI": {
-      "short_pct_float": 2.78,
-      "days_to_cover": 2.5,
-      "shares_short": 1688726,
-      "float_shares": 68937960,
-      "squeeze_risk": "LOW"
-    },
-    "MRVL": {
-      "short_pct_float": 4.71,
-      "days_to_cover": 1.3,
-      "shares_short": 35215842,
-      "float_shares": 872333064,
-      "squeeze_risk": "LOW"
-    },
-    "AXON": {
-      "short_pct_float": 4.85,
-      "days_to_cover": 2.6,
-      "shares_short": 3294993,
-      "float_shares": 76760582,
-      "squeeze_risk": "LOW"
-    },
-    "NMM": {
-      "short_pct_float": 2.35,
-      "days_to_cover": 2.6,
-      "shares_short": 429159,
-      "float_shares": 14201908,
-      "squeeze_risk": "LOW"
-    },
-    "MORN": {
-      "short_pct_float": 8.43,
+    "XMTR": {
+      "short_pct_float": 8.07,
       "days_to_cover": 3.3,
-      "shares_short": 1936111,
-      "float_shares": 19498486,
+      "shares_short": 3449747,
+      "float_shares": 48674402,
       "squeeze_risk": "LOW"
-    },
-    "AIG": {
-      "short_pct_float": 2.08,
-      "days_to_cover": 2.2,
-      "shares_short": 9557797,
-      "float_shares": 528419426,
-      "squeeze_risk": "LOW"
-    },
-    "COO": {
-      "short_pct_float": 3.04,
-      "days_to_cover": 2.1,
-      "shares_short": 5195074,
-      "float_shares": 193675167,
-      "squeeze_risk": "LOW"
-    },
-    "FND": {
-      "short_pct_float": 12.34,
-      "days_to_cover": 3.8,
-      "shares_short": 13166267,
-      "float_shares": 106427338,
-      "squeeze_risk": "MEDIUM"
-    },
-    "PEP": {
-      "short_pct_float": 2.04,
-      "days_to_cover": 3.7,
-      "shares_short": 25087625,
-      "float_shares": 1362845690,
-      "squeeze_risk": "LOW"
-    },
-    "DBD": {
-      "short_pct_float": 14.72,
-      "days_to_cover": 7.8,
-      "shares_short": 2552361,
-      "float_shares": 29682072,
-      "squeeze_risk": "MEDIUM"
-    },
-    "MTDR": {
-      "short_pct_float": 10.01,
-      "days_to_cover": 6.9,
-      "shares_short": 11825067,
-      "float_shares": 116035861,
-      "squeeze_risk": "MEDIUM"
-    },
-    "NEGG": {
-      "short_pct_float": 17.63,
-      "days_to_cover": 1.8,
-      "shares_short": 184340,
-      "float_shares": 1346854,
-      "squeeze_risk": "MEDIUM"
-    },
-    "JBHT": {
-      "short_pct_float": 4.33,
-      "days_to_cover": 2.9,
-      "shares_short": 2758482,
-      "float_shares": 73623160,
-      "squeeze_risk": "LOW"
-    },
-    "WAT": {
-      "short_pct_float": 4.56,
-      "days_to_cover": 3.7,
-      "shares_short": 4475854,
-      "float_shares": 98002247,
-      "squeeze_risk": "LOW"
-    },
-    "CVSA": {
-      "short_pct_float": 6.5,
-      "days_to_cover": 5.0,
-      "shares_short": 1529666,
-      "float_shares": 33183858,
-      "squeeze_risk": "LOW"
-    },
-    "CMC": {
-      "short_pct_float": 6.04,
-      "days_to_cover": 5.3,
-      "shares_short": 5069762,
-      "float_shares": 109806232,
-      "squeeze_risk": "LOW"
-    },
-    "NVR": {
-      "short_pct_float": 6.24,
-      "days_to_cover": 4.2,
-      "shares_short": 111448,
-      "float_shares": 2655105,
-      "squeeze_risk": "LOW"
-    },
-    "ENVA": {
-      "short_pct_float": 9.62,
-      "days_to_cover": 9.2,
-      "shares_short": 1916417,
-      "float_shares": 23763583,
-      "squeeze_risk": "LOW"
-    },
-    "HLNE": {
-      "short_pct_float": 11.79,
-      "days_to_cover": 4.4,
-      "shares_short": 4190020,
-      "float_shares": 41210984,
-      "squeeze_risk": "MEDIUM"
-    },
-    "COR": {
-      "short_pct_float": 3.22,
-      "days_to_cover": 2.4,
-      "shares_short": 5526396,
-      "float_shares": 184006122,
-      "squeeze_risk": "LOW"
-    },
-    "CMPR": {
-      "short_pct_float": 13.4,
-      "days_to_cover": 9.5,
-      "shares_short": 2001315,
-      "float_shares": 13769643,
-      "squeeze_risk": "MEDIUM"
-    },
-    "Q": {
-      "short_pct_float": 2.25,
-      "days_to_cover": 2.1,
-      "shares_short": 4098844,
-      "float_shares": 208794925,
-      "squeeze_risk": "LOW"
-    },
-    "ALSN": {
-      "short_pct_float": 4.11,
-      "days_to_cover": 2.3,
-      "shares_short": 2462924,
-      "float_shares": 82188728,
-      "squeeze_risk": "LOW"
-    },
-    "DUOL": {
-      "short_pct_float": 21.78,
-      "days_to_cover": 4.0,
-      "shares_short": 7615582,
-      "float_shares": 39770953,
-      "squeeze_risk": "HIGH"
-    },
-    "NSC": {
-      "short_pct_float": 3.64,
-      "days_to_cover": 6.4,
-      "shares_short": 8160523,
-      "float_shares": 224254864,
-      "squeeze_risk": "LOW"
-    },
-    "MA": {
-      "short_pct_float": 0.74,
-      "days_to_cover": 1.7,
-      "shares_short": 6482340,
-      "float_shares": 875808317,
-      "squeeze_risk": "LOW"
-    },
-    "CAR": {
-      "short_pct_float": 58.45,
-      "days_to_cover": 3.7,
-      "shares_short": 5676609,
-      "float_shares": 14632316,
-      "squeeze_risk": "HIGH"
-    },
-    "CVX": {
-      "short_pct_float": 1.16,
-      "days_to_cover": 2.2,
-      "shares_short": 22909437,
-      "float_shares": 1882374685,
-      "squeeze_risk": "LOW"
-    },
-    "NVT": {
-      "short_pct_float": 3.39,
-      "days_to_cover": 2.2,
-      "shares_short": 4816464,
-      "float_shares": 161026671,
-      "squeeze_risk": "LOW"
-    },
-    "OKTA": {
-      "short_pct_float": 5.42,
-      "days_to_cover": 2.1,
-      "shares_short": 8045410,
-      "float_shares": 165645371,
-      "squeeze_risk": "LOW"
-    },
-    "MSM": {
-      "short_pct_float": 5.89,
-      "days_to_cover": 3.9,
-      "shares_short": 2664951,
-      "float_shares": 45609374,
-      "squeeze_risk": "LOW"
-    },
-    "RYAN": {
-      "short_pct_float": 11.54,
-      "days_to_cover": 4.3,
-      "shares_short": 12987628,
-      "float_shares": 113582396,
-      "squeeze_risk": "MEDIUM"
     },
     "ESEA": {
       "short_pct_float": 1.51,
@@ -2087,487 +1086,46 @@
       "float_shares": 2828279,
       "squeeze_risk": "LOW"
     },
-    "EXE": {
-      "short_pct_float": 2.6,
-      "days_to_cover": 2.1,
-      "shares_short": 6209752,
-      "float_shares": 238109258,
-      "squeeze_risk": "LOW"
-    },
-    "AXSM": {
-      "short_pct_float": 9.41,
-      "days_to_cover": 3.5,
-      "shares_short": 3093253,
-      "float_shares": 43559663,
-      "squeeze_risk": "LOW"
-    },
-    "SAFT": {
-      "short_pct_float": 2.28,
-      "days_to_cover": 2.4,
-      "shares_short": 198954,
-      "float_shares": 14348358,
-      "squeeze_risk": "LOW"
-    },
-    "ORCL": {
-      "short_pct_float": 2.04,
-      "days_to_cover": 1.6,
-      "shares_short": 34872175,
-      "float_shares": 1710078820,
-      "squeeze_risk": "LOW"
-    },
-    "ARW": {
-      "short_pct_float": 2.83,
-      "days_to_cover": 1.4,
-      "shares_short": 1261724,
-      "float_shares": 50832767,
-      "squeeze_risk": "LOW"
-    },
-    "IBM": {
-      "short_pct_float": 3.61,
-      "days_to_cover": 3.4,
-      "shares_short": 30553020,
-      "float_shares": 937873926,
-      "squeeze_risk": "LOW"
-    },
-    "AMAT": {
-      "short_pct_float": 2.52,
-      "days_to_cover": 2.7,
-      "shares_short": 19954921,
-      "float_shares": 790529525,
-      "squeeze_risk": "LOW"
-    },
-    "RRBI": {
-      "short_pct_float": 2.21,
-      "days_to_cover": 1.6,
-      "shares_short": 122764,
-      "float_shares": 5078842,
-      "squeeze_risk": "LOW"
-    },
-    "AXP": {
-      "short_pct_float": 2.27,
-      "days_to_cover": 3.8,
-      "shares_short": 12044280,
-      "float_shares": 529239682,
-      "squeeze_risk": "LOW"
-    },
-    "D": {
-      "short_pct_float": 3.4,
-      "days_to_cover": 2.9,
-      "shares_short": 26286735,
-      "float_shares": 877696492,
-      "squeeze_risk": "LOW"
-    },
-    "TBBK": {
-      "short_pct_float": 13.28,
-      "days_to_cover": 7.6,
-      "shares_short": 3529387,
-      "float_shares": 39390343,
-      "squeeze_risk": "MEDIUM"
-    },
-    "KYMR": {
-      "short_pct_float": 15.85,
-      "days_to_cover": 19.8,
-      "shares_short": 10103698,
-      "float_shares": 55026213,
-      "squeeze_risk": "MEDIUM"
-    },
-    "JNJ": {
-      "short_pct_float": 1.08,
+    "NBR": {
+      "short_pct_float": 6.83,
       "days_to_cover": 3.1,
-      "shares_short": 23407721,
-      "float_shares": 2403220991,
+      "shares_short": 965859,
+      "float_shares": 13266308,
       "squeeze_risk": "LOW"
     },
-    "BAH": {
-      "short_pct_float": 6.87,
-      "days_to_cover": 4.0,
-      "shares_short": 7250901,
-      "float_shares": 118222959,
-      "squeeze_risk": "LOW"
-    },
-    "NOW": {
-      "short_pct_float": 5.93,
+    "NXPI": {
+      "short_pct_float": 3.66,
       "days_to_cover": 2.0,
-      "shares_short": 61047279,
-      "float_shares": 1028750356,
+      "shares_short": 8285183,
+      "float_shares": 251981285,
       "squeeze_risk": "LOW"
     },
-    "ABT": {
-      "short_pct_float": 1.41,
-      "days_to_cover": 1.7,
-      "shares_short": 22044423,
-      "float_shares": 1731135119,
-      "squeeze_risk": "LOW"
-    },
-    "LRCX": {
-      "short_pct_float": 2.87,
+    "MUSA": {
+      "short_pct_float": 6.39,
       "days_to_cover": 3.5,
-      "shares_short": 32072543,
-      "float_shares": 1245606233,
+      "shares_short": 1143787,
+      "float_shares": 16682723,
       "squeeze_risk": "LOW"
     },
-    "LOAR": {
-      "short_pct_float": 15.84,
-      "days_to_cover": 8.1,
-      "shares_short": 6976311,
-      "float_shares": 43457671,
-      "squeeze_risk": "MEDIUM"
-    },
-    "AWR": {
-      "short_pct_float": 3.17,
-      "days_to_cover": 3.0,
-      "shares_short": 875362,
-      "float_shares": 38767021,
-      "squeeze_risk": "LOW"
-    },
-    "ITW": {
-      "short_pct_float": 3.36,
-      "days_to_cover": 6.5,
-      "shares_short": 9631212,
-      "float_shares": 260607291,
-      "squeeze_risk": "LOW"
-    },
-    "TPC": {
-      "short_pct_float": 4.98,
-      "days_to_cover": 3.2,
-      "shares_short": 1881952,
-      "float_shares": 44866662,
-      "squeeze_risk": "LOW"
-    },
-    "CR": {
-      "short_pct_float": 2.49,
-      "days_to_cover": 2.2,
-      "shares_short": 1227409,
-      "float_shares": 49325210,
-      "squeeze_risk": "LOW"
-    },
-    "ALLE": {
-      "short_pct_float": 3.92,
-      "days_to_cover": 3.2,
-      "shares_short": 3359864,
-      "float_shares": 85463214,
-      "squeeze_risk": "LOW"
-    },
-    "CMS": {
-      "short_pct_float": 0.0,
-      "days_to_cover": null,
-      "shares_short": 7777,
-      "float_shares": 306794235,
-      "squeeze_risk": "LOW"
-    },
-    "TCI": {
-      "short_pct_float": 0.67,
-      "days_to_cover": 3.8,
-      "shares_short": 12423,
-      "float_shares": 1171578,
-      "squeeze_risk": "LOW"
-    },
-    "INTC": {
-      "short_pct_float": 2.69,
-      "days_to_cover": 0.9,
-      "shares_short": 134957829,
-      "float_shares": 5016551120,
-      "squeeze_risk": "LOW"
-    },
-    "PFX": {
-      "short_pct_float": 0.01,
-      "days_to_cover": 0.1,
-      "shares_short": 213,
-      "float_shares": 1390970,
-      "squeeze_risk": "LOW"
-    },
-    "RSG": {
-      "short_pct_float": 1.84,
-      "days_to_cover": 1.9,
-      "shares_short": 3628169,
-      "float_shares": 306867237,
-      "squeeze_risk": "LOW"
-    },
-    "POOL": {
-      "short_pct_float": 12.09,
-      "days_to_cover": 4.1,
-      "shares_short": 3714701,
-      "float_shares": 35151099,
-      "squeeze_risk": "MEDIUM"
-    },
-    "WGS": {
-      "short_pct_float": 29.6,
-      "days_to_cover": 2.2,
-      "shares_short": 4571456,
-      "float_shares": 18622706,
-      "squeeze_risk": "HIGH"
-    },
-    "STZ": {
-      "short_pct_float": 5.16,
-      "days_to_cover": 3.9,
-      "shares_short": 7767156,
-      "float_shares": 155122297,
-      "squeeze_risk": "LOW"
-    },
-    "MSFT": {
-      "short_pct_float": 1.19,
-      "days_to_cover": 2.4,
-      "shares_short": 88696120,
-      "float_shares": 7417366336,
-      "squeeze_risk": "LOW"
-    },
-    "MRK": {
-      "short_pct_float": 1.24,
+    "ACGL": {
+      "short_pct_float": 2.95,
       "days_to_cover": 3.3,
-      "shares_short": 30545853,
-      "float_shares": 2465675110,
+      "shares_short": 8797256,
+      "float_shares": 335705881,
       "squeeze_risk": "LOW"
     },
-    "LLY": {
-      "short_pct_float": 1.1,
-      "days_to_cover": 2.8,
-      "shares_short": 9795475,
-      "float_shares": 889333704,
-      "squeeze_risk": "LOW"
-    },
-    "UNH": {
-      "short_pct_float": 2.37,
-      "days_to_cover": 2.9,
-      "shares_short": 19282449,
-      "float_shares": 905429052,
-      "squeeze_risk": "LOW"
-    },
-    "WOR": {
-      "short_pct_float": 2.84,
-      "days_to_cover": 5.2,
-      "shares_short": 862756,
-      "float_shares": 30739779,
-      "squeeze_risk": "LOW"
-    },
-    "AAPL": {
-      "short_pct_float": 1.06,
-      "days_to_cover": 3.1,
-      "shares_short": 155886024,
-      "float_shares": 14662240621,
-      "squeeze_risk": "LOW"
-    },
-    "LOW": {
-      "short_pct_float": 1.97,
-      "days_to_cover": 3.3,
-      "shares_short": 9927930,
-      "float_shares": 559456664,
-      "squeeze_risk": "LOW"
-    },
-    "SMG": {
-      "short_pct_float": 12.13,
-      "days_to_cover": 5.2,
-      "shares_short": 5422304,
-      "float_shares": 44521400,
-      "squeeze_risk": "MEDIUM"
-    },
-    "BWFG": {
-      "short_pct_float": 3.38,
-      "days_to_cover": 6.0,
-      "shares_short": 213269,
-      "float_shares": 5980575,
-      "squeeze_risk": "LOW"
-    },
-    "MIDD": {
-      "short_pct_float": 6.73,
-      "days_to_cover": 3.5,
-      "shares_short": 2349184,
-      "float_shares": 37668649,
-      "squeeze_risk": "LOW"
-    },
-    "DE": {
-      "short_pct_float": 1.88,
-      "days_to_cover": 4.0,
-      "shares_short": 5073694,
-      "float_shares": 269394851,
-      "squeeze_risk": "LOW"
-    },
-    "CDNL": {
-      "short_pct_float": 11.99,
-      "days_to_cover": 3.3,
-      "shares_short": 1630451,
-      "float_shares": 12779582,
-      "squeeze_risk": "MEDIUM"
-    },
-    "TYL": {
-      "short_pct_float": 7.46,
-      "days_to_cover": 3.3,
-      "shares_short": 2639424,
-      "float_shares": 39503737,
-      "squeeze_risk": "LOW"
-    },
-    "CABO": {
-      "short_pct_float": 15.97,
-      "days_to_cover": 3.5,
-      "shares_short": 787199,
-      "float_shares": 4544863,
-      "squeeze_risk": "MEDIUM"
-    },
-    "ITIC": {
-      "short_pct_float": 3.41,
-      "days_to_cover": 1.7,
-      "shares_short": 48278,
-      "float_shares": 1514078,
-      "squeeze_risk": "LOW"
-    },
-    "XOM": {
-      "short_pct_float": 1.14,
-      "days_to_cover": 2.4,
-      "shares_short": 42132243,
-      "float_shares": 4136159874,
-      "squeeze_risk": "LOW"
-    },
-    "HTO": {
-      "short_pct_float": 15.29,
-      "days_to_cover": 10.0,
-      "shares_short": 4813221,
-      "float_shares": 36474654,
-      "squeeze_risk": "MEDIUM"
-    },
-    "SXI": {
-      "short_pct_float": 8.93,
-      "days_to_cover": 4.1,
-      "shares_short": 778029,
-      "float_shares": 11889948,
-      "squeeze_risk": "LOW"
-    },
-    "V": {
-      "short_pct_float": 1.29,
-      "days_to_cover": 2.6,
-      "shares_short": 21356037,
-      "float_shares": 1688137014,
-      "squeeze_risk": "LOW"
-    },
-    "CHTR": {
-      "short_pct_float": 44.29,
-      "days_to_cover": 6.3,
-      "shares_short": 21381446,
-      "float_shares": 80358096,
-      "squeeze_risk": "HIGH"
-    },
-    "LKFN": {
-      "short_pct_float": 9.41,
-      "days_to_cover": 10.2,
-      "shares_short": 1907859,
-      "float_shares": 24061541,
-      "squeeze_risk": "LOW"
-    },
-    "KKR": {
-      "short_pct_float": 2.09,
-      "days_to_cover": 3.0,
-      "shares_short": 14480719,
-      "float_shares": 690338589,
-      "squeeze_risk": "LOW"
-    },
-    "VRSK": {
-      "short_pct_float": 7.31,
-      "days_to_cover": 4.2,
-      "shares_short": 8292169,
-      "float_shares": 130615672,
-      "squeeze_risk": "LOW"
-    },
-    "BJ": {
-      "short_pct_float": 7.24,
-      "days_to_cover": 3.8,
-      "shares_short": 9181410,
-      "float_shares": 126975070,
-      "squeeze_risk": "LOW"
-    },
-    "MIRM": {
-      "short_pct_float": 14.11,
-      "days_to_cover": 5.2,
-      "shares_short": 6561290,
-      "float_shares": 52453612,
-      "squeeze_risk": "MEDIUM"
-    },
-    "SUI": {
-      "short_pct_float": 3.74,
-      "days_to_cover": 3.9,
-      "shares_short": 3373828,
-      "float_shares": 121612737,
-      "squeeze_risk": "LOW"
-    },
-    "JPM": {
-      "short_pct_float": 1.07,
-      "days_to_cover": 3.4,
-      "shares_short": 28627082,
-      "float_shares": 2665149237,
-      "squeeze_risk": "LOW"
-    },
-    "WDFC": {
-      "short_pct_float": 5.82,
-      "days_to_cover": 3.9,
-      "shares_short": 561873,
-      "float_shares": 13398889,
-      "squeeze_risk": "LOW"
-    },
-    "GOOGL": {
-      "short_pct_float": 1.42,
-      "days_to_cover": 2.8,
-      "shares_short": 82913646,
-      "float_shares": 10822738160,
-      "squeeze_risk": "LOW"
-    },
-    "CVCO": {
-      "short_pct_float": 8.3,
-      "days_to_cover": 2.9,
-      "shares_short": 457377,
-      "float_shares": 7554811,
-      "squeeze_risk": "LOW"
-    },
-    "J": {
-      "short_pct_float": 6.91,
-      "days_to_cover": 4.6,
-      "shares_short": 7144525,
-      "float_shares": 116584794,
-      "squeeze_risk": "LOW"
-    },
-    "AMR": {
-      "short_pct_float": 19.41,
-      "days_to_cover": 6.2,
-      "shares_short": 1706049,
-      "float_shares": 10243537,
-      "squeeze_risk": "MEDIUM"
-    },
-    "ITGR": {
-      "short_pct_float": 16.05,
+    "SATS": {
+      "short_pct_float": 36.49,
       "days_to_cover": 6.6,
-      "shares_short": 4580665,
-      "float_shares": 33463173,
-      "squeeze_risk": "MEDIUM"
+      "shares_short": 41066955,
+      "float_shares": 136887605,
+      "squeeze_risk": "HIGH"
     },
-    "MSEX": {
-      "short_pct_float": 5.23,
-      "days_to_cover": 6.7,
-      "shares_short": 787334,
-      "float_shares": 18102475,
-      "squeeze_risk": "LOW"
-    },
-    "AMZN": {
-      "short_pct_float": 0.94,
-      "days_to_cover": 2.1,
-      "shares_short": 104283766,
-      "float_shares": 9779718473,
-      "squeeze_risk": "LOW"
-    },
-    "SO": {
-      "short_pct_float": 2.64,
-      "days_to_cover": 5.2,
-      "shares_short": 29714772,
-      "float_shares": 1124775944,
-      "squeeze_risk": "LOW"
-    },
-    "CARR": {
-      "short_pct_float": 2.47,
-      "days_to_cover": 2.4,
-      "shares_short": 16907459,
-      "float_shares": 790355413,
-      "squeeze_risk": "LOW"
-    },
-    "GGG": {
-      "short_pct_float": 4.11,
-      "days_to_cover": 3.5,
-      "shares_short": 5360871,
-      "float_shares": 164291898,
+    "CBZ": {
+      "short_pct_float": 8.64,
+      "days_to_cover": 4.3,
+      "shares_short": 3838008,
+      "float_shares": 46667647,
       "squeeze_risk": "LOW"
     },
     "PSX": {
@@ -2577,19 +1135,33 @@
       "float_shares": 400004851,
       "squeeze_risk": "LOW"
     },
-    "RHP": {
-      "short_pct_float": 4.09,
-      "days_to_cover": 2.5,
-      "shares_short": 1725562,
-      "float_shares": 61111996,
+    "ZBRA": {
+      "short_pct_float": 10.09,
+      "days_to_cover": 3.3,
+      "shares_short": 4102024,
+      "float_shares": 47177064,
+      "squeeze_risk": "MEDIUM"
+    },
+    "AMAT": {
+      "short_pct_float": 2.52,
+      "days_to_cover": 2.7,
+      "shares_short": 19954921,
+      "float_shares": 790529525,
       "squeeze_risk": "LOW"
     },
-    "IT": {
-      "short_pct_float": 25.25,
-      "days_to_cover": 6.3,
-      "shares_short": 12221013,
-      "float_shares": 60949652,
-      "squeeze_risk": "HIGH"
+    "ALLE": {
+      "short_pct_float": 3.92,
+      "days_to_cover": 3.2,
+      "shares_short": 3359864,
+      "float_shares": 85463214,
+      "squeeze_risk": "LOW"
+    },
+    "FDS": {
+      "short_pct_float": 18.1,
+      "days_to_cover": 6.6,
+      "shares_short": 5753765,
+      "float_shares": 36298518,
+      "squeeze_risk": "MEDIUM"
     },
     "GE": {
       "short_pct_float": 1.33,
@@ -2598,53 +1170,893 @@
       "float_shares": 1039372554,
       "squeeze_risk": "LOW"
     },
-    "ADI": {
-      "short_pct_float": 2.17,
-      "days_to_cover": 2.1,
-      "shares_short": 9480279,
-      "float_shares": 485260464,
+    "BWFG": {
+      "short_pct_float": 3.38,
+      "days_to_cover": 6.0,
+      "shares_short": 213269,
+      "float_shares": 5980575,
       "squeeze_risk": "LOW"
     },
-    "BFH": {
-      "short_pct_float": 0.01,
-      "days_to_cover": null,
-      "shares_short": 2718,
-      "float_shares": 39776715,
+    "DIS": {
+      "short_pct_float": 1.53,
+      "days_to_cover": 2.9,
+      "shares_short": 26510366,
+      "float_shares": 1733698275,
       "squeeze_risk": "LOW"
     },
-    "HEI": {
-      "short_pct_float": 1.55,
-      "days_to_cover": 0.9,
-      "shares_short": 786670,
-      "float_shares": 123870796,
-      "squeeze_risk": "LOW"
+    "CMPR": {
+      "short_pct_float": 13.4,
+      "days_to_cover": 9.5,
+      "shares_short": 2001315,
+      "float_shares": 13769643,
+      "squeeze_risk": "MEDIUM"
     },
-    "SAIA": {
-      "short_pct_float": 4.18,
+    "LLY": {
+      "short_pct_float": 1.1,
       "days_to_cover": 2.8,
-      "shares_short": 1109079,
-      "float_shares": 26494716,
+      "shares_short": 9795475,
+      "float_shares": 889333704,
       "squeeze_risk": "LOW"
     },
-    "TSM": {
-      "short_pct_float": 0.58,
-      "days_to_cover": 2.2,
-      "shares_short": 28282997,
-      "float_shares": 37818523654,
+    "JNJ": {
+      "short_pct_float": 1.08,
+      "days_to_cover": 3.1,
+      "shares_short": 23407721,
+      "float_shares": 2403220991,
       "squeeze_risk": "LOW"
     },
-    "JKHY": {
-      "short_pct_float": 9.01,
+    "ILMN": {
+      "short_pct_float": 8.34,
+      "days_to_cover": 4.2,
+      "shares_short": 7723045,
+      "float_shares": 148025868,
+      "squeeze_risk": "LOW"
+    },
+    "WFC": {
+      "short_pct_float": 0.0,
+      "days_to_cover": null,
+      "shares_short": 1242,
+      "float_shares": 3051804575,
+      "squeeze_risk": "LOW"
+    },
+    "AWI": {
+      "short_pct_float": 3.27,
+      "days_to_cover": 3.0,
+      "shares_short": 1196761,
+      "float_shares": 41964391,
+      "squeeze_risk": "LOW"
+    },
+    "FTAI": {
+      "short_pct_float": 9.38,
+      "days_to_cover": 4.2,
+      "shares_short": 6026297,
+      "float_shares": 101435069,
+      "squeeze_risk": "LOW"
+    },
+    "ESTC": {
+      "short_pct_float": 6.89,
+      "days_to_cover": 2.8,
+      "shares_short": 6261640,
+      "float_shares": 83287088,
+      "squeeze_risk": "LOW"
+    },
+    "NMM": {
+      "short_pct_float": 2.35,
+      "days_to_cover": 2.6,
+      "shares_short": 429159,
+      "float_shares": 14201908,
+      "squeeze_risk": "LOW"
+    },
+    "BLDR": {
+      "short_pct_float": 9.77,
+      "days_to_cover": 2.6,
+      "shares_short": 8797863,
+      "float_shares": 104404069,
+      "squeeze_risk": "LOW"
+    },
+    "MKL": {
+      "short_pct_float": 2.41,
       "days_to_cover": 3.4,
-      "shares_short": 5586730,
-      "float_shares": 70578292,
+      "shares_short": 298481,
+      "float_shares": 12192483,
       "squeeze_risk": "LOW"
+    },
+    "CINF": {
+      "short_pct_float": 2.23,
+      "days_to_cover": 4.8,
+      "shares_short": 2960919,
+      "float_shares": 151803381,
+      "squeeze_risk": "LOW"
+    },
+    "AIN": {
+      "short_pct_float": 2.19,
+      "days_to_cover": 1.9,
+      "shares_short": 456333,
+      "float_shares": 28224772,
+      "squeeze_risk": "LOW"
+    },
+    "TMDX": {
+      "short_pct_float": 33.2,
+      "days_to_cover": 3.9,
+      "shares_short": 7356977,
+      "float_shares": 33436990,
+      "squeeze_risk": "HIGH"
+    },
+    "GSHD": {
+      "short_pct_float": 10.67,
+      "days_to_cover": 4.1,
+      "shares_short": 1834975,
+      "float_shares": 21611080,
+      "squeeze_risk": "MEDIUM"
+    },
+    "MSM": {
+      "short_pct_float": 5.89,
+      "days_to_cover": 3.9,
+      "shares_short": 2664951,
+      "float_shares": 45609374,
+      "squeeze_risk": "LOW"
+    },
+    "MDLZ": {
+      "short_pct_float": 3.02,
+      "days_to_cover": 4.6,
+      "shares_short": 34703971,
+      "float_shares": 1280042710,
+      "squeeze_risk": "LOW"
+    },
+    "APTV": {
+      "short_pct_float": 5.82,
+      "days_to_cover": 2.3,
+      "shares_short": 9059477,
+      "float_shares": 209356187,
+      "squeeze_risk": "LOW"
+    },
+    "THO": {
+      "short_pct_float": 11.67,
+      "days_to_cover": 7.0,
+      "shares_short": 4444715,
+      "float_shares": 49565907,
+      "squeeze_risk": "MEDIUM"
+    },
+    "SPB": {
+      "short_pct_float": 18.81,
+      "days_to_cover": 7.6,
+      "shares_short": 3225855,
+      "float_shares": 20127780,
+      "squeeze_risk": "MEDIUM"
+    },
+    "GS": {
+      "short_pct_float": 2.62,
+      "days_to_cover": 3.8,
+      "shares_short": 7688517,
+      "float_shares": 304887424,
+      "squeeze_risk": "LOW"
+    },
+    "NTRS": {
+      "short_pct_float": 1.54,
+      "days_to_cover": 2.2,
+      "shares_short": 2467657,
+      "float_shares": 181877398,
+      "squeeze_risk": "LOW"
+    },
+    "CPAY": {
+      "short_pct_float": 4.87,
+      "days_to_cover": 5.3,
+      "shares_short": 3062866,
+      "float_shares": 62729141,
+      "squeeze_risk": "LOW"
+    },
+    "MTN": {
+      "short_pct_float": 34.37,
+      "days_to_cover": 10.6,
+      "shares_short": 7302942,
+      "float_shares": 32994507,
+      "squeeze_risk": "HIGH"
+    },
+    "WCC": {
+      "short_pct_float": 3.79,
+      "days_to_cover": 2.5,
+      "shares_short": 1631986,
+      "float_shares": 47872525,
+      "squeeze_risk": "LOW"
+    },
+    "UNH": {
+      "short_pct_float": 2.37,
+      "days_to_cover": 2.9,
+      "shares_short": 19282449,
+      "float_shares": 905429052,
+      "squeeze_risk": "LOW"
+    },
+    "PFX": {
+      "short_pct_float": 0.01,
+      "days_to_cover": 0.1,
+      "shares_short": 213,
+      "float_shares": 1390970,
+      "squeeze_risk": "LOW"
+    },
+    "DUOL": {
+      "short_pct_float": 21.78,
+      "days_to_cover": 4.0,
+      "shares_short": 7615582,
+      "float_shares": 39770953,
+      "squeeze_risk": "HIGH"
+    },
+    "ASST": {
+      "short_pct_float": 21.35,
+      "days_to_cover": 3.3,
+      "shares_short": 13816905,
+      "float_shares": 56745009,
+      "squeeze_risk": "HIGH"
+    },
+    "SYBT": {
+      "short_pct_float": 4.84,
+      "days_to_cover": 9.1,
+      "shares_short": 1399159,
+      "float_shares": 26240183,
+      "squeeze_risk": "LOW"
+    },
+    "TJX": {
+      "short_pct_float": 1.59,
+      "days_to_cover": 2.8,
+      "shares_short": 17571385,
+      "float_shares": 1102141532,
+      "squeeze_risk": "LOW"
+    },
+    "COP": {
+      "short_pct_float": 1.83,
+      "days_to_cover": 2.9,
+      "shares_short": 22268790,
+      "float_shares": 1215808687,
+      "squeeze_risk": "LOW"
+    },
+    "TDG": {
+      "short_pct_float": 2.49,
+      "days_to_cover": 2.6,
+      "shares_short": 1048245,
+      "float_shares": 55649440,
+      "squeeze_risk": "LOW"
+    },
+    "TBBK": {
+      "short_pct_float": 13.28,
+      "days_to_cover": 7.6,
+      "shares_short": 3529387,
+      "float_shares": 39390343,
+      "squeeze_risk": "MEDIUM"
+    },
+    "SYK": {
+      "short_pct_float": 1.7,
+      "days_to_cover": 1.9,
+      "shares_short": 6237185,
+      "float_shares": 347566368,
+      "squeeze_risk": "LOW"
+    },
+    "HWKN": {
+      "short_pct_float": 7.96,
+      "days_to_cover": 9.3,
+      "shares_short": 1335554,
+      "float_shares": 9662578,
+      "squeeze_risk": "LOW"
+    },
+    "MRK": {
+      "short_pct_float": 1.24,
+      "days_to_cover": 3.3,
+      "shares_short": 30545853,
+      "float_shares": 2465675110,
+      "squeeze_risk": "LOW"
+    },
+    "QCOM": {
+      "short_pct_float": 4.78,
+      "days_to_cover": 1.4,
+      "shares_short": 45037224,
+      "float_shares": 1051712820,
+      "squeeze_risk": "LOW"
+    },
+    "RRBI": {
+      "short_pct_float": 2.21,
+      "days_to_cover": 1.6,
+      "shares_short": 122764,
+      "float_shares": 5078842,
+      "squeeze_risk": "LOW"
+    },
+    "ETN": {
+      "short_pct_float": 2.52,
+      "days_to_cover": 3.3,
+      "shares_short": 9771004,
+      "float_shares": 387647656,
+      "squeeze_risk": "LOW"
+    },
+    "CCI": {
+      "short_pct_float": 3.5,
+      "days_to_cover": 3.7,
+      "shares_short": 12836944,
+      "float_shares": 435500518,
+      "squeeze_risk": "LOW"
+    },
+    "NVR": {
+      "short_pct_float": 6.24,
+      "days_to_cover": 4.2,
+      "shares_short": 111448,
+      "float_shares": 2655105,
+      "squeeze_risk": "LOW"
+    },
+    "BRO": {
+      "short_pct_float": 6.36,
+      "days_to_cover": 4.5,
+      "shares_short": 16341902,
+      "float_shares": 291986618,
+      "squeeze_risk": "LOW"
+    },
+    "TKO": {
+      "short_pct_float": 13.99,
+      "days_to_cover": 6.7,
+      "shares_short": 9536860,
+      "float_shares": 61600937,
+      "squeeze_risk": "MEDIUM"
+    },
+    "TPC": {
+      "short_pct_float": 4.98,
+      "days_to_cover": 3.2,
+      "shares_short": 1881952,
+      "float_shares": 44866662,
+      "squeeze_risk": "LOW"
+    },
+    "TNL": {
+      "short_pct_float": 7.75,
+      "days_to_cover": 4.5,
+      "shares_short": 3913058,
+      "float_shares": 61007142,
+      "squeeze_risk": "LOW"
+    },
+    "SO": {
+      "short_pct_float": 2.64,
+      "days_to_cover": 5.2,
+      "shares_short": 29714772,
+      "float_shares": 1124775944,
+      "squeeze_risk": "LOW"
+    },
+    "AUGO": {
+      "short_pct_float": 8.8,
+      "days_to_cover": 3.3,
+      "shares_short": 3013412,
+      "float_shares": 39911321,
+      "squeeze_risk": "LOW"
+    },
+    "HII": {
+      "short_pct_float": 2.54,
+      "days_to_cover": 1.5,
+      "shares_short": 868669,
+      "float_shares": 39071065,
+      "squeeze_risk": "LOW"
+    },
+    "CHD": {
+      "short_pct_float": 5.19,
+      "days_to_cover": 5.1,
+      "shares_short": 10700652,
+      "float_shares": 236213816,
+      "squeeze_risk": "LOW"
+    },
+    "CDW": {
+      "short_pct_float": 8.01,
+      "days_to_cover": 3.6,
+      "shares_short": 8871238,
+      "float_shares": 127297371,
+      "squeeze_risk": "LOW"
+    },
+    "DINO": {
+      "short_pct_float": 5.06,
+      "days_to_cover": 3.2,
+      "shares_short": 8130963,
+      "float_shares": 168088817,
+      "squeeze_risk": "LOW"
+    },
+    "MS": {
+      "short_pct_float": 0.0,
+      "days_to_cover": null,
+      "shares_short": 13912,
+      "float_shares": 1196323215,
+      "squeeze_risk": "LOW"
+    },
+    "AMD": {
+      "short_pct_float": 2.71,
+      "days_to_cover": 1.1,
+      "shares_short": 44067722,
+      "float_shares": 1622023680,
+      "squeeze_risk": "LOW"
+    },
+    "WGS": {
+      "short_pct_float": 29.6,
+      "days_to_cover": 2.2,
+      "shares_short": 4571456,
+      "float_shares": 18622706,
+      "squeeze_risk": "HIGH"
+    },
+    "AXON": {
+      "short_pct_float": 4.85,
+      "days_to_cover": 2.6,
+      "shares_short": 3294993,
+      "float_shares": 76760582,
+      "squeeze_risk": "LOW"
+    },
+    "GVH": {
+      "short_pct_float": 1.72,
+      "days_to_cover": 0.4,
+      "shares_short": 38284,
+      "float_shares": 1484786,
+      "squeeze_risk": "LOW"
+    },
+    "ITIC": {
+      "short_pct_float": 3.41,
+      "days_to_cover": 1.7,
+      "shares_short": 48278,
+      "float_shares": 1514078,
+      "squeeze_risk": "LOW"
+    },
+    "ITW": {
+      "short_pct_float": 3.36,
+      "days_to_cover": 6.5,
+      "shares_short": 9631212,
+      "float_shares": 260607291,
+      "squeeze_risk": "LOW"
+    },
+    "UBER": {
+      "short_pct_float": 3.12,
+      "days_to_cover": 3.1,
+      "shares_short": 61176999,
+      "float_shares": 2023914675,
+      "squeeze_risk": "LOW"
+    },
+    "HD": {
+      "short_pct_float": 1.34,
+      "days_to_cover": 2.2,
+      "shares_short": 12028186,
+      "float_shares": 995381699,
+      "squeeze_risk": "LOW"
+    },
+    "SRE": {
+      "short_pct_float": 1.78,
+      "days_to_cover": 2.8,
+      "shares_short": 10294382,
+      "float_shares": 652526478,
+      "squeeze_risk": "LOW"
+    },
+    "LQDA": {
+      "short_pct_float": 13.91,
+      "days_to_cover": 6.0,
+      "shares_short": 9955978,
+      "float_shares": 62796577,
+      "squeeze_risk": "MEDIUM"
+    },
+    "BFC": {
+      "short_pct_float": 4.59,
+      "days_to_cover": 5.0,
+      "shares_short": 489438,
+      "float_shares": 10012470,
+      "squeeze_risk": "LOW"
+    },
+    "NKE": {
+      "short_pct_float": 5.43,
+      "days_to_cover": 2.4,
+      "shares_short": 51395885,
+      "float_shares": 1174254564,
+      "squeeze_risk": "LOW"
+    },
+    "MCD": {
+      "short_pct_float": 1.48,
+      "days_to_cover": 2.2,
+      "shares_short": 9457585,
+      "float_shares": 709468520,
+      "squeeze_risk": "LOW"
+    },
+    "BAH": {
+      "short_pct_float": 6.87,
+      "days_to_cover": 4.0,
+      "shares_short": 7250901,
+      "float_shares": 118222959,
+      "squeeze_risk": "LOW"
+    },
+    "COO": {
+      "short_pct_float": 3.04,
+      "days_to_cover": 2.1,
+      "shares_short": 5195074,
+      "float_shares": 193675167,
+      "squeeze_risk": "LOW"
+    },
+    "SUNC": {
+      "short_pct_float": 2.5,
+      "days_to_cover": 2.1,
+      "shares_short": 1289011,
+      "float_shares": 51491439,
+      "squeeze_risk": "LOW"
+    },
+    "SCHW": {
+      "short_pct_float": 0.0,
+      "days_to_cover": null,
+      "shares_short": 31780,
+      "float_shares": 1635274335,
+      "squeeze_risk": "LOW"
+    },
+    "TEAM": {
+      "short_pct_float": 12.3,
+      "days_to_cover": 2.3,
+      "shares_short": 19580648,
+      "float_shares": 157534013,
+      "squeeze_risk": "MEDIUM"
+    },
+    "HON": {
+      "short_pct_float": 2.18,
+      "days_to_cover": 3.2,
+      "shares_short": 13823028,
+      "float_shares": 600886916,
+      "squeeze_risk": "LOW"
+    },
+    "WMT": {
+      "short_pct_float": 1.8,
+      "days_to_cover": 3.8,
+      "shares_short": 80020606,
+      "float_shares": 4366598032,
+      "squeeze_risk": "LOW"
+    },
+    "LPX": {
+      "short_pct_float": 9.35,
+      "days_to_cover": 5.1,
+      "shares_short": 6492387,
+      "float_shares": 63265443,
+      "squeeze_risk": "LOW"
+    },
+    "LNG": {
+      "short_pct_float": 1.9,
+      "days_to_cover": 1.6,
+      "shares_short": 3956590,
+      "float_shares": 208145775,
+      "squeeze_risk": "LOW"
+    },
+    "CRSP": {
+      "short_pct_float": 25.74,
+      "days_to_cover": 12.8,
+      "shares_short": 21672640,
+      "float_shares": 96029240,
+      "squeeze_risk": "HIGH"
+    },
+    "TMUS": {
+      "short_pct_float": 4.1,
+      "days_to_cover": 4.2,
+      "shares_short": 19947133,
+      "float_shares": 495812091,
+      "squeeze_risk": "LOW"
+    },
+    "TMP": {
+      "short_pct_float": 2.11,
+      "days_to_cover": 4.6,
+      "shares_short": 255274,
+      "float_shares": 13043458,
+      "squeeze_risk": "LOW"
+    },
+    "FBK": {
+      "short_pct_float": 4.88,
+      "days_to_cover": 6.8,
+      "shares_short": 1827330,
+      "float_shares": 50375004,
+      "squeeze_risk": "LOW"
+    },
+    "CAT": {
+      "short_pct_float": 1.96,
+      "days_to_cover": 3.0,
+      "shares_short": 8103454,
+      "float_shares": 459181413,
+      "squeeze_risk": "LOW"
+    },
+    "OKTA": {
+      "short_pct_float": 5.42,
+      "days_to_cover": 2.1,
+      "shares_short": 8045410,
+      "float_shares": 165645371,
+      "squeeze_risk": "LOW"
+    },
+    "AWR": {
+      "short_pct_float": 3.17,
+      "days_to_cover": 3.0,
+      "shares_short": 875362,
+      "float_shares": 38767021,
+      "squeeze_risk": "LOW"
+    },
+    "ADSK": {
+      "short_pct_float": 3.45,
+      "days_to_cover": 3.0,
+      "shares_short": 6533650,
+      "float_shares": 210436630,
+      "squeeze_risk": "LOW"
+    },
+    "TXN": {
+      "short_pct_float": 2.32,
+      "days_to_cover": 2.5,
+      "shares_short": 18984838,
+      "float_shares": 907908568,
+      "squeeze_risk": "LOW"
+    },
+    "TPL": {
+      "short_pct_float": 9.5,
+      "days_to_cover": 10.5,
+      "shares_short": 4495255,
+      "float_shares": 58557221,
+      "squeeze_risk": "LOW"
+    },
+    "KLAC": {
+      "short_pct_float": 2.99,
+      "days_to_cover": 3.3,
+      "shares_short": 35041000,
+      "float_shares": 1303270777,
+      "squeeze_risk": "LOW"
+    },
+    "CRH": {
+      "short_pct_float": 2.2,
+      "days_to_cover": 2.4,
+      "shares_short": 12960848,
+      "float_shares": 666549761,
+      "squeeze_risk": "LOW"
+    },
+    "UPS": {
+      "short_pct_float": 3.31,
+      "days_to_cover": 3.9,
+      "shares_short": 24680797,
+      "float_shares": 745778509,
+      "squeeze_risk": "LOW"
+    },
+    "MCB": {
+      "short_pct_float": 4.84,
+      "days_to_cover": 4.8,
+      "shares_short": 566787,
+      "float_shares": 11129288,
+      "squeeze_risk": "LOW"
+    },
+    "INTU": {
+      "short_pct_float": 4.36,
+      "days_to_cover": 2.0,
+      "shares_short": 10399643,
+      "float_shares": 267283944,
+      "squeeze_risk": "LOW"
+    },
+    "NTB": {
+      "short_pct_float": 1.19,
+      "days_to_cover": 2.5,
+      "shares_short": 467242,
+      "float_shares": 38851246,
+      "squeeze_risk": "LOW"
+    },
+    "MSFT": {
+      "short_pct_float": 1.19,
+      "days_to_cover": 2.4,
+      "shares_short": 88696120,
+      "float_shares": 7417366336,
+      "squeeze_risk": "LOW"
+    },
+    "PANW": {
+      "short_pct_float": 3.17,
+      "days_to_cover": 3.2,
+      "shares_short": 25677921,
+      "float_shares": 808178450,
+      "squeeze_risk": "LOW"
+    },
+    "KKR": {
+      "short_pct_float": 2.09,
+      "days_to_cover": 3.0,
+      "shares_short": 14480719,
+      "float_shares": 690338589,
+      "squeeze_risk": "LOW"
+    },
+    "WDFC": {
+      "short_pct_float": 5.82,
+      "days_to_cover": 3.9,
+      "shares_short": 561873,
+      "float_shares": 13398889,
+      "squeeze_risk": "LOW"
+    },
+    "HHH": {
+      "short_pct_float": 9.26,
+      "days_to_cover": 6.2,
+      "shares_short": 2886904,
+      "float_shares": 30464806,
+      "squeeze_risk": "LOW"
+    },
+    "LIN": {
+      "short_pct_float": 1.4,
+      "days_to_cover": 3.0,
+      "shares_short": 6446659,
+      "float_shares": 461035953,
+      "squeeze_risk": "LOW"
+    },
+    "GXO": {
+      "short_pct_float": 5.73,
+      "days_to_cover": 3.4,
+      "shares_short": 5816604,
+      "float_shares": 113748540,
+      "squeeze_risk": "LOW"
+    },
+    "CSW": {
+      "short_pct_float": 9.44,
+      "days_to_cover": 8.4,
+      "shares_short": 1110115,
+      "float_shares": 16086441,
+      "squeeze_risk": "LOW"
+    },
+    "SANM": {
+      "short_pct_float": 7.28,
+      "days_to_cover": 2.4,
+      "shares_short": 2212949,
+      "float_shares": 51876176,
+      "squeeze_risk": "LOW"
+    },
+    "AXP": {
+      "short_pct_float": 2.27,
+      "days_to_cover": 3.8,
+      "shares_short": 12044280,
+      "float_shares": 529239682,
+      "squeeze_risk": "LOW"
+    },
+    "CVCO": {
+      "short_pct_float": 8.3,
+      "days_to_cover": 2.9,
+      "shares_short": 457377,
+      "float_shares": 7554811,
+      "squeeze_risk": "LOW"
+    },
+    "SMG": {
+      "short_pct_float": 12.13,
+      "days_to_cover": 5.2,
+      "shares_short": 5422304,
+      "float_shares": 44521400,
+      "squeeze_risk": "MEDIUM"
     },
     "KGS": {
       "short_pct_float": 7.91,
       "days_to_cover": 2.8,
       "shares_short": 6314306,
       "float_shares": 88191352,
+      "squeeze_risk": "LOW"
+    },
+    "FOX": {
+      "short_pct_float": 8.55,
+      "days_to_cover": 11.5,
+      "shares_short": 11574148,
+      "float_shares": 329468090,
+      "squeeze_risk": "LOW"
+    },
+    "NSP": {
+      "short_pct_float": 13.58,
+      "days_to_cover": 5.4,
+      "shares_short": 4192247,
+      "float_shares": 35717575,
+      "squeeze_risk": "MEDIUM"
+    },
+    "CALM": {
+      "short_pct_float": 12.63,
+      "days_to_cover": 6.6,
+      "shares_short": 4962437,
+      "float_shares": 42718996,
+      "squeeze_risk": "MEDIUM"
+    },
+    "GLP": {
+      "short_pct_float": 0.95,
+      "days_to_cover": 2.7,
+      "shares_short": 222500,
+      "float_shares": 27568139,
+      "squeeze_risk": "LOW"
+    },
+    "MTH": {
+      "short_pct_float": 6.99,
+      "days_to_cover": 4.1,
+      "shares_short": 3207525,
+      "float_shares": 64980176,
+      "squeeze_risk": "LOW"
+    },
+    "MSCI": {
+      "short_pct_float": 2.78,
+      "days_to_cover": 2.5,
+      "shares_short": 1688726,
+      "float_shares": 68937960,
+      "squeeze_risk": "LOW"
+    },
+    "CVS": {
+      "short_pct_float": 1.4,
+      "days_to_cover": 2.0,
+      "shares_short": 17760492,
+      "float_shares": 1273235100,
+      "squeeze_risk": "LOW"
+    },
+    "VRTX": {
+      "short_pct_float": 2.0,
+      "days_to_cover": 3.5,
+      "shares_short": 4491490,
+      "float_shares": 253023696,
+      "squeeze_risk": "LOW"
+    },
+    "RYAN": {
+      "short_pct_float": 11.54,
+      "days_to_cover": 4.3,
+      "shares_short": 12987628,
+      "float_shares": 113582396,
+      "squeeze_risk": "MEDIUM"
+    },
+    "BLK": {
+      "short_pct_float": 1.32,
+      "days_to_cover": 3.4,
+      "shares_short": 2010666,
+      "float_shares": 144144073,
+      "squeeze_risk": "LOW"
+    },
+    "MSTR": {
+      "short_pct_float": 11.38,
+      "days_to_cover": 2.5,
+      "shares_short": 37684181,
+      "float_shares": 329887095,
+      "squeeze_risk": "MEDIUM"
+    },
+    "VRSK": {
+      "short_pct_float": 7.31,
+      "days_to_cover": 4.2,
+      "shares_short": 8292169,
+      "float_shares": 130615672,
+      "squeeze_risk": "LOW"
+    },
+    "CARR": {
+      "short_pct_float": 2.47,
+      "days_to_cover": 2.4,
+      "shares_short": 16907459,
+      "float_shares": 790355413,
+      "squeeze_risk": "LOW"
+    },
+    "CABO": {
+      "short_pct_float": 15.97,
+      "days_to_cover": 3.5,
+      "shares_short": 787199,
+      "float_shares": 4544863,
+      "squeeze_risk": "MEDIUM"
+    },
+    "TNC": {
+      "short_pct_float": 10.4,
+      "days_to_cover": 5.1,
+      "shares_short": 1204431,
+      "float_shares": 16628095,
+      "squeeze_risk": "MEDIUM"
+    },
+    "HLNE": {
+      "short_pct_float": 11.79,
+      "days_to_cover": 4.4,
+      "shares_short": 4190020,
+      "float_shares": 41210984,
+      "squeeze_risk": "MEDIUM"
+    },
+    "CTAS": {
+      "short_pct_float": 3.99,
+      "days_to_cover": 5.7,
+      "shares_short": 11944744,
+      "float_shares": 342074487,
+      "squeeze_risk": "LOW"
+    },
+    "HOOD": {
+      "short_pct_float": 4.4,
+      "days_to_cover": 1.2,
+      "shares_short": 34408802,
+      "float_shares": 784168809,
+      "squeeze_risk": "LOW"
+    },
+    "CAR": {
+      "short_pct_float": 58.45,
+      "days_to_cover": 3.7,
+      "shares_short": 5676609,
+      "float_shares": 14632316,
+      "squeeze_risk": "HIGH"
+    },
+    "NVT": {
+      "short_pct_float": 3.39,
+      "days_to_cover": 2.2,
+      "shares_short": 4816464,
+      "float_shares": 161026671,
+      "squeeze_risk": "LOW"
+    },
+    "GOOGL": {
+      "short_pct_float": 1.42,
+      "days_to_cover": 2.8,
+      "shares_short": 82913646,
+      "float_shares": 10822738160,
       "squeeze_risk": "LOW"
     },
     "DASH": {
@@ -2654,11 +2066,18 @@
       "float_shares": 376574263,
       "squeeze_risk": "LOW"
     },
-    "ELV": {
-      "short_pct_float": 3.4,
-      "days_to_cover": 4.0,
-      "shares_short": 6604471,
-      "float_shares": 216701996,
+    "SPG": {
+      "short_pct_float": 0.0,
+      "days_to_cover": null,
+      "shares_short": 385,
+      "float_shares": 320583278,
+      "squeeze_risk": "LOW"
+    },
+    "NFLX": {
+      "short_pct_float": 2.43,
+      "days_to_cover": 3.1,
+      "shares_short": 101569951,
+      "float_shares": 4183388967,
       "squeeze_risk": "LOW"
     },
     "ENPH": {
@@ -2667,6 +2086,587 @@
       "shares_short": 26746091,
       "float_shares": 127771784,
       "squeeze_risk": "HIGH"
+    },
+    "CECO": {
+      "short_pct_float": 20.4,
+      "days_to_cover": 6.4,
+      "shares_short": 6010071,
+      "float_shares": 32140083,
+      "squeeze_risk": "HIGH"
+    },
+    "TSLA": {
+      "short_pct_float": 2.3,
+      "days_to_cover": 1.5,
+      "shares_short": 76947758,
+      "float_shares": 2815853972,
+      "squeeze_risk": "LOW"
+    },
+    "MOH": {
+      "short_pct_float": 5.66,
+      "days_to_cover": 2.6,
+      "shares_short": 2532174,
+      "float_shares": 48495722,
+      "squeeze_risk": "LOW"
+    },
+    "CDNL": {
+      "short_pct_float": 11.99,
+      "days_to_cover": 3.3,
+      "shares_short": 1630451,
+      "float_shares": 12779582,
+      "squeeze_risk": "MEDIUM"
+    },
+    "MNPR": {
+      "short_pct_float": 34.53,
+      "days_to_cover": 8.6,
+      "shares_short": 1579320,
+      "float_shares": 4129905,
+      "squeeze_risk": "HIGH"
+    },
+    "INTC": {
+      "short_pct_float": 2.69,
+      "days_to_cover": 0.9,
+      "shares_short": 134957829,
+      "float_shares": 5016551120,
+      "squeeze_risk": "LOW"
+    },
+    "LOW": {
+      "short_pct_float": 1.97,
+      "days_to_cover": 3.3,
+      "shares_short": 9927930,
+      "float_shares": 559456664,
+      "squeeze_risk": "LOW"
+    },
+    "DE": {
+      "short_pct_float": 1.88,
+      "days_to_cover": 4.0,
+      "shares_short": 5073694,
+      "float_shares": 269394851,
+      "squeeze_risk": "LOW"
+    },
+    "WAL": {
+      "short_pct_float": 0.14,
+      "days_to_cover": 0.1,
+      "shares_short": 147728,
+      "float_shares": 102049023,
+      "squeeze_risk": "LOW"
+    },
+    "UTHR": {
+      "short_pct_float": 6.04,
+      "days_to_cover": 4.8,
+      "shares_short": 2191540,
+      "float_shares": 38921107,
+      "squeeze_risk": "LOW"
+    },
+    "SAFT": {
+      "short_pct_float": 2.28,
+      "days_to_cover": 2.4,
+      "shares_short": 198954,
+      "float_shares": 14348358,
+      "squeeze_risk": "LOW"
+    },
+    "BSX": {
+      "short_pct_float": 3.87,
+      "days_to_cover": 2.7,
+      "shares_short": 57491117,
+      "float_shares": 1482342020,
+      "squeeze_risk": "LOW"
+    },
+    "PNFP": {
+      "short_pct_float": 3.46,
+      "days_to_cover": 4.5,
+      "shares_short": 4637279,
+      "float_shares": 148382498,
+      "squeeze_risk": "LOW"
+    },
+    "OKE": {
+      "short_pct_float": 4.4,
+      "days_to_cover": 5.7,
+      "shares_short": 24634610,
+      "float_shares": 628268760,
+      "squeeze_risk": "LOW"
+    },
+    "WELL": {
+      "short_pct_float": 2.86,
+      "days_to_cover": 4.8,
+      "shares_short": 17755855,
+      "float_shares": 704940288,
+      "squeeze_risk": "LOW"
+    },
+    "CRM": {
+      "short_pct_float": 8.61,
+      "days_to_cover": 4.5,
+      "shares_short": 60979990,
+      "float_shares": 793643760,
+      "squeeze_risk": "LOW"
+    },
+    "CME": {
+      "short_pct_float": 1.41,
+      "days_to_cover": 1.9,
+      "shares_short": 4566985,
+      "float_shares": 357315305,
+      "squeeze_risk": "LOW"
+    },
+    "MAA": {
+      "short_pct_float": 3.22,
+      "days_to_cover": 4.0,
+      "shares_short": 3724864,
+      "float_shares": 115216299,
+      "squeeze_risk": "LOW"
+    },
+    "MTDR": {
+      "short_pct_float": 10.01,
+      "days_to_cover": 6.9,
+      "shares_short": 11825067,
+      "float_shares": 116035861,
+      "squeeze_risk": "MEDIUM"
+    },
+    "VRTS": {
+      "short_pct_float": 8.3,
+      "days_to_cover": 3.5,
+      "shares_short": 362833,
+      "float_shares": 6236358,
+      "squeeze_risk": "LOW"
+    },
+    "AMZN": {
+      "short_pct_float": 0.94,
+      "days_to_cover": 2.1,
+      "shares_short": 104283766,
+      "float_shares": 9779718473,
+      "squeeze_risk": "LOW"
+    },
+    "RLI": {
+      "short_pct_float": 6.8,
+      "days_to_cover": 5.6,
+      "shares_short": 5525728,
+      "float_shares": 81633883,
+      "squeeze_risk": "LOW"
+    },
+    "RHP": {
+      "short_pct_float": 4.09,
+      "days_to_cover": 2.5,
+      "shares_short": 1725562,
+      "float_shares": 61111996,
+      "squeeze_risk": "LOW"
+    },
+    "SNPS": {
+      "short_pct_float": 2.96,
+      "days_to_cover": 3.1,
+      "shares_short": 5641342,
+      "float_shares": 190376404,
+      "squeeze_risk": "LOW"
+    },
+    "AGYS": {
+      "short_pct_float": 5.76,
+      "days_to_cover": 2.8,
+      "shares_short": 1298739,
+      "float_shares": 26607745,
+      "squeeze_risk": "LOW"
+    },
+    "SHAK": {
+      "short_pct_float": 12.48,
+      "days_to_cover": 1.4,
+      "shares_short": 4107880,
+      "float_shares": 38461914,
+      "squeeze_risk": "MEDIUM"
+    },
+    "FRHC": {
+      "short_pct_float": 5.32,
+      "days_to_cover": 11.1,
+      "shares_short": 989188,
+      "float_shares": 18115022,
+      "squeeze_risk": "LOW"
+    },
+    "HCA": {
+      "short_pct_float": 3.57,
+      "days_to_cover": 3.6,
+      "shares_short": 5214258,
+      "float_shares": 149493404,
+      "squeeze_risk": "LOW"
+    },
+    "ES": {
+      "short_pct_float": 3.31,
+      "days_to_cover": 3.6,
+      "shares_short": 9455423,
+      "float_shares": 375519666,
+      "squeeze_risk": "LOW"
+    },
+    "RDDT": {
+      "short_pct_float": 9.51,
+      "days_to_cover": 2.2,
+      "shares_short": 13400102,
+      "float_shares": 139603706,
+      "squeeze_risk": "LOW"
+    },
+    "SXI": {
+      "short_pct_float": 8.93,
+      "days_to_cover": 4.1,
+      "shares_short": 778029,
+      "float_shares": 11889948,
+      "squeeze_risk": "LOW"
+    },
+    "DLTR": {
+      "short_pct_float": 8.03,
+      "days_to_cover": 2.8,
+      "shares_short": 12414171,
+      "float_shares": 179481456,
+      "squeeze_risk": "LOW"
+    },
+    "ISRG": {
+      "short_pct_float": 2.06,
+      "days_to_cover": 3.2,
+      "shares_short": 7266942,
+      "float_shares": 352098073,
+      "squeeze_risk": "LOW"
+    },
+    "Q": {
+      "short_pct_float": 2.25,
+      "days_to_cover": 2.1,
+      "shares_short": 4098844,
+      "float_shares": 208794925,
+      "squeeze_risk": "LOW"
+    },
+    "J": {
+      "short_pct_float": 6.91,
+      "days_to_cover": 4.6,
+      "shares_short": 7144525,
+      "float_shares": 116584794,
+      "squeeze_risk": "LOW"
+    },
+    "NEE": {
+      "short_pct_float": 0.01,
+      "days_to_cover": 0.0,
+      "shares_short": 131969,
+      "float_shares": 2080920532,
+      "squeeze_risk": "LOW"
+    },
+    "MU": {
+      "short_pct_float": 3.34,
+      "days_to_cover": 0.7,
+      "shares_short": 37549121,
+      "float_shares": 1123550158,
+      "squeeze_risk": "LOW"
+    },
+    "CVSA": {
+      "short_pct_float": 6.5,
+      "days_to_cover": 5.0,
+      "shares_short": 1529666,
+      "float_shares": 33183858,
+      "squeeze_risk": "LOW"
+    },
+    "KNSL": {
+      "short_pct_float": 12.66,
+      "days_to_cover": 8.2,
+      "shares_short": 2759556,
+      "float_shares": 21800591,
+      "squeeze_risk": "MEDIUM"
+    },
+    "SIGI": {
+      "short_pct_float": 3.1,
+      "days_to_cover": 2.9,
+      "shares_short": 1407222,
+      "float_shares": 55388286,
+      "squeeze_risk": "LOW"
+    },
+    "SON": {
+      "short_pct_float": 11.06,
+      "days_to_cover": 6.6,
+      "shares_short": 8523240,
+      "float_shares": 97720824,
+      "squeeze_risk": "MEDIUM"
+    },
+    "ADBE": {
+      "short_pct_float": 5.16,
+      "days_to_cover": 4.1,
+      "shares_short": 18663125,
+      "float_shares": 396255825,
+      "squeeze_risk": "LOW"
+    },
+    "WOR": {
+      "short_pct_float": 2.84,
+      "days_to_cover": 5.2,
+      "shares_short": 862756,
+      "float_shares": 30739779,
+      "squeeze_risk": "LOW"
+    },
+    "TYL": {
+      "short_pct_float": 7.46,
+      "days_to_cover": 3.3,
+      "shares_short": 2639424,
+      "float_shares": 39503737,
+      "squeeze_risk": "LOW"
+    },
+    "GEHC": {
+      "short_pct_float": 3.65,
+      "days_to_cover": 2.2,
+      "shares_short": 14670393,
+      "float_shares": 453399741,
+      "squeeze_risk": "LOW"
+    },
+    "BG": {
+      "short_pct_float": 4.98,
+      "days_to_cover": 3.9,
+      "shares_short": 6666190,
+      "float_shares": 159649746,
+      "squeeze_risk": "LOW"
+    },
+    "META": {
+      "short_pct_float": 1.47,
+      "days_to_cover": 1.9,
+      "shares_short": 32270039,
+      "float_shares": 2192537745,
+      "squeeze_risk": "LOW"
+    },
+    "USB": {
+      "short_pct_float": 0.0,
+      "days_to_cover": null,
+      "shares_short": 26017,
+      "float_shares": 1547549708,
+      "squeeze_risk": "LOW"
+    },
+    "MA": {
+      "short_pct_float": 0.74,
+      "days_to_cover": 1.7,
+      "shares_short": 6482340,
+      "float_shares": 875808317,
+      "squeeze_risk": "LOW"
+    },
+    "IBM": {
+      "short_pct_float": 3.61,
+      "days_to_cover": 3.4,
+      "shares_short": 30553020,
+      "float_shares": 937873926,
+      "squeeze_risk": "LOW"
+    },
+    "PATK": {
+      "short_pct_float": 9.5,
+      "days_to_cover": 4.0,
+      "shares_short": 2179744,
+      "float_shares": 31468946,
+      "squeeze_risk": "LOW"
+    },
+    "COR": {
+      "short_pct_float": 3.22,
+      "days_to_cover": 2.4,
+      "shares_short": 5526396,
+      "float_shares": 184006122,
+      "squeeze_risk": "LOW"
+    },
+    "PODD": {
+      "short_pct_float": 6.9,
+      "days_to_cover": 2.2,
+      "shares_short": 4232806,
+      "float_shares": 68987615,
+      "squeeze_risk": "LOW"
+    },
+    "ALGN": {
+      "short_pct_float": 7.38,
+      "days_to_cover": 4.4,
+      "shares_short": 4629162,
+      "float_shares": 67022392,
+      "squeeze_risk": "LOW"
+    },
+    "ABG": {
+      "short_pct_float": 11.01,
+      "days_to_cover": 4.1,
+      "shares_short": 1222438,
+      "float_shares": 14276710,
+      "squeeze_risk": "MEDIUM"
+    },
+    "ARW": {
+      "short_pct_float": 2.83,
+      "days_to_cover": 1.4,
+      "shares_short": 1261724,
+      "float_shares": 50832767,
+      "squeeze_risk": "LOW"
+    },
+    "CHE": {
+      "short_pct_float": 5.64,
+      "days_to_cover": 2.9,
+      "shares_short": 637297,
+      "float_shares": 12991450,
+      "squeeze_risk": "LOW"
+    },
+    "SEZL": {
+      "short_pct_float": 29.16,
+      "days_to_cover": 6.9,
+      "shares_short": 5013984,
+      "float_shares": 16990388,
+      "squeeze_risk": "HIGH"
+    },
+    "BX": {
+      "short_pct_float": 2.67,
+      "days_to_cover": 4.0,
+      "shares_short": 19720974,
+      "float_shares": 746237886,
+      "squeeze_risk": "LOW"
+    },
+    "EEFT": {
+      "short_pct_float": 12.5,
+      "days_to_cover": 6.2,
+      "shares_short": 4425994,
+      "float_shares": 35153592,
+      "squeeze_risk": "MEDIUM"
+    },
+    "BATRK": {
+      "short_pct_float": 2.98,
+      "days_to_cover": 4.4,
+      "shares_short": 1558284,
+      "float_shares": 58378574,
+      "squeeze_risk": "LOW"
+    },
+    "STC": {
+      "short_pct_float": 2.45,
+      "days_to_cover": 4.1,
+      "shares_short": 623802,
+      "float_shares": 29771075,
+      "squeeze_risk": "LOW"
+    },
+    "PTN": {
+      "short_pct_float": 10.33,
+      "days_to_cover": 11.4,
+      "shares_short": 183059,
+      "float_shares": 1384205,
+      "squeeze_risk": "MEDIUM"
+    },
+    "BAC": {
+      "short_pct_float": 0.0,
+      "days_to_cover": null,
+      "shares_short": 2704,
+      "float_shares": 7068984913,
+      "squeeze_risk": "LOW"
+    },
+    "HEI": {
+      "short_pct_float": 1.55,
+      "days_to_cover": 0.9,
+      "shares_short": 786670,
+      "float_shares": 123870796,
+      "squeeze_risk": "LOW"
+    },
+    "WHR": {
+      "short_pct_float": 0.13,
+      "days_to_cover": 0.0,
+      "shares_short": 75154,
+      "float_shares": 64258512,
+      "squeeze_risk": "LOW"
+    },
+    "STRA": {
+      "short_pct_float": 6.81,
+      "days_to_cover": 3.9,
+      "shares_short": 1065565,
+      "float_shares": 21485972,
+      "squeeze_risk": "LOW"
+    },
+    "DUK": {
+      "short_pct_float": 2.23,
+      "days_to_cover": 4.8,
+      "shares_short": 15620536,
+      "float_shares": 777545879,
+      "squeeze_risk": "LOW"
+    },
+    "ICFI": {
+      "short_pct_float": 3.42,
+      "days_to_cover": 1.4,
+      "shares_short": 608997,
+      "float_shares": 17775951,
+      "squeeze_risk": "LOW"
+    },
+    "MORN": {
+      "short_pct_float": 8.43,
+      "days_to_cover": 3.3,
+      "shares_short": 1936111,
+      "float_shares": 19498486,
+      "squeeze_risk": "LOW"
+    },
+    "CB": {
+      "short_pct_float": 0.94,
+      "days_to_cover": 2.2,
+      "shares_short": 3630053,
+      "float_shares": 351905474,
+      "squeeze_risk": "LOW"
+    },
+    "HRI": {
+      "short_pct_float": 8.26,
+      "days_to_cover": 4.0,
+      "shares_short": 2057761,
+      "float_shares": 28990845,
+      "squeeze_risk": "LOW"
+    },
+    "HUM": {
+      "short_pct_float": 5.79,
+      "days_to_cover": 3.5,
+      "shares_short": 6117059,
+      "float_shares": 119799766,
+      "squeeze_risk": "LOW"
+    },
+    "CELC": {
+      "short_pct_float": 29.59,
+      "days_to_cover": 8.0,
+      "shares_short": 9601855,
+      "float_shares": 26813656,
+      "squeeze_risk": "HIGH"
+    },
+    "PRIM": {
+      "short_pct_float": 10.62,
+      "days_to_cover": 1.6,
+      "shares_short": 4213881,
+      "float_shares": 53658673,
+      "squeeze_risk": "MEDIUM"
+    },
+    "MELI": {
+      "short_pct_float": 2.18,
+      "days_to_cover": 1.5,
+      "shares_short": 1104412,
+      "float_shares": 47035325,
+      "squeeze_risk": "LOW"
+    },
+    "SYY": {
+      "short_pct_float": 3.88,
+      "days_to_cover": 4.4,
+      "shares_short": 16147413,
+      "float_shares": 476728933,
+      "squeeze_risk": "LOW"
+    },
+    "EOG": {
+      "short_pct_float": 4.11,
+      "days_to_cover": 5.5,
+      "shares_short": 19612568,
+      "float_shares": 530849551,
+      "squeeze_risk": "LOW"
+    },
+    "WEX": {
+      "short_pct_float": 8.37,
+      "days_to_cover": 4.0,
+      "shares_short": 2216384,
+      "float_shares": 31946347,
+      "squeeze_risk": "LOW"
+    },
+    "ELV": {
+      "short_pct_float": 3.4,
+      "days_to_cover": 4.0,
+      "shares_short": 6604471,
+      "float_shares": 216701996,
+      "squeeze_risk": "LOW"
+    },
+    "L": {
+      "short_pct_float": 2.69,
+      "days_to_cover": 4.8,
+      "shares_short": 4482193,
+      "float_shares": 166790075,
+      "squeeze_risk": "LOW"
+    },
+    "TFX": {
+      "short_pct_float": 8.25,
+      "days_to_cover": 3.1,
+      "shares_short": 2384970,
+      "float_shares": 44107297,
+      "squeeze_risk": "LOW"
+    },
+    "PVH": {
+      "short_pct_float": 13.13,
+      "days_to_cover": 4.6,
+      "shares_short": 4269400,
+      "float_shares": 45570933,
+      "squeeze_risk": "MEDIUM"
     }
   }
 }
