@@ -1,6 +1,19 @@
 {
-  "last_updated": "2026-06-22T03:41:26.432959",
+  "last_updated": "2026-06-22T11:44:37.416414",
   "filings_13d": [
+    {
+      "type": "13D",
+      "filed_date": "2026-06-18",
+      "title": "SC 13D/A - GENCO SHIPPING & TRADING LTD (0001326200) (Subject)",
+      "ticker": "GNK",
+      "filer": "Unknown",
+      "win_rate": null,
+      "avg_return_6m": null,
+      "filer_style": "Unknown",
+      "sec_link": "https://www.sec.gov/Archives/edgar/data/1326200/000110465926075894/0001104659-26-075894-index.htm",
+      "high_conviction": null,
+      "confluence_signal": false
+    },
     {
       "type": "13D",
       "filed_date": "2026-06-17",
