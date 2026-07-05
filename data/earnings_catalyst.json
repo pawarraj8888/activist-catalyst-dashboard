@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T13:21:34.148604",
+  "last_updated": "2026-07-05T19:09:57.466344",
   "events": [
     {
       "ticker": "UNH",
@@ -21,15 +21,15 @@
     {
       "ticker": "LLY",
       "earnings_date": "2026-08-05",
-      "implied_move": 0.1075,
-      "implied_move_pct": 10.75,
+      "implied_move": 0.1083,
+      "implied_move_pct": 10.83,
       "stock_price": 1213.91,
-      "straddle_cost": 130.5,
+      "straddle_cost": 131.5,
       "options_expiry": "2026-08-07",
       "avg_realized_move": 0.0769,
       "avg_realized_pct": 7.69,
       "mispricing": {
-        "ratio": 1.4,
+        "ratio": 1.41,
         "signal": "FAIR"
       },
       "beat_rate": 1.0,
@@ -98,6 +98,23 @@
       "avg_realized_pct": 3.74,
       "mispricing": {
         "ratio": 1.22,
+        "signal": "FAIR"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "USB",
+      "earnings_date": "2026-07-16",
+      "implied_move": 0.0492,
+      "implied_move_pct": 4.92,
+      "stock_price": 61.73,
+      "straddle_cost": 3.04,
+      "options_expiry": "2026-07-17",
+      "avg_realized_move": 0.0425,
+      "avg_realized_pct": 4.25,
+      "mispricing": {
+        "ratio": 1.16,
         "signal": "FAIR"
       },
       "beat_rate": null,
@@ -259,15 +276,15 @@
     {
       "ticker": "XOM",
       "earnings_date": "2026-07-31",
-      "implied_move": 0.0629,
-      "implied_move_pct": 6.29,
+      "implied_move": 0.0626,
+      "implied_move_pct": 6.26,
       "stock_price": 137.09,
-      "straddle_cost": 8.62,
+      "straddle_cost": 8.57,
       "options_expiry": "2026-07-31",
       "avg_realized_move": 0.0113,
       "avg_realized_pct": 1.13,
       "mispricing": {
-        "ratio": 5.57,
+        "ratio": 5.54,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -391,6 +408,23 @@
       },
       "beat_rate": null,
       "last_surprise": null
+    },
+    {
+      "ticker": "ABBV",
+      "earnings_date": "2026-07-31",
+      "implied_move": 0.0678,
+      "implied_move_pct": 6.78,
+      "stock_price": 261.07,
+      "straddle_cost": 17.7,
+      "options_expiry": "2026-07-31",
+      "avg_realized_move": 0.044,
+      "avg_realized_pct": 4.4,
+      "mispricing": {
+        "ratio": 1.54,
+        "signal": "RICH"
+      },
+      "beat_rate": 0.875,
+      "last_surprise": 2.6522
     },
     {
       "ticker": "KO",
@@ -563,6 +597,23 @@
       "last_surprise": 1.8525
     },
     {
+      "ticker": "LIN",
+      "earnings_date": "2026-07-31",
+      "implied_move": 0.071,
+      "implied_move_pct": 7.1,
+      "stock_price": 546.64,
+      "straddle_cost": 38.8,
+      "options_expiry": "2026-08-21",
+      "avg_realized_move": 0.0162,
+      "avg_realized_pct": 1.62,
+      "mispricing": {
+        "ratio": 4.38,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "NEE",
       "earnings_date": "2026-07-22",
       "implied_move": 0.0588,
@@ -633,15 +684,15 @@
     {
       "ticker": "AMGN",
       "earnings_date": "2026-08-04",
-      "implied_move": 0.077,
-      "implied_move_pct": 7.7,
+      "implied_move": 0.0772,
+      "implied_move_pct": 7.72,
       "stock_price": 374.15,
-      "straddle_cost": 28.8,
+      "straddle_cost": 28.9,
       "options_expiry": "2026-08-07",
       "avg_realized_move": 0.0095,
       "avg_realized_pct": 0.95,
       "mispricing": {
-        "ratio": 8.11,
+        "ratio": 8.13,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -973,15 +1024,15 @@
     {
       "ticker": "EOG",
       "earnings_date": "2026-08-04",
-      "implied_move": 0.0849,
-      "implied_move_pct": 8.49,
+      "implied_move": 0.0853,
+      "implied_move_pct": 8.53,
       "stock_price": 130.78,
-      "straddle_cost": 11.1,
+      "straddle_cost": 11.15,
       "options_expiry": "2026-08-07",
       "avg_realized_move": 0.0133,
       "avg_realized_pct": 1.33,
       "mispricing": {
-        "ratio": 6.38,
+        "ratio": 6.41,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -1107,23 +1158,6 @@
       "last_surprise": 38.1267
     },
     {
-      "ticker": "AMAT",
-      "earnings_date": "2026-08-13",
-      "implied_move": 0.2608,
-      "implied_move_pct": 26.08,
-      "stock_price": 603.04,
-      "straddle_cost": 157.28,
-      "options_expiry": "2026-08-21",
-      "avg_realized_move": 0.0212,
-      "avg_realized_pct": 2.12,
-      "mispricing": {
-        "ratio": 12.3,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 2.154
-    },
-    {
       "ticker": "LRCX",
       "earnings_date": "2026-07-29",
       "implied_move": 0.207,
@@ -1206,20 +1240,6 @@
       "last_surprise": 4.69
     },
     {
-      "ticker": "ABBV",
-      "earnings_date": "2026-07-31",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.044,
-      "avg_realized_pct": 4.4,
-      "mispricing": null,
-      "beat_rate": 0.875,
-      "last_surprise": 2.6522
-    },
-    {
       "ticker": "TMO",
       "earnings_date": "2026-07-23",
       "implied_move": null,
@@ -1234,20 +1254,6 @@
       "last_surprise": 5.22
     },
     {
-      "ticker": "LIN",
-      "earnings_date": "2026-07-31",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0162,
-      "avg_realized_pct": 1.62,
-      "mispricing": null,
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
       "ticker": "DHR",
       "earnings_date": "2026-07-21",
       "implied_move": null,
@@ -1257,20 +1263,6 @@
       "options_expiry": null,
       "avg_realized_move": 0.0571,
       "avg_realized_pct": 5.71,
-      "mispricing": null,
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "USB",
-      "earnings_date": "2026-07-16",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0425,
-      "avg_realized_pct": 4.25,
       "mispricing": null,
       "beat_rate": null,
       "last_surprise": null
@@ -1302,6 +1294,20 @@
       "mispricing": null,
       "beat_rate": null,
       "last_surprise": null
+    },
+    {
+      "ticker": "AMAT",
+      "earnings_date": "2026-08-13",
+      "implied_move": null,
+      "implied_move_pct": null,
+      "stock_price": null,
+      "straddle_cost": null,
+      "options_expiry": null,
+      "avg_realized_move": 0.0212,
+      "avg_realized_pct": 2.12,
+      "mispricing": null,
+      "beat_rate": 1.0,
+      "last_surprise": 2.154
     }
   ]
 }
