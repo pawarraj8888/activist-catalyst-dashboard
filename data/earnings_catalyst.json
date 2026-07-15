@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15T07:59:32.585171",
+  "last_updated": "2026-07-15T13:26:05.375882",
   "events": [
     {
       "ticker": "UNH",
@@ -325,6 +325,23 @@
       "last_surprise": 24.05
     },
     {
+      "ticker": "JPM",
+      "earnings_date": "2026-10-13",
+      "implied_move": 0.0994,
+      "implied_move_pct": 9.94,
+      "stock_price": 342.89,
+      "straddle_cost": 34.1,
+      "options_expiry": "2026-10-16",
+      "avg_realized_move": 0.0291,
+      "avg_realized_pct": 2.91,
+      "mispricing": {
+        "ratio": 3.42,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "V",
       "earnings_date": "2026-07-28",
       "implied_move": 0.0489,
@@ -597,6 +614,23 @@
       "last_surprise": 6.402
     },
     {
+      "ticker": "WFC",
+      "earnings_date": "2026-10-13",
+      "implied_move": 0.1104,
+      "implied_move_pct": 11.04,
+      "stock_price": 85.29,
+      "straddle_cost": 9.42,
+      "options_expiry": "2026-10-16",
+      "avg_realized_move": 0.0482,
+      "avg_realized_pct": 4.82,
+      "mispricing": {
+        "ratio": 2.29,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "TXN",
       "earnings_date": "2026-07-22",
       "implied_move": 0.117,
@@ -731,6 +765,23 @@
       },
       "beat_rate": 0.25,
       "last_surprise": 1.31
+    },
+    {
+      "ticker": "GS",
+      "earnings_date": "2026-10-13",
+      "implied_move": 0.1446,
+      "implied_move_pct": 14.46,
+      "stock_price": 1140.0,
+      "straddle_cost": 164.88,
+      "options_expiry": "2026-10-16",
+      "avg_realized_move": 0.0265,
+      "avg_realized_pct": 2.65,
+      "mispricing": {
+        "ratio": 5.46,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
     },
     {
       "ticker": "SPGI",
@@ -897,6 +948,23 @@
       "avg_realized_pct": 2.89,
       "mispricing": {
         "ratio": 2.41,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "C",
+      "earnings_date": "2026-10-13",
+      "implied_move": 0.1301,
+      "implied_move_pct": 13.01,
+      "stock_price": 133.27,
+      "straddle_cost": 17.34,
+      "options_expiry": "2026-10-16",
+      "avg_realized_move": 0.0379,
+      "avg_realized_pct": 3.79,
+      "mispricing": {
+        "ratio": 3.43,
         "signal": "RICH"
       },
       "beat_rate": null,
