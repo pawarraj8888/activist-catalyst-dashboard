@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17T08:02:10.056616",
+  "last_updated": "2026-07-17T13:17:47.855341",
   "events": [
     {
       "ticker": "LLY",
@@ -801,6 +801,23 @@
       "last_surprise": null
     },
     {
+      "ticker": "PLD",
+      "earnings_date": "2026-10-14",
+      "implied_move": 0.0894,
+      "implied_move_pct": 8.94,
+      "stock_price": 150.06,
+      "straddle_cost": 13.42,
+      "options_expiry": "2026-10-16",
+      "avg_realized_move": 0.0374,
+      "avg_realized_pct": 3.74,
+      "mispricing": {
+        "ratio": 2.39,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "DE",
       "earnings_date": "2026-08-20",
       "implied_move": 0.0984,
@@ -1147,6 +1164,20 @@
       "options_expiry": null,
       "avg_realized_move": 0.0571,
       "avg_realized_pct": 5.71,
+      "mispricing": null,
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "USB",
+      "earnings_date": "2026-10-15",
+      "implied_move": null,
+      "implied_move_pct": null,
+      "stock_price": null,
+      "straddle_cost": null,
+      "options_expiry": null,
+      "avg_realized_move": 0.0425,
+      "avg_realized_pct": 4.25,
       "mispricing": null,
       "beat_rate": null,
       "last_surprise": null
