@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18T13:03:29.164958",
+  "last_updated": "2026-07-18T18:56:32.243627",
   "events": [
     {
       "ticker": "LLY",
@@ -102,6 +102,23 @@
       },
       "beat_rate": null,
       "last_surprise": null
+    },
+    {
+      "ticker": "AAPL",
+      "earnings_date": "2026-07-30",
+      "implied_move": 0.056,
+      "implied_move_pct": 5.6,
+      "stock_price": 333.74,
+      "straddle_cost": 18.7,
+      "options_expiry": "2026-07-31",
+      "avg_realized_move": 0.0116,
+      "avg_realized_pct": 1.16,
+      "mispricing": {
+        "ratio": 4.83,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 2.6668
     },
     {
       "ticker": "MSFT",
@@ -937,6 +954,23 @@
       "last_surprise": 79.02
     },
     {
+      "ticker": "EOG",
+      "earnings_date": "2026-08-04",
+      "implied_move": 0.0708,
+      "implied_move_pct": 7.08,
+      "stock_price": 139.89,
+      "straddle_cost": 9.9,
+      "options_expiry": "2026-08-07",
+      "avg_realized_move": 0.0133,
+      "avg_realized_pct": 1.33,
+      "mispricing": {
+        "ratio": 5.32,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 2.4592
+    },
+    {
       "ticker": "SO",
       "earnings_date": "2026-07-30",
       "implied_move": 0.0354,
@@ -1107,6 +1141,23 @@
       "last_surprise": 8.9567
     },
     {
+      "ticker": "MU",
+      "earnings_date": "2026-09-23",
+      "implied_move": 0.3699,
+      "implied_move_pct": 36.99,
+      "stock_price": 848.95,
+      "straddle_cost": 314.02,
+      "options_expiry": "2026-10-16",
+      "avg_realized_move": 0.0171,
+      "avg_realized_pct": 1.71,
+      "mispricing": {
+        "ratio": 21.63,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "CDNS",
       "earnings_date": "2026-07-27",
       "implied_move": 0.1077,
@@ -1183,20 +1234,6 @@
       "last_surprise": null
     },
     {
-      "ticker": "EOG",
-      "earnings_date": "2026-08-04",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0133,
-      "avg_realized_pct": 1.33,
-      "mispricing": null,
-      "beat_rate": 1.0,
-      "last_surprise": 2.4592
-    },
-    {
       "ticker": "REGN",
       "earnings_date": "2026-07-30",
       "implied_move": null,
@@ -1209,20 +1246,6 @@
       "mispricing": null,
       "beat_rate": 1.0,
       "last_surprise": 0.88
-    },
-    {
-      "ticker": "MU",
-      "earnings_date": "2026-09-23",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0171,
-      "avg_realized_pct": 1.71,
-      "mispricing": null,
-      "beat_rate": null,
-      "last_surprise": null
     }
   ]
 }
