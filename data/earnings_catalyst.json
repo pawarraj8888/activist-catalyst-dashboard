@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19T08:08:35.520281",
+  "last_updated": "2026-07-19T13:06:00.650650",
   "events": [
     {
       "ticker": "LLY",
@@ -376,23 +376,6 @@
       "last_surprise": null
     },
     {
-      "ticker": "KO",
-      "earnings_date": "2026-07-28",
-      "implied_move": 0.0429,
-      "implied_move_pct": 4.29,
-      "stock_price": 81.56,
-      "straddle_cost": 3.5,
-      "options_expiry": "2026-07-31",
-      "avg_realized_move": 0.0197,
-      "avg_realized_pct": 1.97,
-      "mispricing": {
-        "ratio": 2.18,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 0.75
-    },
-    {
       "ticker": "PEP",
       "earnings_date": "2026-10-08",
       "implied_move": 0.1028,
@@ -442,23 +425,6 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 5.22
-    },
-    {
-      "ticker": "MCD",
-      "earnings_date": "2026-08-04",
-      "implied_move": 0.0578,
-      "implied_move_pct": 5.78,
-      "stock_price": 267.71,
-      "straddle_cost": 15.48,
-      "options_expiry": "2026-08-07",
-      "avg_realized_move": 0.0275,
-      "avg_realized_pct": 2.75,
-      "mispricing": {
-        "ratio": 2.1,
-        "signal": "RICH"
-      },
-      "beat_rate": 0.875,
-      "last_surprise": 1.91
     },
     {
       "ticker": "CRM",
@@ -869,23 +835,6 @@
       "last_surprise": null
     },
     {
-      "ticker": "ADI",
-      "earnings_date": "2026-08-19",
-      "implied_move": 0.1496,
-      "implied_move_pct": 14.96,
-      "stock_price": 375.36,
-      "straddle_cost": 56.15,
-      "options_expiry": "2026-08-21",
-      "avg_realized_move": 0.0581,
-      "avg_realized_pct": 5.81,
-      "mispricing": {
-        "ratio": 2.57,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 2.3112
-    },
-    {
       "ticker": "TJX",
       "earnings_date": "2026-08-19",
       "implied_move": 0.0709,
@@ -969,6 +918,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 2.4592
+    },
+    {
+      "ticker": "SO",
+      "earnings_date": "2026-07-30",
+      "implied_move": 0.0354,
+      "implied_move_pct": 3.54,
+      "stock_price": 95.3,
+      "straddle_cost": 3.38,
+      "options_expiry": "2026-07-31",
+      "avg_realized_move": 0.0218,
+      "avg_realized_pct": 2.18,
+      "mispricing": {
+        "ratio": 1.62,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 0.765
     },
     {
       "ticker": "DUK",
@@ -1105,6 +1071,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 8.9567
+    },
+    {
+      "ticker": "MU",
+      "earnings_date": "2026-09-23",
+      "implied_move": 0.3699,
+      "implied_move_pct": 36.99,
+      "stock_price": 848.95,
+      "straddle_cost": 314.02,
+      "options_expiry": "2026-10-16",
+      "avg_realized_move": 0.0171,
+      "avg_realized_pct": 1.71,
+      "mispricing": {
+        "ratio": 21.63,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
     },
     {
       "ticker": "CDNS",
