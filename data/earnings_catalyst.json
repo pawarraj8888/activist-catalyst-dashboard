@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-25T08:00:30.087949",
+  "last_updated": "2026-07-25T13:14:22.753584",
   "events": [
     {
       "ticker": "LLY",
@@ -767,6 +767,23 @@
       "last_surprise": null
     },
     {
+      "ticker": "AXP",
+      "earnings_date": "2026-10-23",
+      "implied_move": 0.1301,
+      "implied_move_pct": 13.01,
+      "stock_price": 326.17,
+      "straddle_cost": 42.42,
+      "options_expiry": "2026-11-20",
+      "avg_realized_move": 0.0198,
+      "avg_realized_pct": 1.98,
+      "mispricing": {
+        "ratio": 6.57,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 46.8625
+    },
+    {
       "ticker": "SBUX",
       "earnings_date": "2026-07-29",
       "implied_move": 0.0654,
@@ -1037,6 +1054,23 @@
       },
       "beat_rate": 0.75,
       "last_surprise": 0.0
+    },
+    {
+      "ticker": "HCA",
+      "earnings_date": "2026-10-23",
+      "implied_move": 0.1835,
+      "implied_move_pct": 18.35,
+      "stock_price": 382.19,
+      "straddle_cost": 70.15,
+      "options_expiry": "2026-12-18",
+      "avg_realized_move": 0.0528,
+      "avg_realized_pct": 5.28,
+      "mispricing": {
+        "ratio": 3.48,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
     },
     {
       "ticker": "VRTX",
