@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26T19:03:31.072562",
+  "last_updated": "2026-07-27T02:28:38.726469",
   "events": [
     {
       "ticker": "LLY",
@@ -1190,23 +1190,6 @@
       },
       "beat_rate": 0.75,
       "last_surprise": 0.0
-    },
-    {
-      "ticker": "CDNS",
-      "earnings_date": "2026-07-27",
-      "implied_move": 0.0871,
-      "implied_move_pct": 8.71,
-      "stock_price": 326.24,
-      "straddle_cost": 28.4,
-      "options_expiry": "2026-07-31",
-      "avg_realized_move": 0.0186,
-      "avg_realized_pct": 1.86,
-      "mispricing": {
-        "ratio": 4.68,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
     },
     {
       "ticker": "FTNT",
