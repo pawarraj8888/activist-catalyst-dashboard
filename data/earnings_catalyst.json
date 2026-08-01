@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01T08:12:54.138828",
+  "last_updated": "2026-08-01T13:08:05.532210",
   "events": [
     {
       "ticker": "UNH",
@@ -240,6 +240,23 @@
       "last_surprise": null
     },
     {
+      "ticker": "XOM",
+      "earnings_date": "2026-10-30",
+      "implied_move": 0.1311,
+      "implied_move_pct": 13.11,
+      "stock_price": 155.44,
+      "straddle_cost": 20.38,
+      "options_expiry": "2026-11-20",
+      "avg_realized_move": 0.0113,
+      "avg_realized_pct": 1.13,
+      "mispricing": {
+        "ratio": 11.6,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "JNJ",
       "earnings_date": "2026-10-13",
       "implied_move": 0.0944,
@@ -342,6 +359,23 @@
       "last_surprise": null
     },
     {
+      "ticker": "ABBV",
+      "earnings_date": "2026-10-29",
+      "implied_move": 0.1269,
+      "implied_move_pct": 12.69,
+      "stock_price": 250.94,
+      "straddle_cost": 31.85,
+      "options_expiry": "2026-11-20",
+      "avg_realized_move": 0.044,
+      "avg_realized_pct": 4.4,
+      "mispricing": {
+        "ratio": 2.88,
+        "signal": "RICH"
+      },
+      "beat_rate": 0.875,
+      "last_surprise": 2.6522
+    },
+    {
       "ticker": "KO",
       "earnings_date": "2026-10-20",
       "implied_move": 0.0965,
@@ -357,6 +391,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 0.75
+    },
+    {
+      "ticker": "CVX",
+      "earnings_date": "2026-10-30",
+      "implied_move": 0.1326,
+      "implied_move_pct": 13.26,
+      "stock_price": 196.83,
+      "straddle_cost": 26.1,
+      "options_expiry": "2026-12-18",
+      "avg_realized_move": 0.0293,
+      "avg_realized_pct": 2.93,
+      "mispricing": {
+        "ratio": 4.53,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
     },
     {
       "ticker": "PEP",
@@ -510,6 +561,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 1.8525
+    },
+    {
+      "ticker": "LIN",
+      "earnings_date": "2026-10-30",
+      "implied_move": 0.1061,
+      "implied_move_pct": 10.61,
+      "stock_price": 478.38,
+      "straddle_cost": 50.75,
+      "options_expiry": "2026-11-20",
+      "avg_realized_move": 0.0162,
+      "avg_realized_pct": 1.62,
+      "mispricing": {
+        "ratio": 6.55,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
     },
     {
       "ticker": "PM",
