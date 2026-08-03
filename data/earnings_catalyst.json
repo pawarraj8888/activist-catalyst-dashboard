@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02T19:02:40.228576",
+  "last_updated": "2026-08-03T02:22:03.751547",
   "events": [
     {
       "ticker": "UNH",
@@ -1139,23 +1139,6 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 0.88
-    },
-    {
-      "ticker": "VRTX",
-      "earnings_date": "2026-08-03",
-      "implied_move": 0.0609,
-      "implied_move_pct": 6.09,
-      "stock_price": 477.1,
-      "straddle_cost": 29.05,
-      "options_expiry": "2026-08-07",
-      "avg_realized_move": 0.0068,
-      "avg_realized_pct": 0.68,
-      "mispricing": {
-        "ratio": 8.96,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
     },
     {
       "ticker": "PANW",
