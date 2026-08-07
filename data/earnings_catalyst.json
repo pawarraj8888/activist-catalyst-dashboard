@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07T07:07:05.634730",
+  "last_updated": "2026-08-07T12:52:32.922253",
   "events": [
     {
       "ticker": "UNH",
@@ -1071,6 +1071,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 1.0728
+    },
+    {
+      "ticker": "ZTS",
+      "earnings_date": "2026-11-03",
+      "implied_move": 0.1874,
+      "implied_move_pct": 18.74,
+      "stock_price": 77.27,
+      "straddle_cost": 14.48,
+      "options_expiry": "2026-12-18",
+      "avg_realized_move": 0.0501,
+      "avg_realized_pct": 5.01,
+      "mispricing": {
+        "ratio": 3.74,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
     },
     {
       "ticker": "BSX",
