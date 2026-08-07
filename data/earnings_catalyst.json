@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T23:54:48.667297",
+  "last_updated": "2026-08-07T02:25:28.212135",
   "events": [
     {
       "ticker": "UNH",
@@ -442,6 +442,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 5.22
+    },
+    {
+      "ticker": "MCD",
+      "earnings_date": "2026-11-05",
+      "implied_move": 0.1033,
+      "implied_move_pct": 10.33,
+      "stock_price": 276.26,
+      "straddle_cost": 28.52,
+      "options_expiry": "2026-11-20",
+      "avg_realized_move": 0.0275,
+      "avg_realized_pct": 2.75,
+      "mispricing": {
+        "ratio": 3.76,
+        "signal": "RICH"
+      },
+      "beat_rate": 0.875,
+      "last_surprise": 1.91
     },
     {
       "ticker": "CRM",
@@ -1037,6 +1054,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 0.765
+    },
+    {
+      "ticker": "DUK",
+      "earnings_date": "2026-11-05",
+      "implied_move": 0.0932,
+      "implied_move_pct": 9.32,
+      "stock_price": 123.9,
+      "straddle_cost": 11.55,
+      "options_expiry": "2026-12-18",
+      "avg_realized_move": 0.0196,
+      "avg_realized_pct": 1.96,
+      "mispricing": {
+        "ratio": 4.76,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 1.0728
     },
     {
       "ticker": "BSX",
