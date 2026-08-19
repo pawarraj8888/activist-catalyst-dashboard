@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19T06:35:21.734403",
+  "last_updated": "2026-08-19T12:36:43.215292",
   "events": [
     {
       "ticker": "UNH",
@@ -289,6 +289,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 2.61
+    },
+    {
+      "ticker": "HD",
+      "earnings_date": "2026-11-17",
+      "implied_move": 0.1204,
+      "implied_move_pct": 12.04,
+      "stock_price": 337.49,
+      "straddle_cost": 40.63,
+      "options_expiry": "2026-11-20",
+      "avg_realized_move": 0.0149,
+      "avg_realized_pct": 1.49,
+      "mispricing": {
+        "ratio": 8.08,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 12.46
     },
     {
       "ticker": "MRK",
