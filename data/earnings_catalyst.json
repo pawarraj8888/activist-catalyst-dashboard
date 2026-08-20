@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20T06:37:10.884041",
+  "last_updated": "2026-08-20T12:37:33.674409",
   "events": [
     {
       "ticker": "UNH",
@@ -846,6 +846,23 @@
       "avg_realized_pct": 0.93,
       "mispricing": {
         "ratio": 12.57,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "TJX",
+      "earnings_date": "2026-11-18",
+      "implied_move": 0.1048,
+      "implied_move_pct": 10.48,
+      "stock_price": 144.5,
+      "straddle_cost": 15.15,
+      "options_expiry": "2026-12-18",
+      "avg_realized_move": 0.0289,
+      "avg_realized_pct": 2.89,
+      "mispricing": {
+        "ratio": 3.63,
         "signal": "RICH"
       },
       "beat_rate": null,
