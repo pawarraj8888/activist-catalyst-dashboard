@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-31T22:19:47.848147",
+  "last_updated": "2026-09-01T03:12:14.444390",
   "events": [
     {
       "ticker": "UNH",
@@ -1169,23 +1169,6 @@
       "avg_realized_pct": 0.68,
       "mispricing": {
         "ratio": 19.28,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "PANW",
-      "earnings_date": "2026-09-01",
-      "implied_move": 0.0932,
-      "implied_move_pct": 9.32,
-      "stock_price": 382.13,
-      "straddle_cost": 35.62,
-      "options_expiry": "2026-09-04",
-      "avg_realized_move": 0.0172,
-      "avg_realized_pct": 1.72,
-      "mispricing": {
-        "ratio": 5.42,
         "signal": "RICH"
       },
       "beat_rate": null,
