@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02T20:26:15.552275",
+  "last_updated": "2026-09-03T02:38:26.994037",
   "events": [
     {
       "ticker": "UNH",
@@ -126,7 +126,7 @@
       "implied_move": 0.1648,
       "implied_move_pct": 16.48,
       "stock_price": 357.01,
-      "straddle_cost": 58.85,
+      "straddle_cost": 58.82,
       "options_expiry": "2026-11-20",
       "avg_realized_move": 0.0272,
       "avg_realized_pct": 2.72,
@@ -461,6 +461,23 @@
       "last_surprise": 1.91
     },
     {
+      "ticker": "CRM",
+      "earnings_date": "2026-12-02",
+      "implied_move": 0.183,
+      "implied_move_pct": 18.3,
+      "stock_price": 256.93,
+      "straddle_cost": 47.02,
+      "options_expiry": "2026-12-18",
+      "avg_realized_move": 0.0074,
+      "avg_realized_pct": 0.74,
+      "mispricing": {
+        "ratio": 24.73,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "NFLX",
       "earnings_date": "2026-10-20",
       "implied_move": 0.1429,
@@ -599,15 +616,15 @@
     {
       "ticker": "NEE",
       "earnings_date": "2026-10-27",
-      "implied_move": 0.0993,
-      "implied_move_pct": 9.93,
+      "implied_move": 0.099,
+      "implied_move_pct": 9.9,
       "stock_price": 83.1,
-      "straddle_cost": 8.25,
+      "straddle_cost": 8.22,
       "options_expiry": "2026-12-18",
       "avg_realized_move": 0.0306,
       "avg_realized_pct": 3.06,
       "mispricing": {
-        "ratio": 3.25,
+        "ratio": 3.24,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -1228,15 +1245,15 @@
     {
       "ticker": "AMAT",
       "earnings_date": "2026-11-12",
-      "implied_move": 0.2037,
-      "implied_move_pct": 20.37,
+      "implied_move": 0.2003,
+      "implied_move_pct": 20.03,
       "stock_price": 438.46,
-      "straddle_cost": 89.32,
+      "straddle_cost": 87.82,
       "options_expiry": "2026-11-20",
       "avg_realized_move": 0.0212,
       "avg_realized_pct": 2.12,
       "mispricing": {
-        "ratio": 9.61,
+        "ratio": 9.45,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
