@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-09-03T20:25:24.437889",
+  "last_updated": "2026-09-04T02:34:53.810894",
   "events": [
     {
       "ticker": "UNH",
       "earnings_date": "2026-10-27",
-      "implied_move": 0.1195,
-      "implied_move_pct": 11.95,
+      "implied_move": 0.1194,
+      "implied_move_pct": 11.94,
       "stock_price": 400.94,
-      "straddle_cost": 47.9,
+      "straddle_cost": 47.88,
       "options_expiry": "2026-11-20",
       "avg_realized_move": 0.1076,
       "avg_realized_pct": 10.76,
@@ -208,15 +208,15 @@
     {
       "ticker": "JNJ",
       "earnings_date": "2026-10-13",
-      "implied_move": 0.0686,
-      "implied_move_pct": 6.86,
+      "implied_move": 0.0674,
+      "implied_move_pct": 6.74,
       "stock_price": 278.43,
-      "straddle_cost": 19.1,
+      "straddle_cost": 18.77,
       "options_expiry": "2026-10-16",
       "avg_realized_move": 0.0191,
       "avg_realized_pct": 1.91,
       "mispricing": {
-        "ratio": 3.59,
+        "ratio": 3.53,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -904,7 +904,7 @@
     },
     {
       "ticker": "PLD",
-      "earnings_date": "2026-10-14",
+      "earnings_date": "2026-10-15",
       "implied_move": 0.0669,
       "implied_move_pct": 6.69,
       "stock_price": 138.35,
