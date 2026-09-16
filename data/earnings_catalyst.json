@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-09-15T20:48:10.086378",
+  "last_updated": "2026-09-16T02:59:39.594561",
   "events": [
     {
       "ticker": "UNH",
-      "earnings_date": "2026-10-27",
-      "implied_move": 0.097,
-      "implied_move_pct": 9.7,
+      "earnings_date": "2026-10-13",
+      "implied_move": 0.0817,
+      "implied_move_pct": 8.17,
       "stock_price": 375.93,
-      "straddle_cost": 36.45,
-      "options_expiry": "2026-10-30",
+      "straddle_cost": 30.7,
+      "options_expiry": "2026-10-16",
       "avg_realized_move": 0.1076,
       "avg_realized_pct": 10.76,
       "mispricing": {
-        "ratio": 0.9,
-        "signal": "FAIR"
+        "ratio": 0.76,
+        "signal": "CHEAP"
       },
       "beat_rate": null,
       "last_surprise": null
