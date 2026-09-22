@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-21T21:36:58.379842",
+  "last_updated": "2026-09-22T02:58:50.969315",
   "events": [
     {
       "ticker": "UNH",
@@ -648,6 +648,23 @@
       "last_surprise": 0.0
     },
     {
+      "ticker": "QCOM",
+      "earnings_date": "2026-11-04",
+      "implied_move": 0.1796,
+      "implied_move_pct": 17.96,
+      "stock_price": 194.23,
+      "straddle_cost": 34.88,
+      "options_expiry": "2026-11-20",
+      "avg_realized_move": 0.0384,
+      "avg_realized_pct": 3.84,
+      "mispricing": {
+        "ratio": 4.68,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 0.9033
+    },
+    {
       "ticker": "AMGN",
       "earnings_date": "2026-11-03",
       "implied_move": 0.0966,
@@ -1229,20 +1246,6 @@
       "mispricing": null,
       "beat_rate": 1.0,
       "last_surprise": 1.8525
-    },
-    {
-      "ticker": "QCOM",
-      "earnings_date": "2026-10-29",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0384,
-      "avg_realized_pct": 3.84,
-      "mispricing": null,
-      "beat_rate": 1.0,
-      "last_surprise": 0.9033
     },
     {
       "ticker": "MDLZ",
