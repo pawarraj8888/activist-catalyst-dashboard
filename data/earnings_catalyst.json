@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22T20:48:15.411330",
+  "last_updated": "2026-09-23T02:58:49.927630",
   "events": [
     {
       "ticker": "UNH",
@@ -71,7 +71,7 @@
     },
     {
       "ticker": "DHR",
-      "earnings_date": "2026-10-20",
+      "earnings_date": "2026-10-21",
       "implied_move": 0.0801,
       "implied_move_pct": 8.01,
       "stock_price": 221.09,
