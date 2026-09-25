@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T21:04:16.012676",
+  "last_updated": "2026-09-25T03:05:41.023317",
   "events": [
     {
       "ticker": "UNH",
@@ -1057,7 +1057,7 @@
     },
     {
       "ticker": "REGN",
-      "earnings_date": "2026-10-28",
+      "earnings_date": "2026-10-30",
       "implied_move": 0.086,
       "implied_move_pct": 8.6,
       "stock_price": 796.02,
