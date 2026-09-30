@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29T21:59:00.371711",
+  "last_updated": "2026-09-30T03:38:57.588812",
   "events": [
     {
       "ticker": "UNH",
@@ -819,7 +819,7 @@
     },
     {
       "ticker": "SPGI",
-      "earnings_date": "2026-10-29",
+      "earnings_date": "2026-10-27",
       "implied_move": 0.0679,
       "implied_move_pct": 6.79,
       "stock_price": 392.45,
@@ -1173,23 +1173,6 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 8.9567
-    },
-    {
-      "ticker": "MU",
-      "earnings_date": "2026-09-30",
-      "implied_move": 0.0758,
-      "implied_move_pct": 7.58,
-      "stock_price": 1065.08,
-      "straddle_cost": 80.72,
-      "options_expiry": "2026-10-02",
-      "avg_realized_move": 0.0171,
-      "avg_realized_pct": 1.71,
-      "mispricing": {
-        "ratio": 4.43,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
     },
     {
       "ticker": "FTNT",
