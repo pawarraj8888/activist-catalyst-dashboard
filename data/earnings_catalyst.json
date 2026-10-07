@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06T22:12:21.161124",
+  "last_updated": "2026-10-07T03:56:03.961080",
   "events": [
     {
       "ticker": "UNH",
@@ -510,23 +510,6 @@
       },
       "beat_rate": null,
       "last_surprise": null
-    },
-    {
-      "ticker": "KO",
-      "earnings_date": "2026-10-27",
-      "implied_move": 0.0465,
-      "implied_move_pct": 4.65,
-      "stock_price": 86.17,
-      "straddle_cost": 4.01,
-      "options_expiry": "2026-10-30",
-      "avg_realized_move": 0.0197,
-      "avg_realized_pct": 1.97,
-      "mispricing": {
-        "ratio": 2.36,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 0.75
     },
     {
       "ticker": "CVX",
@@ -1238,6 +1221,20 @@
       "mispricing": null,
       "beat_rate": null,
       "last_surprise": null
+    },
+    {
+      "ticker": "KO",
+      "earnings_date": "2026-10-27",
+      "implied_move": null,
+      "implied_move_pct": null,
+      "stock_price": null,
+      "straddle_cost": null,
+      "options_expiry": null,
+      "avg_realized_move": 0.0197,
+      "avg_realized_pct": 1.97,
+      "mispricing": null,
+      "beat_rate": 1.0,
+      "last_surprise": 0.75
     },
     {
       "ticker": "AMGN",
