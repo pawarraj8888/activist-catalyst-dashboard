@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T22:34:43.546399",
+  "last_updated": "2026-10-08T04:08:30.820325",
   "events": [
     {
       "ticker": "UNH",
@@ -85,23 +85,6 @@
       },
       "beat_rate": 0.875,
       "last_surprise": 2.6522
-    },
-    {
-      "ticker": "PEP",
-      "earnings_date": "2026-10-08",
-      "implied_move": 0.0336,
-      "implied_move_pct": 3.36,
-      "stock_price": 123.73,
-      "straddle_cost": 4.16,
-      "options_expiry": "2026-10-09",
-      "avg_realized_move": 0.0288,
-      "avg_realized_pct": 2.88,
-      "mispricing": {
-        "ratio": 1.17,
-        "signal": "FAIR"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 4.035
     },
     {
       "ticker": "WFC",
