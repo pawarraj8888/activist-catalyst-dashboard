@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10T16:50:21.742323",
+  "last_updated": "2026-10-10T21:03:16.659173",
   "events": [
     {
       "ticker": "UNH",
@@ -157,15 +157,15 @@
     {
       "ticker": "GE",
       "earnings_date": "2026-10-20",
-      "implied_move": 0.0727,
-      "implied_move_pct": 7.27,
+      "implied_move": 0.0685,
+      "implied_move_pct": 6.85,
       "stock_price": 308.2,
-      "straddle_cost": 22.42,
+      "straddle_cost": 21.1,
       "options_expiry": "2026-10-23",
       "avg_realized_move": 0.0685,
       "avg_realized_pct": 6.85,
       "mispricing": {
-        "ratio": 1.06,
+        "ratio": 1.0,
         "signal": "FAIR"
       },
       "beat_rate": 1.0,
@@ -1143,15 +1143,15 @@
     {
       "ticker": "AMAT",
       "earnings_date": "2026-11-12",
-      "implied_move": 0.1433,
-      "implied_move_pct": 14.33,
+      "implied_move": 0.1366,
+      "implied_move_pct": 13.66,
       "stock_price": 507.03,
-      "straddle_cost": 72.68,
+      "straddle_cost": 69.28,
       "options_expiry": "2026-11-13",
       "avg_realized_move": 0.0212,
       "avg_realized_pct": 2.12,
       "mispricing": {
-        "ratio": 6.76,
+        "ratio": 6.44,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
