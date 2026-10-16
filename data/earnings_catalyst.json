@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15T20:51:52.467686",
+  "last_updated": "2026-10-16T02:49:53.805121",
   "events": [
     {
       "ticker": "PM",
@@ -274,6 +274,23 @@
       "last_surprise": 24.05
     },
     {
+      "ticker": "JPM",
+      "earnings_date": "2027-01-14",
+      "implied_move": 0.0899,
+      "implied_move_pct": 8.99,
+      "stock_price": 335.53,
+      "straddle_cost": 30.15,
+      "options_expiry": "2027-01-15",
+      "avg_realized_move": 0.0291,
+      "avg_realized_pct": 2.91,
+      "mispricing": {
+        "ratio": 3.09,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "V",
       "earnings_date": "2026-10-27",
       "implied_move": 0.044,
@@ -495,6 +512,23 @@
       "last_surprise": 6.402
     },
     {
+      "ticker": "WFC",
+      "earnings_date": "2027-01-14",
+      "implied_move": 0.1024,
+      "implied_move_pct": 10.24,
+      "stock_price": 82.75,
+      "straddle_cost": 8.48,
+      "options_expiry": "2027-01-15",
+      "avg_realized_move": 0.0482,
+      "avg_realized_pct": 4.82,
+      "mispricing": {
+        "ratio": 2.12,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "TXN",
       "earnings_date": "2026-10-21",
       "implied_move": 0.0865,
@@ -614,6 +648,40 @@
       "last_surprise": 1.31
     },
     {
+      "ticker": "MS",
+      "earnings_date": "2027-01-14",
+      "implied_move": 0.1159,
+      "implied_move_pct": 11.59,
+      "stock_price": 182.1,
+      "straddle_cost": 21.1,
+      "options_expiry": "2027-01-15",
+      "avg_realized_move": 0.0322,
+      "avg_realized_pct": 3.22,
+      "mispricing": {
+        "ratio": 3.6,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "BLK",
+      "earnings_date": "2027-01-14",
+      "implied_move": 0.1108,
+      "implied_move_pct": 11.08,
+      "stock_price": 1120.78,
+      "straddle_cost": 124.15,
+      "options_expiry": "2027-01-15",
+      "avg_realized_move": 0.0294,
+      "avg_realized_pct": 2.94,
+      "mispricing": {
+        "ratio": 3.77,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "AXP",
       "earnings_date": "2026-10-23",
       "implied_move": 0.0469,
@@ -727,6 +795,23 @@
       "avg_realized_pct": 2.89,
       "mispricing": {
         "ratio": 2.45,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "C",
+      "earnings_date": "2027-01-14",
+      "implied_move": 0.1122,
+      "implied_move_pct": 11.22,
+      "stock_price": 123.21,
+      "straddle_cost": 13.82,
+      "options_expiry": "2027-01-15",
+      "avg_realized_move": 0.0379,
+      "avg_realized_pct": 3.79,
+      "mispricing": {
+        "ratio": 2.96,
         "signal": "RICH"
       },
       "beat_rate": null,
