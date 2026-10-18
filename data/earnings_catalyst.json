@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T15:16:17.504329",
+  "last_updated": "2026-10-18T19:59:47.212418",
   "events": [
     {
       "ticker": "PM",
@@ -325,6 +325,23 @@
       "last_surprise": null
     },
     {
+      "ticker": "V",
+      "earnings_date": "2026-10-27",
+      "implied_move": 0.0435,
+      "implied_move_pct": 4.35,
+      "stock_price": 402.61,
+      "straddle_cost": 17.52,
+      "options_expiry": "2026-10-30",
+      "avg_realized_move": 0.0131,
+      "avg_realized_pct": 1.31,
+      "mispricing": {
+        "ratio": 3.32,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "XOM",
       "earnings_date": "2026-10-30",
       "implied_move": 0.0478,
@@ -357,6 +374,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 0.7222
+    },
+    {
+      "ticker": "MA",
+      "earnings_date": "2026-10-29",
+      "implied_move": 0.0455,
+      "implied_move_pct": 4.55,
+      "stock_price": 617.42,
+      "straddle_cost": 28.1,
+      "options_expiry": "2026-10-30",
+      "avg_realized_move": 0.0244,
+      "avg_realized_pct": 2.44,
+      "mispricing": {
+        "ratio": 1.86,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
     },
     {
       "ticker": "HD",
@@ -648,6 +682,23 @@
       "last_surprise": 0.9033
     },
     {
+      "ticker": "AMGN",
+      "earnings_date": "2026-11-03",
+      "implied_move": 0.0666,
+      "implied_move_pct": 6.66,
+      "stock_price": 432.49,
+      "straddle_cost": 28.82,
+      "options_expiry": "2026-11-06",
+      "avg_realized_move": 0.0095,
+      "avg_realized_pct": 0.95,
+      "mispricing": {
+        "ratio": 7.01,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 4.78
+    },
+    {
       "ticker": "IBM",
       "earnings_date": "2026-10-21",
       "implied_move": 0.0772,
@@ -835,6 +886,23 @@
       "last_surprise": 1.6467
     },
     {
+      "ticker": "CI",
+      "earnings_date": "2026-11-05",
+      "implied_move": 0.0743,
+      "implied_move_pct": 7.43,
+      "stock_price": 302.3,
+      "straddle_cost": 22.45,
+      "options_expiry": "2026-11-06",
+      "avg_realized_move": 0.0301,
+      "avg_realized_pct": 3.01,
+      "mispricing": {
+        "ratio": 2.47,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 6.8846
+    },
+    {
       "ticker": "SYK",
       "earnings_date": "2026-10-29",
       "implied_move": 0.096,
@@ -846,6 +914,23 @@
       "avg_realized_pct": 0.74,
       "mispricing": {
         "ratio": 12.97,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "MDLZ",
+      "earnings_date": "2026-10-29",
+      "implied_move": 0.052,
+      "implied_move_pct": 5.2,
+      "stock_price": 63.91,
+      "straddle_cost": 3.32,
+      "options_expiry": "2026-10-30",
+      "avg_realized_move": 0.0093,
+      "avg_realized_pct": 0.93,
+      "mispricing": {
+        "ratio": 5.59,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -901,6 +986,23 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 79.02
+    },
+    {
+      "ticker": "EOG",
+      "earnings_date": "2026-11-05",
+      "implied_move": 0.0684,
+      "implied_move_pct": 6.84,
+      "stock_price": 158.01,
+      "straddle_cost": 10.8,
+      "options_expiry": "2026-11-06",
+      "avg_realized_move": 0.0133,
+      "avg_realized_pct": 1.33,
+      "mispricing": {
+        "ratio": 5.14,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 2.4592
     },
     {
       "ticker": "DUK",
@@ -1024,15 +1126,15 @@
     {
       "ticker": "AMAT",
       "earnings_date": "2026-11-12",
-      "implied_move": 0.128,
-      "implied_move_pct": 12.8,
+      "implied_move": 0.1274,
+      "implied_move_pct": 12.74,
       "stock_price": 409.29,
-      "straddle_cost": 52.38,
+      "straddle_cost": 52.12,
       "options_expiry": "2026-11-13",
       "avg_realized_move": 0.0212,
       "avg_realized_pct": 2.12,
       "mispricing": {
-        "ratio": 6.04,
+        "ratio": 6.01,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
@@ -1107,76 +1209,6 @@
       "last_surprise": 0.6453
     },
     {
-      "ticker": "V",
-      "earnings_date": "2026-10-27",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0131,
-      "avg_realized_pct": 1.31,
-      "mispricing": null,
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "MA",
-      "earnings_date": "2026-10-29",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0244,
-      "avg_realized_pct": 2.44,
-      "mispricing": null,
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "AMGN",
-      "earnings_date": "2026-11-03",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0095,
-      "avg_realized_pct": 0.95,
-      "mispricing": null,
-      "beat_rate": 1.0,
-      "last_surprise": 4.78
-    },
-    {
-      "ticker": "CI",
-      "earnings_date": "2026-11-05",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0301,
-      "avg_realized_pct": 3.01,
-      "mispricing": null,
-      "beat_rate": 1.0,
-      "last_surprise": 6.8846
-    },
-    {
-      "ticker": "MDLZ",
-      "earnings_date": "2026-10-29",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0093,
-      "avg_realized_pct": 0.93,
-      "mispricing": null,
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
       "ticker": "ADI",
       "earnings_date": "2026-11-24",
       "implied_move": null,
@@ -1189,20 +1221,6 @@
       "mispricing": null,
       "beat_rate": 1.0,
       "last_surprise": 2.3112
-    },
-    {
-      "ticker": "EOG",
-      "earnings_date": "2026-11-05",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0133,
-      "avg_realized_pct": 1.33,
-      "mispricing": null,
-      "beat_rate": 1.0,
-      "last_surprise": 2.4592
     },
     {
       "ticker": "SO",
