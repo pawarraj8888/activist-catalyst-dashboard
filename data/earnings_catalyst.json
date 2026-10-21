@@ -1,23 +1,6 @@
 {
-  "last_updated": "2026-10-20T21:10:40.204104",
+  "last_updated": "2026-10-21T03:00:49.846627",
   "events": [
-    {
-      "ticker": "PM",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.044,
-      "implied_move_pct": 4.4,
-      "stock_price": 199.9,
-      "straddle_cost": 8.8,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0651,
-      "avg_realized_pct": 6.51,
-      "mispricing": {
-        "ratio": 0.68,
-        "signal": "CHEAP"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
     {
       "ticker": "UNH",
       "earnings_date": "2027-01-12",
@@ -115,40 +98,6 @@
       "avg_realized_pct": 2.93,
       "mispricing": {
         "ratio": 1.49,
-        "signal": "FAIR"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "DHR",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.0734,
-      "implied_move_pct": 7.34,
-      "stock_price": 224.24,
-      "straddle_cost": 16.45,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0571,
-      "avg_realized_pct": 5.71,
-      "mispricing": {
-        "ratio": 1.29,
-        "signal": "FAIR"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "NEE",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.033,
-      "implied_move_pct": 3.3,
-      "stock_price": 78.86,
-      "straddle_cost": 2.6,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0306,
-      "avg_realized_pct": 3.06,
-      "mispricing": {
-        "ratio": 1.08,
         "signal": "FAIR"
       },
       "beat_rate": null,
@@ -272,40 +221,6 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 1.525
-    },
-    {
-      "ticker": "META",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.0543,
-      "implied_move_pct": 5.43,
-      "stock_price": 694.25,
-      "straddle_cost": 37.7,
-      "options_expiry": "2026-10-21",
-      "avg_realized_move": 0.0102,
-      "avg_realized_pct": 1.02,
-      "mispricing": {
-        "ratio": 5.32,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "TSLA",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.0648,
-      "implied_move_pct": 6.48,
-      "stock_price": 373.71,
-      "straddle_cost": 24.22,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0272,
-      "avg_realized_pct": 2.72,
-      "mispricing": {
-        "ratio": 2.38,
-        "signal": "RICH"
-      },
-      "beat_rate": 0.875,
-      "last_surprise": 24.05
     },
     {
       "ticker": "JPM",
@@ -478,23 +393,6 @@
       "last_surprise": null
     },
     {
-      "ticker": "TMO",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.0588,
-      "implied_move_pct": 5.88,
-      "stock_price": 687.37,
-      "straddle_cost": 40.4,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0331,
-      "avg_realized_pct": 3.31,
-      "mispricing": {
-        "ratio": 1.78,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 5.22
-    },
-    {
       "ticker": "MCD",
       "earnings_date": "2026-11-04",
       "implied_move": 0.0475,
@@ -580,23 +478,6 @@
       "last_surprise": null
     },
     {
-      "ticker": "TXN",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.0776,
-      "implied_move_pct": 7.76,
-      "stock_price": 277.78,
-      "straddle_cost": 21.55,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0252,
-      "avg_realized_pct": 2.52,
-      "mispricing": {
-        "ratio": 3.08,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 1.8525
-    },
-    {
       "ticker": "LIN",
       "earnings_date": "2026-10-29",
       "implied_move": 0.0572,
@@ -665,23 +546,6 @@
       "last_surprise": 4.78
     },
     {
-      "ticker": "IBM",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.0728,
-      "implied_move_pct": 7.28,
-      "stock_price": 241.92,
-      "straddle_cost": 17.6,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0087,
-      "avg_realized_pct": 0.87,
-      "mispricing": {
-        "ratio": 8.37,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 6.35
-    },
-    {
       "ticker": "CAT",
       "earnings_date": "2026-10-29",
       "implied_move": 0.0791,
@@ -714,6 +578,23 @@
       },
       "beat_rate": 0.25,
       "last_surprise": 1.31
+    },
+    {
+      "ticker": "GS",
+      "earnings_date": "2027-01-19",
+      "implied_move": 0.1561,
+      "implied_move_pct": 15.61,
+      "stock_price": 884.81,
+      "straddle_cost": 138.08,
+      "options_expiry": "2027-03-19",
+      "avg_realized_move": 0.0265,
+      "avg_realized_pct": 2.65,
+      "mispricing": {
+        "ratio": 5.89,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
     },
     {
       "ticker": "MS",
@@ -903,23 +784,6 @@
       "last_surprise": null
     },
     {
-      "ticker": "CME",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.0308,
-      "implied_move_pct": 3.08,
-      "stock_price": 295.31,
-      "straddle_cost": 9.1,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0126,
-      "avg_realized_pct": 1.26,
-      "mispricing": {
-        "ratio": 2.44,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 79.02
-    },
-    {
       "ticker": "EOG",
       "earnings_date": "2026-11-05",
       "implied_move": 0.0655,
@@ -1054,23 +918,6 @@
       },
       "beat_rate": 1.0,
       "last_surprise": 2.154
-    },
-    {
-      "ticker": "LRCX",
-      "earnings_date": "2026-10-21",
-      "implied_move": 0.079,
-      "implied_move_pct": 7.9,
-      "stock_price": 263.45,
-      "straddle_cost": 20.82,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0348,
-      "avg_realized_pct": 3.48,
-      "mispricing": {
-        "ratio": 2.27,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 8.9567
     },
     {
       "ticker": "MU",
