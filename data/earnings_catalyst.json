@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-22T21:07:58.835942",
+  "last_updated": "2026-10-23T03:03:10.988652",
   "events": [
     {
       "ticker": "UNH",
@@ -495,6 +495,23 @@
       "last_surprise": 0.9033
     },
     {
+      "ticker": "GE",
+      "earnings_date": "2027-01-21",
+      "implied_move": 0.1719,
+      "implied_move_pct": 17.19,
+      "stock_price": 293.54,
+      "straddle_cost": 50.45,
+      "options_expiry": "2027-03-19",
+      "avg_realized_move": 0.0685,
+      "avg_realized_pct": 6.85,
+      "mispricing": {
+        "ratio": 2.51,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 17.16
+    },
+    {
       "ticker": "CAT",
       "earnings_date": "2026-10-29",
       "implied_move": 0.0754,
@@ -578,23 +595,6 @@
       },
       "beat_rate": null,
       "last_surprise": null
-    },
-    {
-      "ticker": "AXP",
-      "earnings_date": "2026-10-23",
-      "implied_move": 0.0377,
-      "implied_move_pct": 3.77,
-      "stock_price": 325.17,
-      "straddle_cost": 12.28,
-      "options_expiry": "2026-10-23",
-      "avg_realized_move": 0.0198,
-      "avg_realized_pct": 1.98,
-      "mispricing": {
-        "ratio": 1.9,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 46.8625
     },
     {
       "ticker": "SBUX",
@@ -977,6 +977,20 @@
       "mispricing": null,
       "beat_rate": null,
       "last_surprise": null
+    },
+    {
+      "ticker": "ISRG",
+      "earnings_date": "2027-01-21",
+      "implied_move": null,
+      "implied_move_pct": null,
+      "stock_price": null,
+      "straddle_cost": null,
+      "options_expiry": null,
+      "avg_realized_move": 0.0137,
+      "avg_realized_pct": 1.37,
+      "mispricing": null,
+      "beat_rate": 0.875,
+      "last_surprise": 3.38
     },
     {
       "ticker": "CI",
