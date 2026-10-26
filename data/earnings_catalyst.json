@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T20:19:07.171743",
+  "last_updated": "2026-10-26T02:51:48.279869",
   "events": [
     {
       "ticker": "UNH",
@@ -982,23 +982,6 @@
       "avg_realized_pct": 1.71,
       "mispricing": {
         "ratio": 11.82,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "CDNS",
-      "earnings_date": "2026-10-26",
-      "implied_move": 0.0771,
-      "implied_move_pct": 7.71,
-      "stock_price": 316.49,
-      "straddle_cost": 24.4,
-      "options_expiry": "2026-10-30",
-      "avg_realized_move": 0.0186,
-      "avg_realized_pct": 1.86,
-      "mispricing": {
-        "ratio": 4.15,
         "signal": "RICH"
       },
       "beat_rate": null,
