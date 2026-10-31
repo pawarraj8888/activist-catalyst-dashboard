@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T03:46:48.444799",
+  "last_updated": "2026-10-31T11:35:49.644157",
   "events": [
     {
       "ticker": "UNH",
@@ -104,6 +104,23 @@
       "last_surprise": null
     },
     {
+      "ticker": "XOM",
+      "earnings_date": "2027-01-29",
+      "implied_move": 0.1279,
+      "implied_move_pct": 12.79,
+      "stock_price": 187.25,
+      "straddle_cost": 23.95,
+      "options_expiry": "2027-02-19",
+      "avg_realized_move": 0.0113,
+      "avg_realized_pct": 1.13,
+      "mispricing": {
+        "ratio": 11.32,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
       "ticker": "WMT",
       "earnings_date": "2026-11-19",
       "implied_move": 0.0729,
@@ -200,6 +217,23 @@
       "avg_realized_pct": 2.62,
       "mispricing": {
         "ratio": 3.7,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "CVX",
+      "earnings_date": "2027-01-29",
+      "implied_move": 0.1446,
+      "implied_move_pct": 14.46,
+      "stock_price": 235.52,
+      "straddle_cost": 34.05,
+      "options_expiry": "2027-03-19",
+      "avg_realized_move": 0.0293,
+      "avg_realized_pct": 2.93,
+      "mispricing": {
+        "ratio": 4.94,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -790,6 +824,20 @@
       "mispricing": null,
       "beat_rate": null,
       "last_surprise": null
+    },
+    {
+      "ticker": "REGN",
+      "earnings_date": "2027-01-28",
+      "implied_move": null,
+      "implied_move_pct": null,
+      "stock_price": null,
+      "straddle_cost": null,
+      "options_expiry": null,
+      "avg_realized_move": 0.0546,
+      "avg_realized_pct": 5.46,
+      "mispricing": null,
+      "beat_rate": 1.0,
+      "last_surprise": 0.88
     },
     {
       "ticker": "VRTX",
