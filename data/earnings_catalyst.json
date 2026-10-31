@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30T21:58:17.632075",
+  "last_updated": "2026-10-31T03:46:48.444799",
   "events": [
     {
       "ticker": "UNH",
@@ -157,15 +157,15 @@
     {
       "ticker": "HD",
       "earnings_date": "2026-11-17",
-      "implied_move": 0.0685,
-      "implied_move_pct": 6.85,
+      "implied_move": 0.0687,
+      "implied_move_pct": 6.87,
       "stock_price": 329.2,
-      "straddle_cost": 22.55,
+      "straddle_cost": 22.6,
       "options_expiry": "2026-11-20",
       "avg_realized_move": 0.0149,
       "avg_realized_pct": 1.49,
       "mispricing": {
-        "ratio": 4.6,
+        "ratio": 4.61,
         "signal": "RICH"
       },
       "beat_rate": 1.0,
