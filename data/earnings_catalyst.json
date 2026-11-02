@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T21:37:23.722666",
+  "last_updated": "2026-11-02T03:59:52.059449",
   "events": [
     {
       "ticker": "UNH",
@@ -34,23 +34,6 @@
       },
       "beat_rate": 0.875,
       "last_surprise": 1.91
-    },
-    {
-      "ticker": "AAPL",
-      "earnings_date": "2026-11-02",
-      "implied_move": 0.0432,
-      "implied_move_pct": 4.32,
-      "stock_price": 344.63,
-      "straddle_cost": 14.9,
-      "options_expiry": "2026-11-04",
-      "avg_realized_move": 0.0116,
-      "avg_realized_pct": 1.16,
-      "mispricing": {
-        "ratio": 3.72,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 2.6668
     },
     {
       "ticker": "MSFT",
@@ -948,23 +931,6 @@
       "avg_realized_pct": 5.28,
       "mispricing": {
         "ratio": 3.04,
-        "signal": "RICH"
-      },
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "VRTX",
-      "earnings_date": "2026-11-02",
-      "implied_move": 0.0561,
-      "implied_move_pct": 5.61,
-      "stock_price": 558.88,
-      "straddle_cost": 31.35,
-      "options_expiry": "2026-11-06",
-      "avg_realized_move": 0.0068,
-      "avg_realized_pct": 0.68,
-      "mispricing": {
-        "ratio": 8.25,
         "signal": "RICH"
       },
       "beat_rate": null,
