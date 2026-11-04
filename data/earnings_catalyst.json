@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03T22:48:32.998492",
+  "last_updated": "2026-11-04T04:32:44.088274",
   "events": [
     {
       "ticker": "UNH",
@@ -17,23 +17,6 @@
       },
       "beat_rate": null,
       "last_surprise": null
-    },
-    {
-      "ticker": "MCD",
-      "earnings_date": "2026-11-04",
-      "implied_move": 0.0348,
-      "implied_move_pct": 3.48,
-      "stock_price": 263.04,
-      "straddle_cost": 9.15,
-      "options_expiry": "2026-11-06",
-      "avg_realized_move": 0.0275,
-      "avg_realized_pct": 2.75,
-      "mispricing": {
-        "ratio": 1.27,
-        "signal": "FAIR"
-      },
-      "beat_rate": 0.875,
-      "last_surprise": 1.91
     },
     {
       "ticker": "AAPL",
@@ -459,23 +442,6 @@
       },
       "beat_rate": 0.625,
       "last_surprise": 0.0
-    },
-    {
-      "ticker": "QCOM",
-      "earnings_date": "2026-11-04",
-      "implied_move": 0.0886,
-      "implied_move_pct": 8.86,
-      "stock_price": 164.43,
-      "straddle_cost": 14.58,
-      "options_expiry": "2026-11-06",
-      "avg_realized_move": 0.0384,
-      "avg_realized_pct": 3.84,
-      "mispricing": {
-        "ratio": 2.31,
-        "signal": "RICH"
-      },
-      "beat_rate": 1.0,
-      "last_surprise": 0.9033
     },
     {
       "ticker": "HON",
