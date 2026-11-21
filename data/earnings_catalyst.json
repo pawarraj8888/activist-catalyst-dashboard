@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20T23:37:18.846451",
+  "last_updated": "2026-11-21T05:17:42.743041",
   "events": [
     {
       "ticker": "UNH",
@@ -98,6 +98,23 @@
       "avg_realized_pct": 2.91,
       "mispricing": {
         "ratio": 3.37,
+        "signal": "RICH"
+      },
+      "beat_rate": null,
+      "last_surprise": null
+    },
+    {
+      "ticker": "V",
+      "earnings_date": "2027-01-26",
+      "implied_move": 0.107,
+      "implied_move_pct": 10.7,
+      "stock_price": 401.87,
+      "straddle_cost": 43.0,
+      "options_expiry": "2027-02-19",
+      "avg_realized_move": 0.0131,
+      "avg_realized_pct": 1.31,
+      "mispricing": {
+        "ratio": 8.17,
         "signal": "RICH"
       },
       "beat_rate": null,
@@ -255,6 +272,23 @@
       },
       "beat_rate": null,
       "last_surprise": null
+    },
+    {
+      "ticker": "TMO",
+      "earnings_date": "2027-01-28",
+      "implied_move": 0.1411,
+      "implied_move_pct": 14.11,
+      "stock_price": 669.54,
+      "straddle_cost": 94.5,
+      "options_expiry": "2027-02-19",
+      "avg_realized_move": 0.0331,
+      "avg_realized_pct": 3.31,
+      "mispricing": {
+        "ratio": 4.26,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 5.22
     },
     {
       "ticker": "CRM",
@@ -888,47 +922,19 @@
     {
       "ticker": "SNPS",
       "earnings_date": "2026-12-08",
-      "implied_move": 0.1517,
-      "implied_move_pct": 15.17,
+      "implied_move": 0.1359,
+      "implied_move_pct": 13.59,
       "stock_price": 396.17,
-      "straddle_cost": 60.1,
+      "straddle_cost": 53.85,
       "options_expiry": "2026-12-11",
       "avg_realized_move": 0.0343,
       "avg_realized_pct": 3.43,
       "mispricing": {
-        "ratio": 4.42,
+        "ratio": 3.96,
         "signal": "RICH"
       },
       "beat_rate": 0.75,
       "last_surprise": 0.0
-    },
-    {
-      "ticker": "V",
-      "earnings_date": "2027-01-26",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0131,
-      "avg_realized_pct": 1.31,
-      "mispricing": null,
-      "beat_rate": null,
-      "last_surprise": null
-    },
-    {
-      "ticker": "TMO",
-      "earnings_date": "2027-01-28",
-      "implied_move": null,
-      "implied_move_pct": null,
-      "stock_price": null,
-      "straddle_cost": null,
-      "options_expiry": null,
-      "avg_realized_move": 0.0331,
-      "avg_realized_pct": 3.31,
-      "mispricing": null,
-      "beat_rate": 1.0,
-      "last_surprise": 5.22
     }
   ]
 }
