@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T01:28:35.019902",
+  "last_updated": "2026-11-26T16:15:38.791804",
   "events": [
     {
       "ticker": "UNH",
@@ -901,6 +901,23 @@
       },
       "beat_rate": null,
       "last_surprise": null
+    },
+    {
+      "ticker": "DE",
+      "earnings_date": "2027-02-11",
+      "implied_move": 0.1361,
+      "implied_move_pct": 13.61,
+      "stock_price": 641.02,
+      "straddle_cost": 87.25,
+      "options_expiry": "2027-02-19",
+      "avg_realized_move": 0.05,
+      "avg_realized_pct": 5.0,
+      "mispricing": {
+        "ratio": 2.72,
+        "signal": "RICH"
+      },
+      "beat_rate": 1.0,
+      "last_surprise": 1.6467
     },
     {
       "ticker": "CI",
